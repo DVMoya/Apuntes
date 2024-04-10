@@ -1,0 +1,56 @@
+
+/*
+    TEXT
+*/
+
+p{
+    text-align: justify;
+}
+
+ul{
+    text-align: justify;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+strong, em{
+    color: lightsalmon;
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2{
+    color: lightcoral;
+}
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6{
+    margin-left: 5%;
+    color: lightcoral;
+}
+
+.cite{
+    text-align: right;
+    color: aqua;
+}
+
+/*
+    LINKS
+*/
+
+:root, body, .view-content {
+    --link-color: coral;
+    --link-color-hover: orange;
+}
+.internal-link,
+.external-link{
+    text-decoration: none !important;
+    color: coral;
+}
+.external-link:hover{
+    color: orange;
+}
