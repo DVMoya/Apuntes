@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "mode": "source",
                 "source": true
               }
@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "mode": "preview",
                 "source": true
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md"
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
               }
             }
           }
@@ -164,20 +164,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b338f63873517c7e",
+  "active": "9b44baeaba220ee6",
   "lastOpenFiles": [
-    "Teoría y Práctica de las Producciones Audiovisuales.md",
-    "imgs/audiovisuales/captacion_television.png",
-    "imgs/audiovisuales/herramientas_captacion_imagen.png",
-    "imgs/audiovisuales/estructura_empresas_television.png",
-    "imgs/audiovisuales/produccion_televisiva.png",
-    "imgs/audiovisuales/postproduccion.png",
-    "imgs/audiovisuales/produccion.png",
-    "imgs/audiovisuales/preproduccion.png",
-    "imgs/diesño_y_animacion_personajes/angulos_no_regulares.png",
+    "imgs/audiovisuales/figuras_del_montaje.png",
+    "imgs/audiovisuales/fases_de_la_produccion_radiofonica.png",
+    "imgs/audiovisuales/elementos_produccion_radiofonica.png",
+    "imgs/audiovisuales/elementos_del_lenguaje_radiofonico.png",
+    "imgs/audiovisuales/el_podcast.png",
+    "imgs/audiovisuales/control_de_audio.png",
+    "imgs/audiovisuales/tipos_de_micro.png",
+    "imgs/audiovisuales/significacion_del_sonido.png",
+    "imgs/audiovisuales/proceso_de_producción.png",
+    "imgs/audiovisuales/patrones_emocionales_del_sonido.png",
+    "imgs/audiovisuales/otra_captura_de_una_captura.png",
     "Diseño y Animacion de Personajes.md",
-    "imgs/diesño_y_animacion_personajes/interpolacion_superficie_esfera.png",
-    "imgs/diesño_y_animacion_personajes/funcion_aceleracion_tiempo_ease.png",
+    "Teoría y Práctica de las Producciones Audiovisuales.md",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
     "Untitled",
