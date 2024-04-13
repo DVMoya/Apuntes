@@ -127,7 +127,7 @@ Tiene como fin la *materialización* del proyecto.
 
 ## LA GESTIÓN Y LA PRODUCCIÓN RADIOFÓNICA
 > La estrategia de elaboración de un programa de radio "varía según la naturaleza de sus contenidos, pero también depende de las estrategias operadas sobre el mensaje "
-> <p class="cite"><cite>(Marzal y López Cantos, 2008: 118)</cite></P>
+> <p class="cite"><cite>(Marzal y López Cantos, 2008: 118)</cite></p>
 
 **El primer paso:** el diseño y configuración de un programa (la idea y la planificación). *La idea se basa en **cuatro** pilares:*
 1) **La emisora:** Adecuarse al tono y línea editorial de la cadena.
@@ -203,12 +203,172 @@ ___
 
 # TEMA 6 : PRODUCCIÓN CINEMATOGRÁFICA
 
+> ““En pocas palabras, el productor es el contribuyente clave de un programa o película: la fuerza impulsora detrás de un proyecto. Es probable que el productor sea la persona que ha creado o desarrollado la idea antes de llevarla a termino”
+> <p class="cite"><cite>(Charlotte Worthington)</cite></p>
 
+## FUNCIONES DEL PRODUCTOR
+- Diseña
+- Planiﬁca
+- GesHona recursos
+- Controla
+- Supervisa el proyecto
+- Tiene una cartera de “talentos”
+
+## HABILIDADES DEL PRODUCTOR
+![[habilidades_del_productor.png|400]]
+
+## PERFILES DE PRODUCTOR
+![[perfiles_productor.png|500]]
+
+### Funciones del *Productor Ejecutivo*
+Es la persona con **mayor responsabilidad**. **Está involucrada en todos los aspectos del negocio y la gestión de la producción**. Enlace entre el equipo artístico y el rendimiento económico.
+
+- Búsqueda de ideas, guiones o proyectos y supervisión de su desarrollo.
+- Realización de los pertinentes estudios de viabilidad de cada proyecto
+- Elaboración de un presupuesto estimativo.
+- Establecimiento del calendario del desarrollo del proyecto
+- Búsqueda de vías de financiación.
+- Selección del equipo técnico - artístico.
+- Negociación de las vías de explotación del producto audiovisual. Supervisión del proceso de producción.
+
+### Funciones del *Productor Ejecutivo*
+Se encarga de **organizar y plantear la totalidad de una producción cinematográfica** en todos los aspectos.
+
+- Coordinar, facilitar y supervisar todo el proceso de preproducción
+- Preparar el desglose de guion y el plan de trabajo inicial.
+- Elaborar el control presupuestario. Supervisar el gasto diario.
+- Realizar los contratos del equipo y empresas.
+- Supervisar localizaciones. Obtener permisos de rodaje. Dirigir la logística del proyecto.
+- Contratar seguros.
+
+### Funciones del **Ayudante de Producción**
+Trabaja a **las órdenes del jefe de producción.** Participa en la **organización** del rodaje.
+
+- Colabora estrechamente con el director de producción y el ayudante de dirección.
+- Coordina el trabajo de un equipo de auxiliares de producción, secretarios y conductores.
+
+### Funciones del **Auxiliar de Producción**
+Está **a las órdenes** del *ayudante de producción.*
+
+- Avituallamiento del equipo
+- La recogida del equipo artístico.
+
+## OTROS TIPOS DE PRODUCTORES
+
+### *Productor asociado*
+Trabaja bajo la dirección del productor ejecutivo. Es un **inversor** dentro de la producción.
+
+### *Productor Delegado*
+Es un *representante de la televisión*, dentro de una producción. Su trabajo es **supervisar** el contenido del programa.
+
+![[integrantes_de_la_produccion.png|500]]
 
 ___
 # TEMA 7 : LAS FASES DE LA PRODUCCIÓN CINEMATOGRÁFICA
 
+## LAS FASES DE LA PRODUCCIÓN CINEMATOGRÁFICA
 
+La producción se divide en tres partes (igual que en apartados anteriores: **preproducción, rodaje y postproducción.** Todo proyecto pasa por estas fases hasta alcanzar su objetivo final: *la exhibición / difusión.*
+
+### Preproducción
+Comienza cuando el proyecto recibe *luz verde.* Es la fase de **planificación**. Las principales partes en las que se *subdivide* la preproducción.
+
+- DESGLOSE DE GUIÓN
+- PLAN DE TRABAJO
+- PRESUPUESTO
+- PLAN DEFINITIVO DEL RODAJE
+
+***Importante diferenciar entre plan de trabajo y plan de rodaje***
+
+### Producción
+También conocido como *rodaje.* Es la fase de **ejecución** de una producción audiovisual.
+
+Aspectos a tener en cuanta:
+- La producción puede llevar **mucho tiempo** e incluso atrasarse.
+- *El productor estará al tanto* de lo que se hace con el material y presupuesto para alcanzar los objetivos.
+- Por muy bien planificado que esté, no lo hace inmune a los **contratiempos**.
+- El equipo de producción pasa a un segundo plano, *limitándose* a ejercer las funciones de supervisión, seguimiento y vigilancia.
+
+![[estructura_rodaje.png|500]]
+
+### Postproducción
+Es la **última fase** de la producción. Se crea el *master* del proyecto mediante los materiales obtenidos en el rodaje.
+ 
+ Aspectos importantes de esta fase:
+- Entran los equipos de edición, montaje sonorización, VFX y etalonaje (departamento que colorea las imágenes).
+- El productor se asegura de que los gastos van a donde deben, y el producto se entrega a tiempo.
+- Problemas de esta fase: *retrasos, re-shoots, problemas técnicos, remontajes...*
+
+**MUY IMPORTANTE -->** El trabajo de postproducción se caracteriza por un efecto dominó: cada fase del proyecto se verá impulsada por la anterior, para lo que resulta imprescindible ir confirmando decisiones para no demorar el proceso.
+
+### RESUMEN FASES
+![[resumen_fases.png|500]] ![[fases_de_trabajo.png|500]]
+
+## PLAN DE PRODUCCIÓN
+> “Podríamos deﬁnir el plan de producción como una herramienta cuya ﬁnalidad es la planiﬁcación de un proyecto en el tiempo y en el cual se especfícan las  necesidades y las tareas que se deben realizar en todas las fases que se acometan en el proyecto.”
+
+### Desglose y Plan de Trabajo
+- Son **fundamentales** para realizar un presupuesto peventivo idóneo.
+- El *primer desglose y plan de trabajo* lo realiza el jefe de producción.
+- El desglose *se realiza por departamentos.*
+- Cada secuencia debe tener su propio desglose.
+![[ejemplo_desglose.png|400]]
+
+- Disponer de un desglose permite:
+	- Conocer recursos necesarios.
+	- Facilita la organización de tareas.
+- Para organizar todo esto realizamos un **plan de trabajo.**
+- Normalmente se emplean **Diagramas de Gantt.**
+### El Plan de Rodaje
+> Este plan consiste en “la organización de la producción por días de rodaje. Esto es un planning dónde se estructura el conjunto de la producción, en el que aparecen los  personajes y sus intervenciones”
+> <p class="cite"><cite>(Calvo, 2003)</cite></P>
+
+
+![[muy_importante.png|500]]
+
+## EL PRESUPUESTO
+**Debemos** tener presente que hay *dos tipos de presupuestos.*
+
+- **Preventivo:** Se realiza *previamente* al proceso de producción. Se estiman los posibles costes que vayan a producirse.
+- **Consultivo:** Se realiza una vez acabada la producción. Su función es *auditar y comprobar* los posibles aumentos de gastos.
+
+Aspectos a tener en cuenta:
+- El productor/a debe conocer las tarifas del material que se pretende utilizar en rodaje.
+- Se debe estudiar a conciencia el guion para realizar un desglose minucioso.
+- Se debe ser coherente, teniendo cierto margen de maniobra.
+- Elaborar un plan de trabajo y rodaje realista ayuda a que no haya un exceso de imprevistos a futuro.
+
+### ¿Qué factores *afectan* al presupuesto?
+**Todo afecta al presupuesto:** los actores contratados, el atrezo empleado, cuanto dinero se invierte en publicidad, doblar el audio...
+
+## PLAN DE FINANCIACIÓN
+Es importante el plan de financiación porque determina la viabilidad del proyecto, entre otras cosas.
+
+**IMPORTANTE:** Ninguna ayuda estatal o subvención puede superar la cuantía de la inversión del productor. Por suerte *la financiación privada casi no tiene límite.*
+
+## FUENTES DE FINANCIACIÓN
+- Privadas
+- Pública
+### Privadas
+El capital que posee **la propia productora.** Puede ser *aportado por inversores* externos a la empresa productora.
+
+El capital que aporta **el gobierno.**
+
+*Tipos:*
+- Producciones asociadas
+- Coproducciones
+- Coproducciones internacionales
+- Coproducciones con cadenas de televisión
+
+*Coproducciones con cadenas de TV:* 
+- Los operadores de TV podrán **financiar** de forma directa la producción de un proyecto audiovisual.
+- Las cadenas **compran los derechos de explotación** para tener prioridad de exhibición.
+
+*Product placement:* Anunciar productos dentro de la producción visual.
+
+*Crowdfunding:* Financiación de proyectos mediante pequeñas aportaciones privadas a través de plataformas de internet (Kickstarter).
+
+*Crowdsourcing:* Trabajos colaborativos para hacer la producción.
 
 ___
 # TEMA 8 : LA POSTPRODUCCIÓN

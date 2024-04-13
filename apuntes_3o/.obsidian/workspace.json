@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b8cf8cadf94c7481",
+        "id": "de9a57dc56f0dd5e",
         "type": "tabs",
         "children": [
           {
-            "id": "b338f63873517c7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "05687a8cce1aeaac",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a1179b5cf7735589",
+            "id": "8f302311dfa644f6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -164,21 +146,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b44baeaba220ee6",
+  "active": "8f302311dfa644f6",
   "lastOpenFiles": [
-    "imgs/audiovisuales/figuras_del_montaje.png",
-    "imgs/audiovisuales/fases_de_la_produccion_radiofonica.png",
-    "imgs/audiovisuales/elementos_produccion_radiofonica.png",
-    "imgs/audiovisuales/elementos_del_lenguaje_radiofonico.png",
-    "imgs/audiovisuales/el_podcast.png",
-    "imgs/audiovisuales/control_de_audio.png",
-    "imgs/audiovisuales/tipos_de_micro.png",
-    "imgs/audiovisuales/significacion_del_sonido.png",
-    "imgs/audiovisuales/proceso_de_producción.png",
-    "imgs/audiovisuales/patrones_emocionales_del_sonido.png",
-    "imgs/audiovisuales/otra_captura_de_una_captura.png",
-    "Diseño y Animacion de Personajes.md",
+    "imgs/resumen_fases.png",
+    "imgs/fases_de_trabajo.png",
+    "imgs/estructura_rodaje.png",
+    "imgs/ejemplo_desglose.png",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
+    "imgs/muy_importante.png",
+    "imgs/integrantes_de_la_produccion.png",
+    "imgs/perfiles_productor.png",
+    "imgs/habilidades_del_productor.png",
+    "Diseño y Animacion de Personajes.md",
+    "imgs/audiovisuales/captacion_television.png",
+    "imgs/audiovisuales/herramientas_captacion_imagen.png",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
     "Untitled",
