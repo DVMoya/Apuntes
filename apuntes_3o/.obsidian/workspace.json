@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Diseño y Animacion de Personajes.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Diseño y Animacion de Personajes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Diseño y Animacion de Personajes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
+                "file": "Diseño y Animacion de Personajes.md"
               }
             }
           }
@@ -148,18 +148,17 @@
   },
   "active": "88dcf3e672316e2f",
   "lastOpenFiles": [
-    "imgs/fases_comercializacion_pelicula.png",
-    "imgs/cut_types.png",
-    "imgs/cine_postproduccion_staff.png",
-    "imgs/audiovisuales/resumen_fases.png",
+    "imgs/audiovisuales/fases_comercializacion_pelicula.png",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
+    "imgs/audiovisuales/cut_types.png",
+    "imgs/audiovisuales/cine_postproduccion_staff.png",
+    "imgs/audiovisuales/resumen_fases.png",
     "imgs/audiovisuales/ejemplo_desglose.png",
     "imgs/audiovisuales/fases_de_trabajo.png",
     "imgs/audiovisuales/estructura_rodaje.png",
     "imgs/audiovisuales/muy_importante.png",
     "imgs/audiovisuales/integrantes_de_la_produccion.png",
     "imgs/audiovisuales/perfiles_productor.png",
-    "imgs/audiovisuales/habilidades_del_productor.png",
     "Diseño y Animacion de Personajes.md",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
