@@ -372,3 +372,69 @@ El capital que aporta **el gobierno.**
 
 ___
 # TEMA 8 : LA POSTPRODUCCIÓN
+## LA POSTPRODUCCIÓN
+Se dota al producto de sentido y se conforma el producto final que verá el mercado. (edición, etalonaje, VFX, mezclas de sonido...)
+
+En esta fase intervienen figuras como:
+- *Editor/montador*
+- *Ayudante de montaje*
+- *DIT*
+- *Coordinador de postproducción*
+
+![[cine_postproduccion_staff.png|500]]
+
+## CRONOGRAMAS Y FIGURAS
+Cada fase del proceso *se verá impulsada por la anterior*, para lo que resulta imprescindible ir confirmando decisiones para no demorar el proceso.
+
+### DIT
+- *Gestiona* el material rodado
+- Se encarga de los **backups**
+- Forma parte del **departamento de cámara**
+- Trabaja estrechamente con el *Ayudante de Montaje*
+
+### Ayudante de Montaje
+- Interviene **antes** de acabar el rodaje
+- Mano derecha del montador
+- Organización, sincronización y adecuación del material necesario para la edición
+- Trabaja junto al DIT y al departamento de *postpro*
+- Se encarga de obtener el **master definitivo** *(o DCPs)*
+- Tiene una función más técnica que creativa
+
+### Montador / Editor
+- **Ensambla el metraje**
+- Plasma sus conocimientos teóricos, formales y prácticos del lenguaje audiovisual.
+
+### El Montaje
+- Primer montaje o montaje provisional **(Rough Cut)**
+- Segundo montaje o montaje fino **(Fine Cut)**
+- Montaje definitivo **(Final Cut)**
+
+![[cut_types.png|500]]
+
+### Coordinador de Postproducción
+Gestiona, *desde la fase de preproducción*, los recursos humanos y técnicos que van a intervenir en la fase de postproducción.
+
+En la fase de postproducción **se encarga de supervisar que el timing de edición sea el adecuado**, que se cumplan los plazos de entrega, **que todos los departamentos estén trabajando de forma ordenada y sincronizada** y resolver cualquier incidencia técnica que ocurra.
+
+## ENTORNO ECONÓMICO
+- Ingresos en taquilla
+- Festivales
+- Ventas especiales
+- Home entertainment
+- VOD
+- TV en abierto
+
+## FASES DE COMERCIALIZACIÓN DE UNA PELÍCULA
+- *Fase de preparación* (durante la preproducción y rodaje)
+	- Actividades de marketing y promoción orientadas al mercado profesional. **Para buscar inversores y coproductores.**
+- *Fase de lanzamiento*
+	- Marketing orientado al público.
+
+![[fases_comercializacion_pelicula.png|500]]
+
+##  HERRAMIENTAS DE PROMOCIÓN
+Acciones que realiza la empresa productora para dar la mayor difusión de su proyecto y atraer al público para que lo consuma.
+- *Trailer*
+- *Teaser*
+- *Making of*
+- *Proyecciones exclusivas*
