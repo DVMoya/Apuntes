@@ -21,6 +21,9 @@ strong, em{
     color: lightsalmon;
 }
 
+.markdown-preview-view h1{
+    text-align: center;
+}
 .markdown-preview-view h1,
 .markdown-preview-view h2{
     color: lightcoral;

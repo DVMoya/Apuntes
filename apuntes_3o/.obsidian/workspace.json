@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ccaa453a1df42060",
+        "id": "a7811ee57bb3f5fc",
         "type": "tabs",
         "children": [
           {
-            "id": "88dcf3e672316e2f",
+            "id": "c0600b5fa64cb151",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Redes y Sistemas Multijugador.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Redes y Sistemas Multijugador.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md",
+                "file": "Redes y Sistemas Multijugador.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Diseño y Animacion de Personajes.md"
+                "file": "Redes y Sistemas Multijugador.md"
               }
             }
           }
@@ -146,8 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "88dcf3e672316e2f",
+  "active": "c0600b5fa64cb151",
   "lastOpenFiles": [
+    "imgs/redes_y_sistemas_multijugador/arquitectura_tcp_ip.png",
+    "imgs/redes_y_sistemas_multijugador",
+    "imgs/redes_y_sistemas_multijugador/modelo_comunicacion.png",
+    "Diseño y Animacion de Personajes.md",
+    "Redes y Sistemas Multijugador.md",
     "imgs/audiovisuales/fases_comercializacion_pelicula.png",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
     "imgs/audiovisuales/cut_types.png",
@@ -158,8 +163,6 @@
     "imgs/audiovisuales/estructura_rodaje.png",
     "imgs/audiovisuales/muy_importante.png",
     "imgs/audiovisuales/integrantes_de_la_produccion.png",
-    "imgs/audiovisuales/perfiles_productor.png",
-    "Diseño y Animacion de Personajes.md",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
     "Untitled",
