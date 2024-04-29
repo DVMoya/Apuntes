@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a7811ee57bb3f5fc",
+        "id": "1ba0a11a71bf5a04",
         "type": "tabs",
         "children": [
           {
-            "id": "c0600b5fa64cb151",
+            "id": "fa15f34953ce2eaf",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,23 +146,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c0600b5fa64cb151",
+  "active": "fa15f34953ce2eaf",
   "lastOpenFiles": [
+    "Teoría y Práctica de las Producciones Audiovisuales.md",
+    "imgs/redes_y_sistemas_multijugador/modelo_comunicacion.png",
     "imgs/redes_y_sistemas_multijugador/arquitectura_tcp_ip.png",
     "imgs/redes_y_sistemas_multijugador",
-    "imgs/redes_y_sistemas_multijugador/modelo_comunicacion.png",
-    "Diseño y Animacion de Personajes.md",
+    "imgs/diesño_y_animacion_personajes/tipos_de_micro.png",
+    "imgs/diesño_y_animacion_personajes/significacion_del_sonido.png",
+    "imgs/diesño_y_animacion_personajes/proceso_de_producción.png",
+    "imgs/diesño_y_animacion_personajes/patrones_emocionales_del_sonido.png",
+    "imgs/diesño_y_animacion_personajes/otra_captura_de_una_captura.png",
+    "imgs/diesño_y_animacion_personajes/figuras_del_montaje.png",
+    "imgs/diesño_y_animacion_personajes/fases_de_la_produccion_radiofonica.png",
+    "imgs/diesño_y_animacion_personajes/elementos_produccion_radiofonica.png",
     "Redes y Sistemas Multijugador.md",
-    "imgs/audiovisuales/fases_comercializacion_pelicula.png",
-    "Teoría y Práctica de las Producciones Audiovisuales.md",
-    "imgs/audiovisuales/cut_types.png",
-    "imgs/audiovisuales/cine_postproduccion_staff.png",
-    "imgs/audiovisuales/resumen_fases.png",
-    "imgs/audiovisuales/ejemplo_desglose.png",
-    "imgs/audiovisuales/fases_de_trabajo.png",
-    "imgs/audiovisuales/estructura_rodaje.png",
-    "imgs/audiovisuales/muy_importante.png",
-    "imgs/audiovisuales/integrantes_de_la_produccion.png",
+    "Diseño y Animacion de Personajes.md",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
     "Untitled",
