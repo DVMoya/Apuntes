@@ -5,13 +5,18 @@ ___
 - [[#BLOQUE 1 - REDES]]
 	- [[#TEMA 1 INTRODUCCIÓN A LAS REDES DE COMPUTADOR]]
 		- [[#- 1 - Definición de red de comunicación de datos]]
-		- [[#- 2 - VISIÓN GENERAL DE INTERNET]]
+		- [[#- 2 - Visión General de Internet]]
 		- [[#- 3 - Modelo de Comunicación]]
 		- [[#- 4 - Arquitectura de Red]]
 		- [[#- 5 - Resumen]]
 	- [[#TEMA 2 EL NUVEL DE RED]]
 - [[#BLOQUE 2 - SISTEMAS MULTIJUGADOR]]
 	- [[#TEMA 5 LA CAPA DE APLICACIÓN]]
+		- [[#- 1 - Introducción]]
+		- [[#- 2 - Principios de las Aplicaciones en Red]]
+		- [[#- 3 - Proceso de Comunicación]]
+		- [[#- 4 - Servicios de Transporte]]
+		- [[#- 5 - Direccionamiento Entre Procesos]]
 	- [[#TEMA 6 LA CAPA DE TRANSPORTE]]
 	- [[#TEMA 7 SISTEMAS DISTRIBUIDOS - CONCURRENCIA - DESARROLLO DE APLICACIONES EN RED]]
 - [[#BLOQUE 3 - REDES]]
@@ -74,7 +79,7 @@ Una red es una colección interconectada de computadoras autónomas.
 - Protocolos: tcp, ip, http, ftp, ppp...
 - Un protocolo concreto define un aspecto concreto de la comunicación.
 
-## - 2 - VISIÓN GENERAL DE INTERNET
+## - 2 - Visión General de Internet
 
 ### Estructura de Internet
 
@@ -227,6 +232,66 @@ Las redes TCP/IP ponen a disposición de las aplicaciones dos protocolos de tran
 ___
 # TEMA 6 : LA CAPA DE TRANSPORTE
 ___
+
+## - 1 - Introducción
+
+![[capa_de_transporte.png|500]]
+
+LLamamos *"entidad de transporte"* al hardware o software que se encarga de realizar los servicios de la capa de transporte.
+
+## - 2 - El Servicio de Transporte
+
+- **A nivel IP** tenemos servicio no confiable. Es necesaria la capa de transporte que mejore el servicio.
+- Los programas de aplicación se escriben usando un grupo estándar de primitivas (funciones), válidas para una gran variedad de redes.
+- En la capa de red una capa da servicio a la capa por encima de ella. La capa inferior se ve como *proveedor del servicio* y la capa superior como *usuario del servicio.*
+- El *servicio de transporte* se implementa como un *protocolo* de transporte *entre las entidades* de transporte.
+- En la capa de transporte se requiere direccionamiento explícito a los destinos.
+
+## - 3 - Direccionamiento
+
+-  **A nivel IP**
+	- Envío sin garantía de entrega en destino ni garantía de orden.
+	- Se identifica: El host que recibirá el datagrama (dirección IP)
+	- Pero no se identifica la aplicación concreta que loo recibe
+- El SO necesita saber *a quién enviar y qué enviar.*
+- Por encima del protocolo IP están otros protocolos que organizan el problema de comunicación.
+- La capa de transporte identifica los destinos **a nivel de las funciones que implementan.**
+- Se definen **direcciones de transporte** en las que los procesos pueden estar a la escucha de solicitudes de conexión.
+- ***En internet:*** Para obtener un servicio de una máquina necesitamos un par, llamado **"punto de acceso al servicio de transporte" TSAP** (Transport Service Access Point).
+- cada mensaje en la capa de transporte lleva: número de puerto de destino y número de puerto fuente de la máquina fuente.
+
+> En internet hay dos tipos de servicios de transporte:
+> - Orientados a conexión (**TCP**): con tres fases establecimiento, transferencia y liberación de conexión.
+> - Sin conexión (**UDP**).
+
+## - 4 - Protocolos
+
+### Protocolo **UDP** (User Datagram Protocol)
+
+SIN CONEXIÓN
+No confiable, recepción no ordenada.
+
+![[paquete_udp.png|500]]
+
+En el encabezado de un paquete UDP aparecen: puerto fuente, puerto destino, longitud del encabezado (mínimo 8 bytes) y, opcionalmente, el UDP checksum.
+
+*¿Cómo se asignan los puertos?*
+- Una autoridad central asigna Puertos a Aplicaciones o Servicios. (Puertos "Bien conocidos") 
+- O una asignación dinámica.
+
+### Protocolo **TCP** ()
+
+CON CONEXIÓN
+Confiable, recepción de paquetes ordenada.
+
+- *Servidor:*
+	1. Quiero recibir, en tal puerto
+	2. Si no puedo atender guarda petición en memoria
+	3. Espera que alguien se conecte (haga petición)
+- 
+
+## - 4 - Protocolos
+
 
 ___
 # TEMA 7 : SISTEMAS DISTRIBUIDOS - CONCURRENCIA - DESARROLLO DE APLICACIONES EN RED
