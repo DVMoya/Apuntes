@@ -4,29 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1ba0a11a71bf5a04",
+        "id": "8acd5ad81a31979c",
         "type": "tabs",
         "children": [
           {
-            "id": "fa15f34953ce2eaf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Redes y Sistemas Multijugador.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "4aec826f36d94ef0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "36544abd27816ebd",
+            "id": "55dffc31617e38de",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -164,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b44baeaba220ee6",
+  "active": "55dffc31617e38de",
   "lastOpenFiles": [
+    "imgs/redes_y_sistemas_multijugador/ventana2_tcp.png",
+    "imgs/redes_y_sistemas_multijugador/ventana_tcp.png",
     "imgs/redes_y_sistemas_multijugador/paquete_udp.png",
     "imgs/redes_y_sistemas_multijugador/capa_de_transporte.png",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
@@ -177,8 +161,6 @@
     "imgs/diesño_y_animacion_personajes/proceso_de_producción.png",
     "imgs/diesño_y_animacion_personajes/patrones_emocionales_del_sonido.png",
     "imgs/diesño_y_animacion_personajes/otra_captura_de_una_captura.png",
-    "imgs/diesño_y_animacion_personajes/figuras_del_montaje.png",
-    "imgs/diesño_y_animacion_personajes/fases_de_la_produccion_radiofonica.png",
     "Redes y Sistemas Multijugador.md",
     "Diseño y Animacion de Personajes.md",
     "imgs/audiovisuales",

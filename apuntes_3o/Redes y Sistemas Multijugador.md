@@ -12,12 +12,15 @@ ___
 	- [[#TEMA 2 EL NUVEL DE RED]]
 - [[#BLOQUE 2 - SISTEMAS MULTIJUGADOR]]
 	- [[#TEMA 5 LA CAPA DE APLICACIÓN]]
-		- [[#- 1 - Introducción]]
 		- [[#- 2 - Principios de las Aplicaciones en Red]]
 		- [[#- 3 - Proceso de Comunicación]]
 		- [[#- 4 - Servicios de Transporte]]
 		- [[#- 5 - Direccionamiento Entre Procesos]]
 	- [[#TEMA 6 LA CAPA DE TRANSPORTE]]
+		- [[#- 1 - Introducción]]
+		- [[#- 2 - El Servicio de Transporte]]
+		- [[#- 3 - Direccionamiento]]
+		- [[#- 4 - Protocolos]]
 	- [[#TEMA 7 SISTEMAS DISTRIBUIDOS - CONCURRENCIA - DESARROLLO DE APLICACIONES EN RED]]
 - [[#BLOQUE 3 - REDES]]
 	- [[#TEMA 3 EL NIVEL DE ENLACE EN DATOS]]
@@ -150,8 +153,6 @@ ___
 ___
 # TEMA 5 : LA CAPA DE APLICACIÓN
 ___
-
-## - 1 - Introducción
 
 ## - 2 - Principios de las Aplicaciones en Red
 
@@ -288,11 +289,47 @@ Confiable, recepción de paquetes ordenada.
 	1. Quiero recibir, en tal puerto
 	2. Si no puedo atender guarda petición en memoria
 	3. Espera que alguien se conecte (haga petición)
-- 
 
-## - 4 - Protocolos
+RESUMEN:
+- Las entidades emisora y receptora **intercambian datos en forma de datagramas.**
+- El datagrama IP está formado por:
+	- cabecera de 20 bytes + bytes opcionales + bytes de datos
+- La parte de datos del datagrama se corresponde con:
+	- la cabecera TCP y los datos TCP
+- El tamaño del datagrama está **limitado** por:
+	- *(Cabecera IP + datos)* debe ser inferior a 65535 bytes ya que la longitud máxima del datagrama IP es de 65535 bytes.
+	- *El datagrama debe caber en los datos de la MTU* (unidad de transferencia máxima de la unidad física = trama) sino se debe fragmentar.
+- El protocolo básico usado por entidades TCP es el protocolo de la **ventana corrediza o deslizante.**
+	- Los paquetes generados por la aplicación se envían a la entidad de transporte.
+	- Los paquetes se enumeran según el orden en que se transmiten.
+	- Permite la transmisión de varios paquetes antes de recibir confirmación.
+	- El transmisor inicia temporizador por cada paquete que envía (timer).
+	- El receptor devuelve paquetes, en los que puede haber datos y/o acuse de recibo.
+	- Si en emisor expira el temporizador sin recibir ACK se retransmite.
+- Tenemos una ventana de tamaño determinado y podemos transmitir todos los paquetes dentro de ella.
 
+![[ventana_tcp.png|500]]
 
+- Se manda 1, al recibir confirmación del paquete 1 y se desplaza la ventana, se descarta el paquete del buffer.
+
+![[ventana2_tcp.png|300]]
+
+- De esta forma los paquetes se dividen en:
+	- A la *izquierda* de la ventana y *dentro* del buffer: enviados y no confirmados.
+	- A la *izquierda* de la ventana y la *izquierda* del buffer: enviados y confirmados.
+	- *Dentro* de la ventana: no enviados, posibles a enviar.
+- Matizaciones sobre las ventanas deslizantes en TCP.
+	- TCP ve la ventana de datos a transmitir como un conjunto ordenado de bytes.
+	- La divide en segmentos para transmitirla y viajan en un diagrama IP.
+	- Usa el mecanismo de ventana deslizante para:
+		- proporcionar una transmisión segura.
+		- control de flujo.
+	- El receptor tiene un buffer para recomponer la secuencia de datos.
+	- Una conexión TCP es *"full-duplex"*, las dos partes tienen ventanas.
+- Control de flujo:
+	- Se permite que el tamaño de la ventana varíe dinámicamente.
+	- Con cada confirmación se envía el tamaño de la ventana.
+	
 ___
 # TEMA 7 : SISTEMAS DISTRIBUIDOS - CONCURRENCIA - DESARROLLO DE APLICACIONES EN RED
 ___
