@@ -6,8 +6,9 @@ ___
 - [[#TEMA 4 PRODUCCIÓN EN TV]]
 - [[#TEMA 5 EL CICLO PRODUCTIVO DE LA PRODUCCIÓN EN TV]]
 - [[#TEMA 6 PRODUCCIÓN CINEMATOGRÁFICA]]
-- [[#TEMA 7 : LAS FASES DE LA PRODUCCIÓN CINEMATOGRÁFICA]]
+- [[#TEMA 7 LAS FASES DE LA PRODUCCIÓN CINEMATOGRÁFICA]]
 - [[#TEMA 8 LA POSTPRODUCCIÓN]]
+- [[#TEMA 9 UNA INTRODUCCIÓN A LA PRODUCCIÓN DE VIDEOJUEGOS]]
 ___
 # PRODUCCIÓN RADIOFÓNICA
 ___
@@ -438,3 +439,8 @@ Acciones que realiza la empresa productora para dar la mayor difusión de su pro
 - *Teaser*
 - *Making of*
 - *Proyecciones exclusivas*
+
+___
+# TEMA 9 : UNA INTRODUCCIÓN A LA PRODUCCIÓN DE VIDEOJUEGOS
+___
+

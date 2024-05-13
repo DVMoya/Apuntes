@@ -280,7 +280,7 @@ En el encabezado de un paquete UDP aparecen: puerto fuente, puerto destino, long
 - Una autoridad central asigna Puertos a Aplicaciones o Servicios. (Puertos "Bien conocidos") 
 - O una asignación dinámica.
 
-### Protocolo **TCP** ()
+### Protocolo **TCP**
 
 CON CONEXIÓN
 Confiable, recepción de paquetes ordenada.

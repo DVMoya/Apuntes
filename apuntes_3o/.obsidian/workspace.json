@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redes y Sistemas Multijugador.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redes y Sistemas Multijugador.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redes y Sistemas Multijugador.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redes y Sistemas Multijugador.md"
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "55dffc31617e38de",
   "lastOpenFiles": [
+    "Redes y Sistemas Multijugador.md",
+    "Diseño y Animacion de Personajes.md",
     "imgs/redes_y_sistemas_multijugador/ventana2_tcp.png",
     "imgs/redes_y_sistemas_multijugador/ventana_tcp.png",
     "imgs/redes_y_sistemas_multijugador/paquete_udp.png",
@@ -160,9 +162,6 @@
     "imgs/diesño_y_animacion_personajes/significacion_del_sonido.png",
     "imgs/diesño_y_animacion_personajes/proceso_de_producción.png",
     "imgs/diesño_y_animacion_personajes/patrones_emocionales_del_sonido.png",
-    "imgs/diesño_y_animacion_personajes/otra_captura_de_una_captura.png",
-    "Redes y Sistemas Multijugador.md",
-    "Diseño y Animacion de Personajes.md",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
     "Untitled",
