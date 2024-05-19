@@ -8,12 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "55dffc31617e38de",
+            "id": "0e3354c80383e260",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Motores de Videojuegos.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "692a6f35dc3a39d5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41c7a4ed23d73e74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Motores de Videojuegos.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Motores de Videojuegos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Motores de Videojuegos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
+                "file": "Motores de Videojuegos.md"
               }
             }
           }
@@ -146,25 +164,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55dffc31617e38de",
+  "active": "9b44baeaba220ee6",
   "lastOpenFiles": [
-    "Redes y Sistemas Multijugador.md",
+    "imgs/motores_de_videojuegos/unity_2.png",
+    "imgs/motores_de_videojuegos/unity_1.png",
+    "imgs/motores_de_videojuegos/game_loop_loop.png",
+    "imgs/motores_de_videojuegos/rendering_loop.png",
+    "imgs/motores_de_videojuegos/digital_content_creation_tools.png",
+    "imgs/motores_de_videojuegos/gm_layers_3.png",
+    "imgs/motores_de_videojuegos/gm_layers_2.png",
+    "imgs/motores_de_videojuegos/gm_layers_1.png",
+    "imgs/motores_de_videojuegos/math_game_loop.png",
+    "imgs/motores_de_videojuegos/game_loop.png",
+    "Motores de Videojuegos.md",
+    "imgs/motores_de_videojuegos",
     "Diseño y Animacion de Personajes.md",
-    "imgs/redes_y_sistemas_multijugador/ventana2_tcp.png",
-    "imgs/redes_y_sistemas_multijugador/ventana_tcp.png",
-    "imgs/redes_y_sistemas_multijugador/paquete_udp.png",
-    "imgs/redes_y_sistemas_multijugador/capa_de_transporte.png",
+    "Redes y Sistemas Multijugador.md",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
-    "imgs/redes_y_sistemas_multijugador/modelo_comunicacion.png",
-    "imgs/redes_y_sistemas_multijugador/arquitectura_tcp_ip.png",
+    "imgs/redes_y_sistemas_multijugador/ventana2_tcp.png",
     "imgs/redes_y_sistemas_multijugador",
-    "imgs/diesño_y_animacion_personajes/tipos_de_micro.png",
-    "imgs/diesño_y_animacion_personajes/significacion_del_sonido.png",
-    "imgs/diesño_y_animacion_personajes/proceso_de_producción.png",
-    "imgs/diesño_y_animacion_personajes/patrones_emocionales_del_sonido.png",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
-    "Untitled",
     "imgs",
     "Welcome.md",
     "INDEX"
