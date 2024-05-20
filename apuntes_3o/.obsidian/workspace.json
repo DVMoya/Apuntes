@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "8acd5ad81a31979c",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0e3354c80383e260",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Motores de Videojuegos.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "692a6f35dc3a39d5",
         "type": "tabs",
         "children": [
@@ -164,24 +146,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b44baeaba220ee6",
+  "active": "41c7a4ed23d73e74",
   "lastOpenFiles": [
-    "imgs/motores_de_videojuegos/unity_2.png",
-    "imgs/motores_de_videojuegos/unity_1.png",
-    "imgs/motores_de_videojuegos/game_loop_loop.png",
-    "imgs/motores_de_videojuegos/rendering_loop.png",
-    "imgs/motores_de_videojuegos/digital_content_creation_tools.png",
-    "imgs/motores_de_videojuegos/gm_layers_3.png",
-    "imgs/motores_de_videojuegos/gm_layers_2.png",
-    "imgs/motores_de_videojuegos/gm_layers_1.png",
-    "imgs/motores_de_videojuegos/math_game_loop.png",
-    "imgs/motores_de_videojuegos/game_loop.png",
+    "imgs/motores_de_videojuegos/bintrees.png",
+    "imgs/motores_de_videojuegos/restriced_quadtree.png",
+    "imgs/motores_de_videojuegos/quadtree.png",
+    "imgs/motores_de_videojuegos/variable_domain.png",
+    "imgs/motores_de_videojuegos/uniform_domain.png",
+    "imgs/motores_de_videojuegos/discrete_models.png",
+    "imgs/motores_de_videojuegos/image_based_simplification.png",
+    "imgs/motores_de_videojuegos/simplification_geometric.png",
+    "imgs/motores_de_videojuegos/contraction_vertices.png",
+    "imgs/motores_de_videojuegos/edge_collapse.png",
+    "imgs/motores_de_videojuegos/vertex_removal.png",
     "Motores de Videojuegos.md",
     "imgs/motores_de_videojuegos",
     "Diseño y Animacion de Personajes.md",
     "Redes y Sistemas Multijugador.md",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
-    "imgs/redes_y_sistemas_multijugador/ventana2_tcp.png",
     "imgs/redes_y_sistemas_multijugador",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
