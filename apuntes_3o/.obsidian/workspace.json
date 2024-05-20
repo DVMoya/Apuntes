@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "692a6f35dc3a39d5",
+        "id": "2d8677b4101dd318",
         "type": "tabs",
         "children": [
           {
-            "id": "41c7a4ed23d73e74",
+            "id": "8dae9c8e7f47e1e1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a2e03e78e08ba805",
@@ -146,20 +147,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41c7a4ed23d73e74",
+  "active": "9b44baeaba220ee6",
   "lastOpenFiles": [
+    "imgs/motores_de_videojuegos/culling_techniques.png",
+    "imgs/motores_de_videojuegos/aligned_with_polygons_1.png",
+    "Motores de Videojuegos.md",
+    "imgs/motores_de_videojuegos/octrees_2_example.png",
+    "imgs/motores_de_videojuegos/octrees_1.png",
+    "imgs/motores_de_videojuegos/aligned_with_polygons_2.png",
+    "imgs/motores_de_videojuegos/aligned_with_axis_1.png",
+    "imgs/motores_de_videojuegos/aligned_with_axis_3.png",
+    "imgs/motores_de_videojuegos/aligned_with_axis_2.png",
+    "imgs/motores_de_videojuegos/scene_graph.png",
     "imgs/motores_de_videojuegos/bintrees.png",
     "imgs/motores_de_videojuegos/restriced_quadtree.png",
-    "imgs/motores_de_videojuegos/quadtree.png",
-    "imgs/motores_de_videojuegos/variable_domain.png",
-    "imgs/motores_de_videojuegos/uniform_domain.png",
-    "imgs/motores_de_videojuegos/discrete_models.png",
-    "imgs/motores_de_videojuegos/image_based_simplification.png",
-    "imgs/motores_de_videojuegos/simplification_geometric.png",
-    "imgs/motores_de_videojuegos/contraction_vertices.png",
-    "imgs/motores_de_videojuegos/edge_collapse.png",
-    "imgs/motores_de_videojuegos/vertex_removal.png",
-    "Motores de Videojuegos.md",
     "imgs/motores_de_videojuegos",
     "Diseño y Animacion de Personajes.md",
     "Redes y Sistemas Multijugador.md",

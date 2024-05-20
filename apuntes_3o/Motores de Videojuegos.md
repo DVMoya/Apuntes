@@ -16,6 +16,11 @@ ___
 	- [[#SIMPLIFICATION]]
 	- [[#LEVEL OF DETAIL (MULTIRESOLUTION MODEL)]]
 - [[#CHAPTER 3 SCENE REPRESENTATION]]
+	- [[#WHY DO WE NEED NEW TECHNIQUES?]]
+	- [[#SCENE GRAPHS]]
+	- [[#SPACE PARTITIONING]]
+	- [[#VISIBILITY DETERMINATION *(CULLING)*]]
+- [[#CHAPTER 4 VISUAL REALISM]]
 
 ___
 # CHAPTER 1 : GAME ENGINE ARCHITECTURE
@@ -292,14 +297,95 @@ ___
 # CHAPTER 3 : SCENE REPRESENTATION
 ___
 
+## WHY DO WE NEED NEW TECHNIQUES?
+
+Because we need to increase efficiency. *Clipping* and *Z-buffer* have a linear cost with the number of primitives.
+
+## SCENE GRAPHS
+
+- **Node:** element of a scene graph.
+	- *Groups:* nodes with children.
+	- *Leaves:* nodes without children.
+- **Components of a node:** set of attributes.
+	- Geometry.
+	- Color.
+	- Sound.
+	- A component can be referenced by more than one object.
+
+![[scene_graph.png|500]]
+
+## SPACE PARTITIONING
+
+Process of dividing a space into non-overlapping regions. Space-partitioning systems are often hierarchical (Tree).
+
+*Features:*
+- The acceleration of the visibility computation.
+	- Send only the visible triangles from the point of view.
+	- Removing a big amount of polygons (no per triangle).
+
+*Types:*
+- **BSP** (Binary Space Partition) **Trees.**
+- **Octrees.**
+
+### BSP Trees
+
+*Types:*
+- Aligned with the axis.
+- Aligned with polygons.
+
+*Main idea:*
+- Divide the space with a plane.
+- Locate geometry in space to which it belongs.
+- Apply the process recursively.
+
+#### Aligned with the *axis*
+
+![[aligned_with_axis_1.png|400]]![[aligned_with_axis_2.png|400]]![[aligned_with_axis_3.png|400]]
+
+#### Aligned with *polygons*
+
+![[aligned_with_polygons_1.png|400]]![[aligned_with_polygons_2.png|400]]
+
+### Octrees
+
+![[octrees_1.png|400]]![[octrees_2_example.png|400]]
+
+*Algorithm features:*
+- **Subdivision**
+	- Until the boxes have a number of triangles.
+	- Until some subdivision level is reached.
+	- Until a number of boxes is reached on the tree.
+- **When the triangles intersect several boxes**
+	- Place the triangles in the larger cube containing it.
+	- Divide the triangle.
+	- Place the triangle in both boxes.
+- **Use**
+	- Combination with skeleton of visible polygons (Hierarchical Frustum Culling).
+
+## VISIBILITY DETERMINATION *(CULLING)*
+
+***Culling*. Select from a group for reject.**
+- Usually happens before Visible Surface Determination in a rendering pipeline.
+- Primitives or batches of primitives can be rejected in their entirety (reducing the load).
+- Objects that are invisible do not have to be fetched, transformed, rasterized or shaded.
+- *Types:*
+	- Back-face culling.
+	- Hierarchical view-frustum culling.
+	- Detail culling.
+	- Occlusion culling (Portal culling).
+
+![[culling_techniques.png|500]]
+
+This requires way more explanation for each culling method, but I'm lazy so... Tough luck finding anything else in here.
+
+___
+# CHAPTER 4 : VISUAL REALISM
+___
+
 
 
 ___
-Tema 3
-Justificación de porqué es necesario la utilización de técnicas
-Scene graphs
-Space partitioning
-BSP
-Octrees, características
-Técnicas de culling, oclusión culling, general culling, z buffer jerárquico, (todo de culling) xd
-CON MAS RELACIONADO CON VIDEOJUEGOS MEJOR
+Tema 4
+Soft shadows (PCSS)
+Hay 4 Algoritmos 4 preguntas xd
+Shadow volumen
