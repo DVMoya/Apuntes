@@ -21,6 +21,11 @@ ___
 	- [[#SPACE PARTITIONING]]
 	- [[#VISIBILITY DETERMINATION *(CULLING)*]]
 - [[#CHAPTER 4 VISUAL REALISM]]
+	- [[#PROJECTION SHADOWS]]
+	- [[#SHADOW TEXTURES]]
+	- [[#SHADOW MAPPING]]
+	- [[#SOFT SHADOWS]]
+	- [[#FINAL COMPARISON]]
 
 ___
 # CHAPTER 1 : GAME ENGINE ARCHITECTURE
@@ -382,10 +387,171 @@ ___
 # CHAPTER 4 : VISUAL REALISM
 ___
 
+## PROJECTION SHADOWS
 
+### Main idea
+
+The vertices of the model (generator) are projected over the floor (receptor) taking into account the light position. The projected vertices define the *convex hull* of the shadow polygon.
+
+![[shadow_matrix.png|500]]
+
+### How it works
+
+Apply the matrix projection over the vertices of the generator object to produce the shadow object.
+Draw with shadow color.
+Avoid Z-buffer overlapping. Draw plane, disable Z-buffer, draw shadow.
+The *stencil buffer* is used to avoid drawing shadows out of the receptor.
+
+### Transparent shadows
+
+For convex objects is enough to draw the shadow polygons with transparency. In other cases, is necessary to use the *stencil buffer* counting the drawn pixels.
+
+### Advantages
+
+Better than no shadows. :|
+
+### Disadvantages
+
+![[disadvantage_of_projection_shadows.png|300]]
+
+## SHADOW TEXTURES
+
+### Description
+
+Render the polygons to a texture (render-to-texture).
+Apply the texture to the receptors.
+
+![[shadow_textures_1.png|400]]
+
+### Advantages
+
+The texture can be projected over different receptors.
+It is not necessary to compute the texture again if the scene is static.
+The shadows can be projected over curved receptors.
+
+### Disadvantages
+
+The artist must identify which objects cast and receive shadows.
+The overlapping of shadows is not very convincing.
+
+## SHADOW VOLUMES
+
+![[shadow_volumes_1.png|400]]
+
+### Basic concepts
+
+Make shadow volumes for each lighted polygon.
+The volume for each triangle is defined by 3 quadrilaterals.
+
+![[shadow_volumes_2.png|200]]
+
+### How it works
+
+Count the number of intersections between the point of view and the point to be shaded. If the number of visible polygons traversed is higher than the back ones, the point is in shadow.
+
+![[shadow_volumes_3.png|400]]
+
+### Algorithm
+
+![[shadow_volumes_4.png|500]]
+
+### Problems
+
+- When the point of view is inside one or more shadow volumes (the count can fail).
+	- *Solution:* Initialize the stencil buffer with the number of volumes appropriated.
+
+![[shadow_volumes_5.png|300]]
+
+- The frustum intersects with the shadow volume (the count fails).
+	- *Solution:* detect the intersection with the frontal plane.
+
+![[shadow_volumes_6.png|300]]
+
+## SHADOW MAPPING
+
+### Description
+
+The shadow computation is integrated in the Z-buffer algorithm.
+It is necessary a new buffer called *Shadow Map.*
+The shadows are generated in two steps.
+- Compute the Shadow Map from the light source.
+- Render with the modified Z-buffer algorithm.
+
+### Shadow map computation
+
+The scene is rendered from the point of view of the light source.
+Only depth information is stored. The distance from light to the closer surfaces.
+
+![[shadow_mapping_1.png|500]]
+
+### Render algorithm
+
+Render the scene from the point of view. If the point of view is visible the transform it to the coordinate system of the light source.
+The *(x,y)* position of the transformed point is used to index the Shadows Map.
+If the *z* value of the transformed point is higher than the stored in the Shadows Map then the point is in shadow and must be rendered using the shadow color.
+
+![[shadow_mapping_2.png|300]]
+
+### Problems
+
+- Self shadowing.
+- Too much filtering of the Shadow Map.
+
+![[shadow_mapping_3.png|500]]
+
+## SOFT SHADOWS
+
+### Why soft shadows?
+
+- **Antialiasing**
+	- Filtering the shadow edges
+- **Area lights**
+	- Cast penumbra with variable size.
+	- Shadows hardening on contact.
+
+![[soft_shadows_1.png|500]]
+
+### Why Soft Shadow Mapping for Soft Shadows?
+
+- Most popular technique for shadows *in games.*
+	- Purely image-based technique.
+	- Works with any rasterizable geometry.
+- Fixed-Size Penumbra.
+	- *PCF* (Percentage Closer Filtering).
+- Variable-Size Penumbra.
+	- *PCSS* (Percentage Closer Soft Shadows).
+
+### Percentage Closer Filtering *PCF*
+
+- Sample the results of **(d<z)** around projected point.
+	- Filter the binary results in a given kernel.
+- Increasing the number of PCF taps increases the softness of the shadows.
+
+![[soft_shadows_2.png|500]]
+
+### Percentage Closer Soft Shadows *PCSS*
+
+- Assume a square light centered at the shadow map centre.
+- Assuming some parallel to receiver.
+	- Compute penumbra using similar triangles area.
+
+$$
+	W_{Penumbra} = (d_{Receiver} - d_{Blocker}) · W_{Light}/d_{Blocker}
+$$
+
+![[soft_shadows_3.png|300]]
+
+1) **Blocker Search**
+	- Sample the depth buffer using point sampling.
+	- Average the blockers with (depth + bias < receiver) in search region kernel.
+	- Early out if no blocker found.
+2) **Filtering**
+	- Use filter radius from step 1.
+	- Clamp filter width to be >= MinRadius for antialiasing.
+	- filter the shadow map with PCF.
+
+## FINAL COMPARISON
+
+![[final_shadows_comparison.png|500]]
 
 ___
-Tema 4
-Soft shadows (PCSS)
-Hay 4 Algoritmos 4 preguntas xd
-Shadow volumen
