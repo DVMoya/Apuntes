@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a2e03e78e08ba805",
@@ -146,8 +147,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b44baeaba220ee6",
+  "active": "9b2b0cfce8d17de7",
   "lastOpenFiles": [
+    "Redes y Sistemas Multijugador.md",
+    "Diseño y Animacion de Personajes.md",
+    "Motores de Videojuegos.md",
     "imgs/motores_de_videojuegos/final_shadows_comparison.png",
     "imgs/motores_de_videojuegos/soft_shadows_3.png",
     "imgs/motores_de_videojuegos/soft_shadows_2.png",
@@ -156,13 +160,9 @@
     "imgs/motores_de_videojuegos/shadow_mapping_2.png",
     "imgs/motores_de_videojuegos/shadow_mapping_1.png",
     "imgs/motores_de_videojuegos/shadow_volumes_1.png",
-    "Motores de Videojuegos.md",
     "imgs/motores_de_videojuegos/shadow_volumes_6.png",
     "imgs/motores_de_videojuegos/shadow_volumes_5.png",
-    "imgs/motores_de_videojuegos/shadow_volumes_4.png",
     "imgs/motores_de_videojuegos",
-    "Diseño y Animacion de Personajes.md",
-    "Redes y Sistemas Multijugador.md",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
     "imgs/redes_y_sistemas_multijugador",
     "imgs/audiovisuales",

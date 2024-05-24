@@ -143,7 +143,7 @@ ___
 
 ### Euler-Poincaré formula
 
-Let the number of vertices be *V*, edges be *E*, bodies be *B*, and let the genus be *G.* Then, to denote a meaningful geometric object, the mesh must satisfy the generalized formula:
+Let the number of vertices be *V*, edges be *E*, bodies be *B*, the number of loops be *L* (all outer and inner loops of faces are counted), and let the genus be *G.* Then, to denote a meaningful geometric object, the mesh must satisfy the generalized formula:
 
 $$
 	F - E + V - L = 2(B - G)
@@ -486,7 +486,7 @@ Only depth information is stored. The distance from light to the closer surfaces
 
 ### Render algorithm
 
-Render the scene from the point of view. If the point of view is visible the transform it to the coordinate system of the light source.
+Render the scene from the point of view. If the point of view is visible then transform it to the coordinate system of the light source.
 The *(x,y)* position of the transformed point is used to index the Shadows Map.
 If the *z* value of the transformed point is higher than the stored in the Shadows Map then the point is in shadow and must be rendered using the shadow color.
 
