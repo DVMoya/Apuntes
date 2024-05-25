@@ -219,7 +219,78 @@ Los concursos se suelen grabar por lotes.
 ### Producción en *Exteriores*
 
 - **Es más volátil.** No dependes de una estricta planificación sino también de cualquier inclemencia temporal y meteorológica además de mayor dificultad para controlar todos los elementos (luz, sonido, imagen).
-- La producción en exteriores no solo engloba seriales de televisión o docu-series, también reportajes informativos
+- La producción en exteriores no solo engloba seriales de televisión o docu-series, también reportajes informativos, programas culturales y realización de noticias.
+- La complejidad **depende del tipo de programa a realizar.**
+- La retransmisión de un espectáculo deportivo requiere de un gran **despliegue técnico** y con un **equipo humano numeroso.**
+
+## PROGRAMAS Y GÉNEROS DE TV
+
+**GÉNERO:** Amalgama de formas de proceder y su organización y estructuración, cuya combinación y seguimiento da como resultado un producto simbólico diferenciado y claramente reconocible por parte de los receptores.
+
+Cada género audiovisual cuenta con *una serie de códigos y reglas particulares* que determinan el resultado final.
+
+### Informativos
+
+- Los **espacios informativos** sobre los que se articula el conjunto de la programación de cada cadena de television.
+- Eje central y buque insignia de cada cadena. Presentadores estrella.
+- Representan y transmiten la idea editorial de cada empresa.
+
+Programas y géneros informativos:
+- La noticia.
+- El reportaje.
+- La entrevista.
+
+### Entretenimiento
+
+La función principal que tienen estos programas es la de *acompañar, divertir, entretener y evadir* al espectador de su día a día.
+
+Programas y géneros de entretenimiento:
+- Dramáticos.
+- Magacín.
+- Concursos.
+- Talk Show / Late Show.
+
+### Híbridos
+
+Programas y géneros híbridos:
+- Divulgativos.
+- Deportivos.
+- Educativos.
+- Musicales.
+
+### Franjas Horarias de Programación
+
+- *Banda despertador (06:30 - 09:00)* - programas informativos e infantiles.
+- *Banda matinal (09:00 - 13:00)* - informativos matutinos y magacines.
+- *Banda de acceso al mediodía (13:00 - 15:00)* - concursos y programas de cocina.
+- *Mediodía o segundo prime time (15:00 - 16:00)* - espacios informativos.
+- *Sobremesa (16:00 - 18:00)* - seriales, concursos y magacines.
+- *Tarde (18:00 - 20:00)* - magacines y concursos.
+- *Acceso a prime time (20:00 - 21:00)* - concursos
+- *Prime time (21:00 - 24:00)* - informativos y programas estrella (series y talk shows).
+- *Late night (00:00 - 2:30)* - late shows y programas para adultos.
+
+## EL CICLO PRODUCTIVO DE LA TELEVISIÓN
+
+[INSERTAR IMAGEN]
+
+*En la fase de preproducción:*
+- Se concibe y decide qué hecho es noticiable y qué no, qué va a emitirse, qué queremos transmitir (en los noticiarios).
+- Esta fase se caracteriza por albergar procesos de **selección de contenido** vinculados a la naturaleza del programa.
+- Esta fase inicial **la vinculamos con la planificación y la organización.**
+
+*En la fase de producción:*
+- Se centra principalmente en la grabación de imágenes y sonidos necesarios para la construcción de noticias.
+- En el caso de la grabación fuera del estudio, implica el desplazamiento de los equipos técnicos de grabación a las localizaciones.
+
+*En la fase de postproducción:*
+- Proceso en el que se lleva a cabo la construcción definitiva del relato audiovisual que se pretende transmitir.
+- Este relato se construye a partir del material en bruto obtenido en la fase anterior y en la obtención de material adicional por otras fuentes (videos de archivo o fotografías).
+
+*En la fase de emisión:*
+- Fase estrechamente relacionada con la televisión.
+- Esta etapa se centra en la organización y ordenación de los diferentes productos audiovisuales para emitir que integran cada bloque en la parrilla de televisión.
+- Objetivo: **Conseguir el mayor impacto en cuanto audiencia para atraer el mayor número posible de anunciantes y aumentar el rendimiento económico de la cadena.**
 
 ___
 # PRODUCCIÓN CINEMATOGRÁFICA
