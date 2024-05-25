@@ -196,7 +196,30 @@ El *ojo humano* funciona **como una cámara.**
 ___
 # TEMA 5 : EL CICLO PRODUCTIVO DE LA PRODUCCIÓN EN TV
 
+## EL CICLO DE LA PRODUCCIÓN AUDIOVISUAL EN LA TV
 
+**Elaboración de productos audiovisuales:**
+- Producción en estudios.
+- Producción en exteriores.
+
+### Producción en *Estudio*
+
+- Toda aquella producción de programas realizados en platós.
+- Se sitúan las cámaras, equipos de captura de sonido, así como los accesorios de iluminación y maquinaria que requiera cada producción.
+- En las producciones informativas, el realizador o realizadora es quien decide y ordena qué planos vamos a ver en antena.
+- Un informativo se compone de infinidad de personal técnico.
+
+En platós privados se tiende a realizar la *producción de programas de entretenimiento* 
+- Programas en falso directo (concursos).
+- Programas en directo (magacines diarios en prime time).
+- Series de ficción con decorados.
+
+Los concursos se suelen grabar por lotes.
+
+### Producción en *Exteriores*
+
+- **Es más volátil.** No dependes de una estricta planificación sino también de cualquier inclemencia temporal y meteorológica además de mayor dificultad para controlar todos los elementos (luz, sonido, imagen).
+- La producción en exteriores no solo engloba seriales de televisión o docu-series, también reportajes informativos
 
 ___
 # PRODUCCIÓN CINEMATOGRÁFICA
@@ -204,7 +227,7 @@ ___
 
 # TEMA 6 : PRODUCCIÓN CINEMATOGRÁFICA
 
-> ““En pocas palabras, el productor es el contribuyente clave de un programa o película: la fuerza impulsora detrás de un proyecto. Es probable que el productor sea la persona que ha creado o desarrollado la idea antes de llevarla a termino”
+> “En pocas palabras, el productor es el contribuyente clave de un programa o película: la fuerza impulsora detrás de un proyecto. Es probable que el productor sea la persona que ha creado o desarrollado la idea antes de llevarla a termino”
 > <p class="cite"><cite>(Charlotte Worthington)</cite></p>
 
 ## FUNCIONES DEL PRODUCTOR

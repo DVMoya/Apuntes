@@ -13,7 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Motores de Videojuegos.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "5b9c7c0aa23b98c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a37da6f63767a014",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "mode": "preview",
                 "source": true
               }
@@ -86,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Motores de Videojuegos.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Motores de Videojuegos.md",
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Motores de Videojuegos.md"
+                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
               }
             }
           }
@@ -149,9 +167,10 @@
   },
   "active": "9b2b0cfce8d17de7",
   "lastOpenFiles": [
-    "Redes y Sistemas Multijugador.md",
     "Diseño y Animacion de Personajes.md",
+    "Teoría y Práctica de las Producciones Audiovisuales.md",
     "Motores de Videojuegos.md",
+    "Redes y Sistemas Multijugador.md",
     "imgs/motores_de_videojuegos/final_shadows_comparison.png",
     "imgs/motores_de_videojuegos/soft_shadows_3.png",
     "imgs/motores_de_videojuegos/soft_shadows_2.png",
@@ -163,7 +182,6 @@
     "imgs/motores_de_videojuegos/shadow_volumes_6.png",
     "imgs/motores_de_videojuegos/shadow_volumes_5.png",
     "imgs/motores_de_videojuegos",
-    "Teoría y Práctica de las Producciones Audiovisuales.md",
     "imgs/redes_y_sistemas_multijugador",
     "imgs/audiovisuales",
     "imgs/diesño_y_animacion_personajes",
