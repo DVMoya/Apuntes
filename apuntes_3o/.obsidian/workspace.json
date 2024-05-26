@@ -13,8 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
-                "mode": "preview",
+                "file": "Redes y Sistemas Multijugador.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "aa1bf177eb0a83a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2dbc65ccbef4961f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Redes y Sistemas Multijugador.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Redes y Sistemas Multijugador.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Redes y Sistemas Multijugador.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
+                "file": "Redes y Sistemas Multijugador.md"
               }
             }
           }
@@ -146,23 +164,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "adb833474d200d4c",
+  "active": "2dbc65ccbef4961f",
   "lastOpenFiles": [
+    "imgs/redes_y_sistemas_multijugador/crear_vlan_estatica.png",
+    "imgs/redes_y_sistemas_multijugador/creacion_y_nombrado_vlan.png",
+    "imgs/redes_y_sistemas_multijugador/show_vlan.png",
+    "imgs/redes_y_sistemas_multijugador/ejemplo_lan.png",
+    "Teoría y Práctica de las Producciones Audiovisuales.md",
     "imgs/audiovisuales/equipo_de_desarrollo.png",
     "imgs/audiovisuales/las_tres_fases.png",
     "imgs/audiovisuales/proceso_video_ludico.png",
     "imgs/audiovisuales/tema9_introduccion.png",
     "imgs/audiovisuales/ciclo_produccion_tv.png",
     "Diseño y Animacion de Personajes.md",
-    "Teoría y Práctica de las Producciones Audiovisuales.md",
     "Motores de Videojuegos.md",
     "Redes y Sistemas Multijugador.md",
     "imgs/motores_de_videojuegos/final_shadows_comparison.png",
     "imgs/motores_de_videojuegos/soft_shadows_3.png",
-    "imgs/motores_de_videojuegos/soft_shadows_2.png",
-    "imgs/motores_de_videojuegos/soft_shadows_1.png",
-    "imgs/motores_de_videojuegos/shadow_mapping_3.png",
-    "imgs/motores_de_videojuegos/shadow_mapping_2.png",
     "imgs/motores_de_videojuegos",
     "imgs/redes_y_sistemas_multijugador",
     "imgs/audiovisuales",
