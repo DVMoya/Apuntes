@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "aa1bf177eb0a83a7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4362173e1ed92b64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemas Operativos.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "3dfc75e6fa3fbaaf",
         "type": "tabs",
         "children": [
@@ -164,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4362173e1ed92b64",
+  "active": "7de6961ed91cfcfb",
   "lastOpenFiles": [
+    "imgs/sistemas_operativos/niveles_de_proteccion.png",
+    "imgs/sistemas_operativos/pcb_linux_lista.png",
     "imgs/sistemas_operativos/particiones_memoria_2.png",
     "imgs/sistemas_operativos/particiones_multiples_1.png",
     "imgs/sistemas_operativos/memoria_un_proceso.png",
@@ -180,8 +164,6 @@
     "imgs/redes_y_sistemas_multijugador/crear_vlan_estatica.png",
     "imgs/redes_y_sistemas_multijugador/creacion_y_nombrado_vlan.png",
     "imgs/redes_y_sistemas_multijugador/show_vlan.png",
-    "imgs/redes_y_sistemas_multijugador/ejemplo_lan.png",
-    "imgs/audiovisuales/equipo_de_desarrollo.png",
     "Motores de Videojuegos.md",
     "imgs/motores_de_videojuegos",
     "imgs/redes_y_sistemas_multijugador",
