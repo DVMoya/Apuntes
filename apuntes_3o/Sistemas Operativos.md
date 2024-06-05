@@ -4,6 +4,7 @@ ___
 
 - [[#TEMA 1 PROCESOS]]
 - [[#TEMA 2 PROCESOS EN POSIX]]
+- [[#TEMA 3 FICHEROS Y COMUNICACIONES EN UNIX]]
 
 ___
 # TEMA 1 : PROCESOS
@@ -221,5 +222,112 @@ Pasos a realizar para realizar un cambio de contexto:
 
 ___
 # TEMA 2 : PROCESOS EN POSIX
+___
+
+## SERVICIOS POSIX PARA GESTIÓN DE PROCESOS
+
+- **POSIX** (**P**ortable **O**perating **S**ystem **I**nterface)
+- Son una *familia de estándares* de llamadas al sistema operativo.
+- Persiguen generalizar las interfaces de los sistemas operativos para que una misma aplicación pueda ejecutarse en diferentes plataformas.
+
+## JERARQUÍA DE PROCESOS EN POSIX
+
+Todo proceso tiene asociados dos números desde su creación:
+- **PID** (Process Identifier)
+- **PPID** (Parent Process Identifier)
+
+## DESCRIPCIÓN DE LA FUNCIÓN fork()
+
+- La función **fork()** sirve para crear un nuevo proceso a partir de uno ya existente.
+	- *Proceso padre:* el que invoca el fork().
+	- *Proceso hijo:* el nuevo proceso, hijo del padre.
+- El proceso hijo es una réplica exacta del padre *(clon).* 
+
+![[fork.png|300]]
+
+Tras la clonación:
+- El proceso hijo ocupa una zona de memoria independiente, pero con el mismo contenido que el padre.
+- El contador de programa *(PC)* de ambos procesos tiene el mismo valor. La ejecución de cada proceso continúa después del fork().
+- Ambos procesos comparten los punteros de posición de los ficheros abiertos en ese momento.
+
+> Los cambios que se realizan posteriormente en cada uno de ellos **NO** afectará al otro.
+
+**fork();** devuelve:
+- **Al proceso padre:** el *PID* del hijo.
+- **Al proceso hijo:** *0*.
+- **Error:** *-1*.
+
+**getpid();** devuelve: el PID del proceso que realiza la llamada.
+
+**getppid()** devuelve: el PPID, o sea, el PID del proceso padre.
+
+> Sincronización entre procesos (tema 7 de la asignatura): funciones *exit()* y *wait().*
+
+## TERMINACIÓN DE PROCESOS
+
+La terminación de un proceso padre no afecta a sus procesos hijos, aunque éstos quedan *huérfanos* y son adoptados por el proceso *init* (sus PPIDs serán 1).
+
+![[procesos_huerfanos.png|500]]
+
+La terminación de un proceso hijo sí que puede afectar a un proceso padre:
+- Si el proceso padre está en espera debido a una función *wait().*
+- El proceso que invoca la función *exit()* queda en estado **zombie** hasta que el padre ejecute la función *wait()* o finalice.
+	- Cuando un proceso se encuentra en estado **zombie** libera el espacio de memoria que ocupaba, excepto su PCB.
+
+### LA FUNCIÓN exit()
+
+- **void exit(int estado);**
+- Esta función finaliza la ejecución del proceso que la invoca.
+- No es imprescindible, pero sí recomendable.
+- No devuelve ningún valor, pero el valor asignado al parámetro *estado* puede ser utilizado para ser procesado.
+
+### LA FUNCIÓN WAIT()
+
+- Suspende (bloquea) su ejecución hasta que uno de sus procesos hijos (cualquiera) termine. Con **waitpid()** es posible especificar el hijo al que se espera.
+- Si no tiene hijos, o los hijo han terminado, no tiene efecto.
+- Si algún proceso hijo se encuentra en estado **zombie**, entonces recoge el estado de dicho proceso y tampoco se bloquea.
+
+**wait(int *estado);** devuelve:
+- El PID del hijo que ha finalizado (-1 si hay error).
+- Parámetro *estado.*
+
+### SINCRONIZACIÓN ENTRE exit() Y wait()
+
+![[exit_y_wait_sync.png|500]]
+
+Ejemplo sincronización simple (exit_wait.c):
+
+```c
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
+int main() {
+	int estado ;
+	if (fork ()!=0) {
+		wait(& estado );
+		printf ("Soy el padre\n");
+	}
+	else printf ("Soy el hijo\n");
+	exit (0);
+}
+```
+
+*% ./exit_wait*
+Soy el hijo
+Soy el padre
+
+## PATRÓN DE CREACIÓN DE PROCESOS
+
+- El proceso padre ejecuta tantos **fork()** como hijos queramos crear.
+- Los hijos, una vez ejecutado su código, deben finalizar (con un **exit()**).
+
+Al tener procesos independientes estos pueden ser ejecutados, al mismo tiempo, en distintas CPUs.
+
+![[patron_de_proceso.png|200]]
+
+> En el tema 4 veremos como es posible decidir la prioridad de cada uno de los procesos, así como las CPUs en las que se ejecutarán.
+
+___
+# TEMA 3 : FICHEROS Y COMUNICACIONES EN UNIX
 ___
 

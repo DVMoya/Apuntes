@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3dfc75e6fa3fbaaf",
+        "id": "5af3a1ba4cc70df1",
         "type": "tabs",
         "children": [
           {
-            "id": "7de6961ed91cfcfb",
+            "id": "1bea6d028ab10496",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,8 +146,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7de6961ed91cfcfb",
+  "active": "1bea6d028ab10496",
   "lastOpenFiles": [
+    "imgs/sistemas_operativos/patron_de_proceso.png",
+    "imgs/sistemas_operativos/exit_y_wait_sync.png",
+    "imgs/sistemas_operativos/procesos_huerfanos.png",
+    "imgs/sistemas_operativos/fork.png",
+    "Teoría y Práctica de las Producciones Audiovisuales.md",
+    "Diseño y Animacion de Personajes.md",
+    "Sistemas Operativos.md",
     "imgs/sistemas_operativos/niveles_de_proteccion.png",
     "imgs/sistemas_operativos/pcb_linux_lista.png",
     "imgs/sistemas_operativos/particiones_memoria_2.png",
@@ -155,15 +162,8 @@
     "imgs/sistemas_operativos/memoria_un_proceso.png",
     "imgs/sistemas_operativos/formato_elf.png",
     "imgs/sistemas_operativos/unix2.png",
-    "imgs/sistemas_operativos/unix1.png",
     "imgs/sistemas_operativos",
     "Redes y Sistemas Multijugador.md",
-    "Sistemas Operativos.md",
-    "Teoría y Práctica de las Producciones Audiovisuales.md",
-    "Diseño y Animacion de Personajes.md",
-    "imgs/redes_y_sistemas_multijugador/crear_vlan_estatica.png",
-    "imgs/redes_y_sistemas_multijugador/creacion_y_nombrado_vlan.png",
-    "imgs/redes_y_sistemas_multijugador/show_vlan.png",
     "Motores de Videojuegos.md",
     "imgs/motores_de_videojuegos",
     "imgs/redes_y_sistemas_multijugador",
