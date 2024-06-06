@@ -5,6 +5,7 @@ ___
 - [[#TEMA 1 PROCESOS]]
 - [[#TEMA 2 PROCESOS EN POSIX]]
 - [[#TEMA 3 FICHEROS Y COMUNICACIONES EN UNIX]]
+- [[#TEMA 4 PLANIFICACIÓN DE PROCESOS]]
 
 ___
 # TEMA 1 : PROCESOS
@@ -470,4 +471,93 @@ ___
 > Comunicación entre procesos.
 
 ___
+
+## TUBERÍAS *(Pipes)*
+
+Los procesos en UNIX se comunican mediante **tuberías.**
+
+- Las tuberías *(pipes)* son un tipo de *pseudo-ficheros* manejados por el sistema operativo: son estructuras que se crean en *memoria principal,* no en disco.
+- Cada proceso ve a la tubería como un conducto con dos extremos, uno para escribir y otro para leer.
+- la lectura y escritura en tuberías se realiza mediante los servicios estándar de lectura/escritura de ficheros.
+
+### Servicios POSIX para la Creación de Tuberías
+
+```c
+int pipe(int tubo[2]);
+```
+
+- Descripción:
+	- Crea una tubería denominada *tubo.*
+	- Crea un *descriptor de lectura* de tubo: tubo[0].
+	- Crea un *descriptor de escritura* de tubo: tubo[1].
+- Devuelve:
+	- Si todo ha ido bien: 0.
+	- Si hay error: -1.
+
+> Las tuberías se utilizan para la comunicación entre padres e hijos, o procesos emparentados. Para ello hay que crear la tubería (con *pipe()*) antes de ejecutar *fork().*
+
+### Escritura y Lectura en Tuberías
+
+**Escritura en una tubería:**
+- En una tubería se escribe mediante la función *write().*
+- Si la tubería está llena o se llena durante la escritura en curso, la operación bloquea el proceso escritor hasta que se pueda completar.
+
+**Lectura en una tubería:**
+- Una tubería se lee mediante la función *read().*
+- Una vez realizada la lectura se vacía el contenido leído de la tubería.
+- Si la tubería está vacía, la operación bloquea al proceso lector hasta que:
+	- O bien se pueda completar la operación.
+	- O bien se haya alcanzado el *final del fichero:* devuelve 0.
+
+> En una tubería, *el final del fichero* se alcanza cuando la tubería está vacía, y **ADEMÁS** no hay ningún proceso con la tubería abierta para escritura.
+
+> Es conveniente cerrar todos los descriptores de tubería cuando vayan a ser utilizados ya que así evitamos problemas.
+
+## EJEMPLO *tuberías_2.c*
+
+**ENUNCIADO:**
+Realizar un programa que cree dos procesos: el proceso padre generará los 100 primeros números pares (y los imprimirá por pantalla) y el hijo los 100 primeros números impares (y también los imprimiré por pantalla). Los números han de mostrarse en orden creciente. Utilizaremos una tubería para pasar un testigo, que indicará qué proceso debe imprimir.
+
+**SOLUCIÓN:**
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#define MAX 200
+int main() {
+	int i, testigo = 1, t[2];
+	pipe(t);
+	if(fork () != 0) {
+		write(t[1], &testigo, sizeof(int));
+		i=1; /* El padre imprime los impares */
+		while (i <= MAX) {
+			read(t[0], &testigo, sizeof(int));
+			printf ("Proceso %d: %d\n", getpid(), i);
+			i = i + 2;
+			write(t[1],& testigo , sizeof (int ));
+		}
+		close(t[0]);
+		close(t[1]);
+	} else {
+		i=0; /* El hijo imprime los pares */
+		while (i <= MAX) {
+			read(t[0], &testigo, sizeof(int));
+			printf ("Proceso %d: %d\n", getpid (), i);
+			i = i + 2;
+			write(t[1], &testigo, sizeof(int));
+	}
+	close(t[0]);
+	close(t[1]);
+}
+exit
+```
+
+**ESQUEMA:**
+![[ejemmplo_tuberias_1.png|500]]![[ejemplo_tuberias_2.png|500]]
+
+___
+# TEMA 4 : PLANIFICACIÓN DE PROCESOS
+___
+
+
 
