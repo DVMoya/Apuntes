@@ -236,7 +236,7 @@ Todo proceso tiene asociados dos números desde su creación:
 - **PID** (Process Identifier)
 - **PPID** (Parent Process Identifier)
 
-## DESCRIPCIÓN DE LA FUNCIÓN fork()
+## DESCRIPCIÓN DE LA FUNCIÓN *fork()*
 
 - La función **fork()** sirve para crear un nuevo proceso a partir de uno ya existente.
 	- *Proceso padre:* el que invoca el fork().
@@ -274,14 +274,14 @@ La terminación de un proceso hijo sí que puede afectar a un proceso padre:
 - El proceso que invoca la función *exit()* queda en estado **zombie** hasta que el padre ejecute la función *wait()* o finalice.
 	- Cuando un proceso se encuentra en estado **zombie** libera el espacio de memoria que ocupaba, excepto su PCB.
 
-### LA FUNCIÓN exit()
+### LA FUNCIÓN *exit()*
 
 - **void exit(int estado);**
 - Esta función finaliza la ejecución del proceso que la invoca.
 - No es imprescindible, pero sí recomendable.
 - No devuelve ningún valor, pero el valor asignado al parámetro *estado* puede ser utilizado para ser procesado.
 
-### LA FUNCIÓN WAIT()
+### LA FUNCIÓN *wait()*
 
 - Suspende (bloquea) su ejecución hasta que uno de sus procesos hijos (cualquiera) termine. Con **waitpid()** es posible especificar el hijo al que se espera.
 - Si no tiene hijos, o los hijo han terminado, no tiene efecto.
@@ -291,7 +291,7 @@ La terminación de un proceso hijo sí que puede afectar a un proceso padre:
 - El PID del hijo que ha finalizado (-1 si hay error).
 - Parámetro *estado.*
 
-### SINCRONIZACIÓN ENTRE exit() Y wait()
+### SINCRONIZACIÓN ENTRE *exit()* Y *wait()*
 
 ![[exit_y_wait_sync.png|500]]
 
@@ -329,5 +329,145 @@ Al tener procesos independientes estos pueden ser ejecutados, al mismo tiempo, e
 
 ___
 # TEMA 3 : FICHEROS Y COMUNICACIONES EN UNIX
+___
+
+> Ficheros en UNIX
+
+___
+
+## OPERACIONES E/S
+
+En UNIX la mayor parte de las operaciones de entrada/salida se realizan mediante el uso de **ficheros.**
+- En Linux cada **PCB** mantiene un puntero (llamado *files*) a una tabla de ficheros (llamada *files_struct*), que contiene información de los ficheros que dicho proceso tiene abiertos.
+- Cada entrada en **files_struct** está formada por un descriptor de fichero *(fd)*, y un puntero a la dirección de memoria de dicho fichero.
+
+## DESCRIPTORES DE FICHEROS (FD)
+
+Los **fd** pueden referenciar no sólo ficheros "normales", sino dispositivos, directorios, sockets, etc.
+
+- Los **fd** adoptan valores enteros no negativos (-1 si hay error).
+- El máximo número de procesos que pueden ser abiertos por un proceso es de **1.024** (se puede configurar hasta 1.048.576).
+- Cuando se crea un proceso, por convención, éste tendrá tres descriptores de ficheros abiertos:
+	- *Entrada estándar* (descriptor 0).
+	- *Salida estándar* (descriptor 1).
+	- *Error estándar* (descriptor 2).
+- Los procesos hijos heredan una copia de la tabla de ficheros de sus padres.
+
+## ESTRUCTURA DE FICHEROS
+
+![[estructura_fichero_1.png|300]]
+
+## CREACIÓN DE FICHEROS
+
+### Función *creat()*
+```c
+int creat(const char *nombre, mode_t permisos);
+```
+
+- Crea un fichero cuyo nombre es *nombre*, y cuya máscara de permisos es *permisos.*
+- Devuelve:
+	- Un descriptor de fichero. *Siempre elige el menor número posible.*
+	- Si hay error: -1.
+
+### Permisos de Ficheros
+
+- Los permisos de ficheros se representan mediante una máscara de 9 bits, y se suele expresar en octal mediante un número de 3 dígitos.
+- **Formato octal:** permiso de *lectura, escritura y ejecución* para el usuario *propietario,* el *grupo de usuarios* al que el usuario pertenece, y el *resto de usuarios.*
+*$$	
+	rwx\ rwx\ rwx
+$$*
+
+## APERTURA DE FICHEROS
+
+### Función *open()*
+```c
+int open(const char *nombre, int modo, [mode_t permisos]);
+```
+
+- Abre el fichero *nombre*, en modo *modo* y con permisos *permisos.*
+- Devuelve:
+	- Un descriptor de fichero. *Siempre elige el menor número posible.*
+	- Si hay error: -1.
+- Parámetro **modo:** O_READONLY(*0*), O_WRONLY(*1*), O_RDWR(*2*), O_CREAT, O_TRUNC, O_APPEND, O_EXCEL.
+
+## CIERRE DE FICHEROS
+
+### Función *close()*
+
+**int close(int fd);**
+
+- Cierra el fichero con descriptor *fd.*
+- Devuelve:
+	- Si todo ha ido bien: 0.
+	- Si hay error: -1.
+
+## ESCRITURA DE FICHEROS
+
+### Función *write()*
+```c
+int write(int fd, const void *dato, size_t n_bytes);
+```
+
+- Descripción:
+	- En el fichero con descriptor *fd* se escribe, a partir de la posición actual del *puntero de escritura del fichero,* los *n_bytes* que hay en memoria a partir de la posición *dato.*
+	- Modifica el valor del *puntero de escritura del fichero:* indica la posición a partir de la cual se escribe el fichero (en nuestro caso, al final del fichero).
+- Devuelve:
+	- El número de bytes escritos.
+	- Si hay error: -1.
+- Ejemplo:
+```c
+n = write(fd, "XXX YYY ZZZ\0", 12);
+```
+
+## LECTURA DE FICHEROS
+
+### Función *read()*
+
+```c
+int read(int fd, void *dato, size_t n_bytes);
+```
+
+- Descripción:
+	- Lee los *n_bytes* siguientes a la posición actual del *puntero de lectura del fichero* con descriptor *fd,* y los almacena a partir de la posición de memoria *dato.*
+	- Modifica el valor del *puntero de lectura del fichero:* indica la posición a partir de la cual se lee el fichero.
+- Devuelve:
+	- El número de bytes que ha podido leer. Si no se ha leído nada o se ha alcanzado el final del fichero devuelve 0.
+	- Si hay error: -1.
+- Ejemplo:
+```c
+n = read(fd, &i, sizeof(i));
+```
+
+## EJEMPLO *fichero_1.c*
+
+> Ejemplo simple de creación, cierre, escritura y lectura de un fichero.
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
+int main() {
+	int i , fd , dato; /* (a) */
+	
+	fd = creat ("prueba " ,0600); /* (b) */
+	
+	for (i = 0;i < 10;i++)
+		write(fd ,&i,sizeof (i));
+	close (fd); /* (c) */
+	
+	fd = open("prueba ",O_RDONLY ); /* (d) */
+	while (read(fd ,&dato ,sizeof (int )) > 0)
+		printf ("Leído el número %d\n",dato);
+	close (fd);
+	
+	exit (0);
+}
+```
+
+___
+
+> Comunicación entre procesos.
+
 ___
 
