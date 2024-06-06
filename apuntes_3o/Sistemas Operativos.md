@@ -307,6 +307,7 @@ Ejemplo sincronización simple (exit_wait.c):
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+
 int main() {
 	int estado ;
 	if (fork ()!=0) {
@@ -453,6 +454,7 @@ n = read(fd, &i, sizeof(i));
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+
 int main() {
 	int i , fd , dato; /* (a) */
 	
@@ -529,6 +531,7 @@ Realizar un programa que cree dos procesos: el proceso padre generará los 100 p
 #include <unistd.h>
 #include <stdlib.h>
 #define MAX 200
+
 int main() {
 	int i, testigo = 1, t[2];
 	pipe(t);
@@ -671,6 +674,7 @@ nice.c
 #include <sys/time .h>
 #include <sys/resource .h>
 #include <sched .h>
+
 int main () {
 	int valor ;
 	
@@ -733,6 +737,7 @@ int sched_setscheduler(pid_t pid, int pilicy, const struct sched_param *sp);
 #include <sys/time .h>
 #include <sys/resource .h>
 #include <sched .h>
+
 int main () {
 	int policy, ret, x;
 	struct sched_param sp;
@@ -763,3 +768,120 @@ Política CFS. Prioridad Estática: 0
 Política RR. Prioridad estática: 11
 
 ## AFINIDAD
+
+### Planificación con Multiprocesadores
+
+- Ejecutar un proceso en distintas CPUs tiene un coste.
+- Si un proceso está asignado a una CPU y es cambiado a otra, puede ocurrir que datos almacenados en la caché local se pierdan.
+
+### Afinidad
+
+**Afinidad del Proceso (Process Affinity):** característica de un proceso que hace que sea posible/preferible su ejecución en una determinada CPU.
+
+Tipos de afinidad:
+- **Fuerte:** se fuerza a un proceso a ejecutarse en la misma CPU.
+- **Débil:** se intenta que el proceso esté en la misma CPU, pero puede ser replanificado a otra diferente:
+	- Se mantiene una lista de procesos por cada CPU *(runqueue).*
+	- Se intenta que la carga de las CPUs esté balanceada:
+		- **Pull migration:** si la lista de procesos de una CPU está vacía se coge un proceso de otra lista.
+		- **Push migration:** se hace una comprobación periódica de la carga del sistema, si no está *balanceada*, se mueven procesos entre CPUs para que lo esté.
+
+### Afinidad en Linux
+
+Linux utiliza por defecto una **afinidad débil** con **push migration,** regularmente se invoca a la función *load_balance().*
+
+Mecanismo de balanceo de carga usado por Linux:
+1. Por cada CPU se emplea una *runqueue* diferente.
+2. Los procesos se mantienen en la misma *runqueue*, pero si hay más de un 25% de diferencia en el número de procesos entre dos *runqueue,* se transfieren algunos procesos para equilibrar la carga: **la carga es el número de procesos.**
+3. Actúa cada 1 ms, si alguna *runqueue* se vacía, o 200 ms en general.
+
+### Obtención de Afinidad
+
+```c
+int sched_getaffinity(pid_t pid, size_t len, cpu_set_t *set);
+```
+
+- Al conjunto *set* se le asigna la afinidad del proceso *pid.*
+- *len* debe especificar el tamaño de *cpu_set_t* (sizeof(set)).
+
+### Selección de Afinidad
+
+```c
+int sched_setaffinity(pid_t pid, size_t len, cpu_set_t *set);
+```
+
+- Al proceso *pid* se le asigna la afinidad especificada en *set.*
+- *len* debe especificar el tamaño de *cpu_set_t* (sizeof(set)).
+- Para trabajar con *set* se utilizan las siguientes macros:
+```c
+	CPU_ZERO(cpu_set_t *set); // inicializa el conjunto "set" vacío
+	CPU_SET(int cpu, cpu_set_t *set); // añade "cpu" a "set"
+	CPU_CLR(int cpu, cpu_set_t *set); // elimina "cpu" de "set"
+```
+
+### Ejemplo: Cambiar Afinidad de un Proceso
+afinidad.c
+```c
+int main () {
+	int i, cpus = GetCPUCount();
+	cpu_set_t set;
+	
+	sched_getaffinity(0, sizeof(set), &set);
+	printf ("CPUs afines al proceso %d:", getpid());
+	for (i = 0; i < cpus; i++)
+		if (CPU_ISSET (i ,&set )) printf (" %i",i);
+		
+	CPU_ZERO (&set);
+	CPU_SET (1, &set); // Sólo añadimos la CPU #1
+	sched_setaffinity(0, sizeof(set), &set);
+	printf ("\nCPUs afines al proceso %d:", getpid());
+	for (i = 0; i < cpus; i++)
+		if (CPU_ISSET (i, &set)) printf(" %i",i);
+	printf ("\n");
+}
+```
+
+*% ./afinidad*
+CPUs afines al proceso 2375: 0 1 2 3
+CPUs afines al proceso 2375: 1
+
+## INTERACCIÓN SOFTWARE-HARDWARE
+
+### Buffer Overflow
+
+buffer_overflow.c
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int check_authentication(char *password) {
+	int auth_flag = 0;
+	char password_buffer [16];
+	strcpy(password_buffer, password);
+	if(strcmp(password_buffer, "mazinger") == 0)
+		auth_flag = 1;
+	return auth_flag ;
+}
+
+int main(int argc, char *argv[]) {
+	if(check_authentication(argv[1]))
+		printf ("\nAccess Granted .\n");
+	else printf ("\nAccess Denied .\n");
+}
+```
+
+*% ./buffer overflow mazinger*
+Access Granted.
+
+*% ./buffer overflow perroflauta*
+Access Denied.
+
+*% ./buffer overflow aaaaaaaaaaaaaaaaaaaa*
+Access Denied.
+
+*% ./buffer overflow aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*
+Segmentation fault (core dumped)
+
+*% ./buffer overflow aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*
+Access Granted.
