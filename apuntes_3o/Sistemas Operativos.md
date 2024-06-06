@@ -277,7 +277,9 @@ La terminación de un proceso hijo sí que puede afectar a un proceso padre:
 
 ### LA FUNCIÓN *exit()*
 
-- **void exit(int estado);**
+```c
+void exit(int estado);
+```
 - Esta función finaliza la ejecución del proceso que la invoca.
 - No es imprescindible, pero sí recomendable.
 - No devuelve ningún valor, pero el valor asignado al parámetro *estado* puede ser utilizado para ser procesado.
@@ -288,7 +290,10 @@ La terminación de un proceso hijo sí que puede afectar a un proceso padre:
 - Si no tiene hijos, o los hijo han terminado, no tiene efecto.
 - Si algún proceso hijo se encuentra en estado **zombie**, entonces recoge el estado de dicho proceso y tampoco se bloquea.
 
-**wait(int *estado);** devuelve:
+```c
+wait(int *estado);
+```
+Devuelve:
 - El PID del hijo que ha finalizado (-1 si hay error).
 - Parámetro *estado.*
 
@@ -559,5 +564,202 @@ ___
 # TEMA 4 : PLANIFICACIÓN DE PROCESOS
 ___
 
+## COMPORTAMIENTO DE LOS PROCESOS
 
+![[comportamiento_procesos.png|500]]
 
+## PLANIFICACIÓN
+
+### Situaciones Reales
+
+- Varios procesos pueden requerir la CPU al mismo tiempo.
+- Algunos procesos pueden querer utilizar la CPU por mucho tiempo.
+- Puede que todos los procesos estén esperando para realizar operaciones de E/S al mismo tiempo.
+
+### Objetivos
+
+1. **Justicia (*fairness*):** que cada proceso obtenga una proporción de CPU justa o razonable.
+2. **Eficiencia:** que la CPU esté ocupada y no gaste mucho tiempo decidiendo.
+3. **Throughput:** conseguir que la mayor parte de los procesos acabe lo antes posible.
+4. **Tiempo de respuesta:** minimizar el tiempo que los usuarios deben esperar a obtener alguna respuesta.
+5. **Fiabilidad:** evitar perder datos, reaccionar en tiempo límite, etc.
+6. **Predecibilidad:** degradación no brusca.
+
+### Planificador *(Scheduler)*
+
+El panificador *(scheduler)* está formado por dos componentes:
+- **Algoritmo de planificación:** decide que proceso utilizará la CPU durante un determinado intervalo de tiempo.
+- **Dispatcher:** mecanismo encargado de realizar los cambios de contexto.
+
+### Situaciones en que Actúa
+
+1. El proceso actual *termina.*
+2. El proceso actual pasa de un estado de *ejecución* a uno de *bloqueado.*
+3. El proceso actual pasa de *bloqueado* a *listo.*
+4. Una *interrupción* le indica al planificador que un proceso en *ejecución* debe pasar a *listo.*
+
+Las causas 3 y 4 solo se dan en **planificadores expulsivos (*preemptive*):** el planificador puede desalojar el proceso en ejecución y cambiarlo por otro.
+
+## ALGORITMOS DE PLANIFICACIÓN
+
+### First-Come, First-Served *(FIFO)*
+
+- Primero en llegar, primero en ser servido.
+- *No es expulsivo.*
+- *Ventajas:*
+	- Bastante **justo.**
+	- Fácil de implementar y rápido de ejecutar: cola FIFO.
+- *Inconvenientes:*
+	- Puede provocar un **efecto convoy** (un proceso pesado puede bloquear muchos otros procesos).
+
+![[esquema_FIFO.png|400]]
+
+### Round Robbin *(RR)*
+
+- **RR** consiste en realizar una asociación por turnos. Cada proceso tiene un tiempo límite de uso de la CPU, llamado *q.*
+- *Es exclusivo.*
+
+![[esquema_round_robbin.png|400]]
+
+*Descripción detallada:*
+- Los procesos cuyo estado es **listo** se organizan en una **cola FIFO.**
+- Se elige el primero de la cola para ser ejecutado.
+- Si un proceso *p* se está ejecutando y alcanza el quantum *q*, entonces se pasa el primero de la cola FIFO a la CPU, y se inserta *p* al final.
+- Un temporizador (reloj), se encarga de activar el planificador cada cierto tiempo.
+
+*Ventajas/Inconvenientes:*
+- Los procesos reciben la *misma cantidad de CPU* 
+- El comportamiento depende del quantum:
+	- Si es muy grande, se reduce la interactividad.
+	- Si es muy grande, provoca muchos cambios de contexto.
+- Fácil de implementar.
+- Fácil cómputo del tiempo de respuesta medio.
+- Asume que todos los procesos son igualmente importantes.
+
+### Linux Completely Fair Scheduler *(CFS)*
+
+El objetivo de la política **CFS** es doble:
+- Permitir que existan prioridades en la ejecución de los procesos.
+- Garantizar un determinado **tiempo de respuesta** para todos los procesos: máximo intervalo de tiempo que cualquier proceso podrá estar sin ser ejecutado. 
+
+_
+- En **CFS,** cada proceso en el sistema tiene un *peso* en función de un valor **nice** que se le asigna.
+- El valor **nice** va de -20 a 19 (el valor por defecto es 0, y a menos valor mayor *peso*).
+
+Para determinar el tiempo que cada proceso utilizará la CPU, CFS utiliza el concepto de **latencia objetivo** del sistema:
+> La **latencia objetivo** se define como el intervalo de tiempo en el que **DESEAMOS** que todos los procesos sean, parcialmente, ejecutados.
+
+Para evitar la pérdida de prestaciones, debido al gran número de cambios de contexto, CFS utiliza una **granularidad mínima:** es un tiempo mínimo de ejecución de cada proceso cuando coge la CPU.
+
+```c
+int getpriority(int which, pid_t pid);
+```
+- Devuelve el valor de *nice* del proceso *pid.*
+- El valor de *which* indica si nos referimos al pid del proceso, grupo o usuario efectivo (PRIO_PROCESS, PRIO_PGRP o PRIO_USER).
+
+```c
+int setpriority(int which, pid_t pid, int v);
+```
+- Asigna *v* como valor de *nice* del proceso *pid.*
+
+#### Ejemplo: cambio de valor de *nice* de un proceso
+nice.c
+```c
+#define _GNU_SOURCE
+#include <unistd.h>
+#include <stdio .h>
+#include <sys/time .h>
+#include <sys/resource .h>
+#include <sched .h>
+int main () {
+	int valor ;
+	
+	valor = getpriority(PRIO_PROCESS, 0);
+	printf("Prioridad del proceso %d: %d\n",getpid(), valor );
+	
+	setpriority(PRIO_PROCESS, 0, -4);
+	valor = getpriority(PRIO_PROCESS, 0);
+	printf("Nueva prioridad del proceso %d: %d\n" ,getpid(), valor);
+}
+```
+*% ./nice*
+Prioridad del proceso 3386: 0
+Nueva prioridad del proceso 3386: -4
+
+### Otros Planificadores de Propósito General
+
+- **Brain Fuck Scheduler** (BFS)
+- **Budget Fair Queuing** (BFQ)
+
+### Planificadores en Tiempo Real
+
+- **Rate Monotonic** (RM)
+
+## COLAS MULTINIVEL
+
+- Una **cola multinivel** está formada por un conjunto de varias colas, de manera que cada una de ellas esté gestionada por un planificador.
+- Cada proceso es asignado a una cola.
+- Cada cola tiene una *prioridad.*
+
+![[esquema_colas_multinivel.png|400]]
+
+En Linux se utiliza una cola multinivel (con cuatro niveles) sin realimentación, con algunas características propias:
+- Todos los procesos tienen una **prioridad estática.**
+- El planificador elige el proceso con *mayor* prioridad estática.
+
+Tipos de prioridades estáticas:
+- **FIFO y RR:** de 1 a 99.
+- **CFS:** prioridad estática *fija* de 0, solo se ejecutan si no hay procesos FIFO o RR.
+- **Batch:** los procesos de esta cola se ejecutan si no hay procesos en las otras colas listos para ser ejecutados.
+
+### Obtención del Planificador
+```c
+int sched_getscheduler(pid_t pid);
+```
+- Devuelve la política de planificación del proceso *pid.*
+- Si *pid = 0* devuelve la política de planificación del proceso que realiza la llamada.
+
+### Selección del Planificador
+```c
+int sched_setscheduler(pid_t pid, int pilicy, const struct sched_param *sp);
+```
+- Selecciona la política de planificación *policy* del proceso *pid* con los parámetros especificado en *sp* (solo contiene la prioridad).
+
+*Ejemplo planificación_2.c:*
+```c
+#define _GNU_SOURCE
+#include <unistd.h>
+#include <stdio .h>
+#include <sys/time .h>
+#include <sys/resource .h>
+#include <sched .h>
+int main () {
+	int policy, ret, x;
+	struct sched_param sp;
+	
+	sched_getparam(0, &sp); // Obtenemos la prioridad estática de 0
+	printf("Pol´ıtica CFS. Prioridad est´atica : %d\n",sp.sched_priority);
+	
+	sp.sched_priority = 1;
+	sched_setscheduler(0, SCHED_RR, &sp); // RR con prioridad 1
+	sp.sched_priority = 11; // Aquí aún no hemos cambiado la prioridad a 11
+	sched_setparam(0, &sp); // Ahora cambiamos la prioridad a 11
+	policy = sched_getscheduler(0);
+	switch(policy) {
+	case SCHED_OTHER:
+		printf("Pol´ıtica CFS. Prioridad est´atica : %d\n", sp.sched_priority);
+		break ;
+	case SCHED_RR:
+		printf("Pol´ıtica RR. Prioridad est´atica : %d\n", sp.sched_priority);
+		break ;
+	case SCHED_FIFO:
+		printf("Pol´ıtica FIFO . Prioridad est´atica : %d\n", sp.sched_priority);
+	};
+}
+```
+
+*% ./planificación_2*
+Política CFS. Prioridad Estática: 0
+Política RR. Prioridad estática: 11
+
+## AFINIDAD
