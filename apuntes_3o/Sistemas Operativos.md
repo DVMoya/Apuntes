@@ -6,6 +6,7 @@ ___
 - [[#TEMA 2 PROCESOS EN POSIX]]
 - [[#TEMA 3 FICHEROS Y COMUNICACIONES EN UNIX]]
 - [[#TEMA 4 PLANIFICACIÓN DE PROCESOS]]
+- [[#TEMA 5 VIRTUALIZACIÓN]]
 
 ___
 # TEMA 1 : PROCESOS
@@ -885,3 +886,93 @@ Segmentation fault (core dumped)
 
 *% ./buffer overflow aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*
 Access Granted.
+
+___
+# TEMA 5 : VIRTUALIZACIÓN
+___
+
+## ¿QUÉ ES LA VIRTUALIZACIÓN?
+
+La **virtualización** es el conjunto de técnicas que proporcionan un nivel de abstracción adicional entre la máquina y las aplicaciones que se ejecutan sobre la misma.
+
+Objetivos:
+- Conseguir que múltiples recursos físicos parezcan un solo recurso lógico.
+- Conseguir que un solo recurso físico parezca múltiples recursos lógicos.
+
+## ¿QUÉ ES UNA MÁQUINA VIRTUAL?
+
+LLamamos **máquina virtual** a la implementación de una máquina que ejecuta programas o sistemas como si fuese una máquina real.
+
+## VENTAJAS E INCONVENIENTES DE LA VIRTUALIZACIÓN
+
+- **Ventajas:**
+	- Flexibilidad
+	- Portabilidad
+	- Aislamiento/Seguridad
+	- Utilización del hardware
+- **Inconvenientes:**
+	- Complejidad
+	- Prestaciones
+
+## TIPOS DE MÁQUINAS VIRTUALES
+
+1. **Máquinas virtuales de proceso:** se ejecutan como aplicaciones normales sobre un sistema operativo, y su objetivo es abstraer los detalles del hardware subyacente.
+2. **Máquinas virtuales del sistema:** permiten la compartición del hardware subyacente entre sistemas operativos diferentes.
+
+### Máquinas Virtuales de *Proceso*
+
+Entorno en que un programa es independiente de la máquina subyacente.
+
+- El entorno virtual se crea cuando el programa es ejecutado, y termina cuando éste acaba.
+- Permite que un programa se ejecute siempre de la misma forma, independientemente de la plataforma en la que se esté ejecutando.
+- La máquina virtual de proceso se implementa como si fuese un intérprete: el programa que se ejecutará sobre la máquina virtual de proceso no se compila sino que se interpreta.
+
+### Máquinas Virtuales del *Sistema*
+
+Plataforma que permite la ejecución de múltiples sistemas operativos.
+
+- Permite la compartición de hardware subyacente entre distintos sistemas operativos.
+- Cada sistema operativo permanece aislado de los otros sistemas operativos.
+
+### El *Hipervisor*
+
+El **hipervisor** (Virtual Machine Monitor (VMM)) es el programa encargado de la virtualización. Presenta un conjunto de dispositivos virtuales a cada sistema operativo, y se encarga de arbitrar el acceso de los distintos sistemas a los recursos compartidos reales.
+
+Hay dos tipos básicos de hipervisores:
+1. **Hipervisores nativos.**
+	- El VMM se ejecuta directamente sobre el hardware.
+![[hipervisor_nativo.png|250]]
+1. **Hipervisores con anfitrión.**
+	- El VMM se ejecuta sobre un sistema operativo anfitrión.
+![[hipervisor_con_anfitrion.png|250]]
+
+### Dispositivo Virtual
+
+Un **dispositivo virtual (virtual appliance)** es un conjunto de componentes empaquetados para ser ejecutados sobre un hipervisor.
+
+![[dispositivo_virtual.png|400]]
+
+### Virtual Box
+
+Hipervisor con *anfitrión.*
+
+### Rosetta
+
+Los ordenadores Mac utilizaron **Rosetta** durante un tiempo para realizar la transición de procesadores PowerPC a Intel.
+
+## CONTAINERS
+
+Los **containers** proporcionan a cada aplicación un entorno aislado en el que ejecutarse:
+
+![[container.png|400]]
+
+Loa containers ofrecen un entorno similar al que se puede obtener utilizando una máquina virtual por cada aplicación, pero sin la carga asociada a ejecutar un sistema operativo por cada una de ellas (solo se ejecutan las partes que hacen falta).
+
+Containers en casos reales:
+- *Google search*
+- *Electronic Arts* (servidores de juegos)
+- *Pokemon Go* (cada personaje usa un container)
+
+___
+# TEMA 6 : 
+___
