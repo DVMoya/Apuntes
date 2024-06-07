@@ -272,7 +272,7 @@ Programas y géneros híbridos:
 
 ## EL CICLO PRODUCTIVO DE LA TELEVISIÓN
 
-[INSERTAR IMAGEN]
+![[ciclo_produccion_tv.png|500]]
 
 *En la fase de preproducción:*
 - Se concibe y decide qué hecho es noticiable y qué no, qué va a emitirse, qué queremos transmitir (en los noticiarios).
@@ -538,3 +538,88 @@ ___
 # TEMA 9 : UNA INTRODUCCIÓN A LA PRODUCCIÓN DE VIDEOJUEGOS
 ___
 
+> “Los videojuegos son cosas de niños. Los videojuegos son violentos. Las mujeres no juegan a videojuegos. los videojuegos crean psicópatas. los videojuegos llevan al aislamiento social. Los videojuegos no pueden transmitir valores éticos. Es importante que un videojuego te haga llorar. Los videojuegos no son cultura. Los videojuegos no tienen guion. Los videojuegos jamás serán arte.”
+> <p class="cite"><cite>(Monchán, 2015)</cite></p>
+
+## INTRODUCCIÓN
+
+![[tema9_introduccion.png|500]]
+
+### Sistema Exterior
+
+El sistema exterior es *el lugar donde se ubica el jugador, en el que se establecen las condiciones del pacto lúdico y de la partida.*
+
+**Ningún objeto cultural existe en el vacío.** El contexto en el que se diseña el propio videojuego afecta al propio diseño.
+
+#### El contexto
+
+*Todos los elementos del mundo real que tienen una influencia directa o indirecta en el juego.*
+- Contexto en el momento de creación.
+- Contexto en el momento del análisis.
+
+### Sistema General y Game-world
+
+El *sistema central* es el conjunto de reglamentos y ficción que da lugar a la partida. Está formado por: objetos, sujetos, mecánicas, reglas, obstáculos, recompensas y penalizaciones.
+
+El *game-world* es una representación navegable y manipulable de un entorno modelo, imaginario o real, reconstruido mediante implementación directa o simulación.
+
+### El Proceso Video-lúdico
+
+![[proceso_video_ludico.png|500]]
+
+## LAS TRES FASES
+
+1. PREPRODUCCIÓN --> **CONCEPTUALIZACIÓN**
+2. PRODUCCIÓN --> **DISEÑO E IMPLEMENTACIÓN**
+3. POSTPRODUCCIÓN --> **EXPLOTACIÓN**
+
+![[las_tres_fases.png|300]]
+
+### Preproducción *(Conceptualización)*
+
+Se realizan **tareas diversas encaminadas a la definición del juegos, a la conceptualización de los aspectos más relevantes y a los plazos que determinarán su materialización.**
+
+- La fase más crítica.
+- Duración variable.
+- Cerca de una cuarta parte del proceso de creación del videojuego.
+
+Debemos definir:
+- *Cómo va a ser.*
+- *La tecnología.*
+- *El target.*
+
+**IMPORTANTE**
+En este punto tendremos un primer borrador del * **GDD** (**G**ame **D**esign **D**ocument).*
+
+#### ¿Qué incluye el **GDD**?
+
+- Género del juego.
+- Jugadores.
+- Look and feel.
+- Interfaz de usuario.
+- Objetivos.
+- Reglas.
+- Características.
+- Diseño de niveles.
+- Requerimientos técnicos.
+- Marketing.
+- Presupuesto.
+
+### Producción *(Diseño e Implementación)*
+
+- *Diseño de mecánicas.*
+- *Motor de juego.*
+- *Diseño técnico.*
+- *Implementación.*
+- *Testeos.*
+- *Master (Gold Master):* primera versión final del juego.
+
+### Postproducción *(Explotación)*
+
+- *Parches:* Bugs y resolución de problemas.
+- *DLCs (Downloadable Content):* Expansiones.
+- *Explotación:* Ventas del producto.
+
+![[equipo_de_desarrollo.png|500]]
+
+___

@@ -4,16 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "5b9c7c0aa23b98c4",
+        "id": "cb2cdc975b9915a7",
         "type": "tabs",
         "children": [
           {
-            "id": "a37da6f63767a014",
+            "id": "162153d818a77ced",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Sistemas Operativos.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "70e4cd43782a034e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fefb2b84b55f1ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos.md",
                 "mode": "preview",
                 "source": true
               }
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Sistemas Operativos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md",
+                "file": "Sistemas Operativos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoría y Práctica de las Producciones Audiovisuales.md"
+                "file": "Sistemas Operativos.md"
               }
             }
           }
@@ -146,22 +164,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a37da6f63767a014",
+  "active": "9b44baeaba220ee6",
   "lastOpenFiles": [
-    "Diseño y Animacion de Personajes.md",
-    "Teoría y Práctica de las Producciones Audiovisuales.md",
+    "imgs/sistemas_operativos/niños_2.png",
+    "imgs/sistemas_operativos/niños_1.png",
+    "imgs/sistemas_operativos/container.png",
+    "imgs/sistemas_operativos/dispositivo_virtual.png",
+    "imgs/sistemas_operativos/hipervisor_con_anfitrion.png",
+    "imgs/sistemas_operativos/hipervisor_nativo.png",
     "Motores de Videojuegos.md",
+    "Sistemas Operativos.md",
+    "imgs/sistemas_operativos/esquema_colas_multinivel.png",
+    "imgs/sistemas_operativos/esquema_round_robbin.png",
+    "imgs/sistemas_operativos/esquema_FIFO.png",
+    "imgs/sistemas_operativos/comportamiento_procesos.png",
+    "imgs/sistemas_operativos/ejemplo_tuberias_2.png",
+    "Untitled.md",
+    "Teoría y Práctica de las Producciones Audiovisuales.md",
+    "Diseño y Animacion de Personajes.md",
+    "imgs/sistemas_operativos",
     "Redes y Sistemas Multijugador.md",
-    "imgs/motores_de_videojuegos/final_shadows_comparison.png",
-    "imgs/motores_de_videojuegos/soft_shadows_3.png",
-    "imgs/motores_de_videojuegos/soft_shadows_2.png",
-    "imgs/motores_de_videojuegos/soft_shadows_1.png",
-    "imgs/motores_de_videojuegos/shadow_mapping_3.png",
-    "imgs/motores_de_videojuegos/shadow_mapping_2.png",
-    "imgs/motores_de_videojuegos/shadow_mapping_1.png",
-    "imgs/motores_de_videojuegos/shadow_volumes_1.png",
-    "imgs/motores_de_videojuegos/shadow_volumes_6.png",
-    "imgs/motores_de_videojuegos/shadow_volumes_5.png",
     "imgs/motores_de_videojuegos",
     "imgs/redes_y_sistemas_multijugador",
     "imgs/audiovisuales",

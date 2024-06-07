@@ -9,7 +9,7 @@ ___
 		- [[#- 3 - Modelo de Comunicación]]
 		- [[#- 4 - Arquitectura de Red]]
 		- [[#- 5 - Resumen]]
-	- [[#TEMA 2 EL NUVEL DE RED]]
+	- [[#TEMA 2 EL NIVEL DE RED]]
 - [[#BLOQUE 2 - SISTEMAS MULTIJUGADOR]]
 	- [[#TEMA 5 LA CAPA DE APLICACIÓN]]
 		- [[#- 2 - Principios de las Aplicaciones en Red]]
@@ -23,7 +23,10 @@ ___
 		- [[#- 4 - Protocolos]]
 	- [[#TEMA 7 SISTEMAS DISTRIBUIDOS - CONCURRENCIA - DESARROLLO DE APLICACIONES EN RED]]
 - [[#BLOQUE 3 - REDES]]
-	- [[#TEMA 3 EL NIVEL DE ENLACE EN DATOS]]
+	- [[#TEMA 3 LAN Y VLAN]]
+		- [[#- 1 - Introducción]]
+		- [[#- 2 - Redes de Área Local]]
+		- [[#- 3 - Introducción a las VLANs]]
 	- [[#TEMA 4 SEGURIDAD ACLs]]
 
 ___
@@ -143,7 +146,7 @@ capas que constituyen la arquitectura TCP/IP.
 Internet (capa de red, capa de internet).
 
 ___
-# TEMA 2 : EL NUVEL DE RED
+# TEMA 2 : EL NIVEL DE RED
 ___
 
 ___
@@ -339,8 +342,107 @@ ___
 ___
 
 ___
-# TEMA 3 : EL NIVEL DE ENLACE EN DATOS
+# TEMA 3 : LAN Y VLAN
 ___
+
+## - 1 - Introducción
+
+- Cada empresa solía utilizar sus propios estándares. Esto dificultaba enormemente la comunicación entre empresas.
+- **Solución:** creación de estándares * **LAN** (red de área local).* Suministran un conjunto abierto de pautas para la creación de hardware y software de red y la capacidad de mezclar y emparejar equipos de distintos fabricantes.
+- Otra solución fue la creación de las * **MAN** (red de área metropolitana)* y las * **WAN** (red de área amplia).*
+- Las *WAN* hacen posible la comunicación a grandes distancias.
+
+## - 2 - Redes de Área Local
+
+- Ethernet es una tecnología de difusión de medio amplio compartido, aparecen dominios de broadcast (difusión) y dominios de colisión.
+- *Desventaja* de redes Ethernet, cuando varios host transmiten simultáneamente se producen **colisiones** entre paquetes.
+- El ancho de banda se mide en bits por segundo (bts).
+- Si hay colisiones el ancho de banda se reduce.
+- Una LAN Ethernet que aumenta el número de usuarios aumenta la posibilidad de colisiones y por tanto disminuye el ancho de banda.
+- Un hub no ofrece mecanismos para eliminar las colisiones por lo que se utilizan switches.
+
+### Consideraciones de Diseño de Red Ethernet
+
+- *Solución:* Crear segmentos de red físicos separados llamados **dominios de colisión.**
+- El switch crea una tabla de direcciones MAC de los host conectados a sus puertos. El switch filtra las tramas basándose en las direcciones MAC.
+- Un switch crea en cada uno de sus puertos una conexión dedicada (dominio de colisión individual).
+- Varios switches conectados constituyen un **dominio de difusión.**
+
+![[ejemplo_lan.png|500]]
+
+## - 3 - Introducción a las VLANs
+
+- Las VLANs extienden el dominio de difusión limitado por el router a un dominio limitado por VLAN.
+
+### Beneficios de las VLANs
+
+- Seguridad.
+- Reducción de coste.
+- Rendimiento más alto.
+- Atenuación de la tormenta de difusión: ya no se propaga por toda la red.
+- Mejora de la administración.
+- Se pueden agrupar switches para crear una única unidad de computación.
+
+### Tipos de VLANs
+
+#### Según el identificador ID
+
+- VLANs de rango normal.
+	- Usa *protocolo de enlace troncal.*
+- VLANs de rango extendido.
+
+#### Según el tráfico que soportan
+
+- VLANs de datos.
+- VLAN predeterminada.
+- VLAN agujero negro.
+	- VLAN ficticia a la que suelen asignar los puertos no usados.
+- VLANs nativas.
+	- Se asigna un puerto de enlace troncal que admite tráfico de diferentes VLANs y tráfico que no llega de una VLAN.
+- VLAN administración.
+	- El administrador la configura como medio para acceder a las capacidades de transmisión de un switch.
+- VLANs de voz.
+	- Requiere ancho de banda asegurado para garantizar la calidad de voz.
+	- Prioridad sobre otros tráficos.
+	- Posibilidad de enrutar si hay congestión de red.
+	- Retraso inferior a 150 miliseg a través de la red.
+
+### Configuración de VLANs
+
+- LA configuración se almacena automáticamente en un archivo llamado **vlan.bat** en la memoria Flash del switch. Para ver el archivo usa el comando *show vlan brief.*
+
+![[show_vlan.png|500]]
+
+1. Primer paso: **Creación  y nombrado de la VLAN.**
+
+![[creacion_y_nombrado_vlan.png|500]]
+
+#### Tráfico en los puertos de un switch
+
+- Si un puerto pertenece a una una VLAN se dice que es un puerto no etiquetado *(untagged)*, no existe ambigüedad sobre el tráfico que se envía/recibe, es de esa vlan.
+- Pero, cuando un puerto pertenece a varias VLANs se dice que es un puerto etiquetado *(tagged).*
+- Para puertos etiquetados es necesario identificar cada VLAN por un número entero.
+
+#### Asociación de puertos de un switch
+
+- Los puertos del switch son interfaces de capa 2, físicos, usan MACs.
+- No manipulan enrutamiento.
+- Pertenecen a una o más VLANs.
+- Al configurar VLANs se asocian puertos a *(nombres o números de)* VLANs.
+- Según si los puertos soportan tráfico de una sola vlan o de varias tendremos que configurarlos como:
+	- **De acceso:** solo tráfico de una VLAN, *puerto no etiquetado.*
+	- **Troncales:** circula tráfico de varias VLANs, *puerto etiquetado.*
+
+**Un puerto no etiquetado:**
+Puede configurarse para que soporte diferentes tipos de VLAN.
+1. *VLAN dinámica.*
+2. *VLAN de voz.*
+3. *VLAN estática*
+	- Se asignan puertos manualmente a las VLANs.
+	- Los puertos se asignan en modo de acceso.
+![[crear_vlan_estatica.png|500]]
+
+pag27 
 
 ___
 # TEMA 4 : SEGURIDAD ACLs
