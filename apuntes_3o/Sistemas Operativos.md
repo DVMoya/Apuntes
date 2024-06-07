@@ -8,6 +8,7 @@ ___
 - [[#TEMA 4 PLANIFICACIÓN DE PROCESOS]]
 - [[#TEMA 5 VIRTUALIZACIÓN]]
 - [[#TEMA 6 THREADS]]
+- [[#TEMA 7 SINCRONIZACIÓN]]
 
 ___
 # TEMA 1 : PROCESOS
@@ -1124,4 +1125,169 @@ Thread 60633088
 
 ## PLANIFICACIÓN DE THREADS
 
-pag 10
+¿Qué identificadores usan los thread?
+- **PID** --> getpid()
+- **ID** del thread --> pthread_self()
+- **TID** --> gettid()
+
+## UTILIZACIÓN DE THREADS
+
+*Objetivo:* pasar un argumento a la función *func()*, que contendrá el código de un thread *hilo.*
+
+1. Supongamos que el argumento es de tipo entero.
+```c
+int argumento;
+pthread_create(&hilo, NULL, func, (void * ) &argumento);
+```
+> Se le pasa un puntero sin tipo a la dirección **argumento.**
+
+2. El formato de la función **func()** que recibirá dicho argumento es del tipo:
+```c
+*func((void * ) arg)
+```
+> **(void \*) arg** es un puntero sin tipo que a punta a la dirección de **&argumento.**
+
+Por lo tanto en la función **func()** habrá que hacer una conversión de tipos, ya que no trabajaremos con un puntero a una dirección, sino con una variable de tipo entero.
+```c
+int parametro;
+parametro = *((int * ) arg)
+```
+
+## EJEMPLO PASO DE ARGUMENTOS A THREADS
+
+arg_bien.c
+```c
+#include <stdio .h>
+#include <pthread .h>
+#define MAX_THREADS 6
+void *func (void * arg) {
+	int parametro;
+	parametro = *((int * ) arg );
+	printf("Thread %u lee %d\n", pthread_self(), parametro);
+	pthread_exit(0);
+}
+int main() {
+	int i, v[MAX_THREADS];
+	pthread_t hilo[MAX_THREADS];
+	for (i = 0; i < MAX_THREADS; i++) v[i] = i;
+	for (i = 0; i < MAX_THREADS; i++)
+		pthread_create(&hilo[i], NULL, func, (void * ) &v[i]);
+	for (i = 0; i < MAX_THREADS; i++)
+		pthread_join (hilo [i], NULL);
+	exit (0);
+}
+```
+
+*% ./arg_bien*
+Thread 67641344 lee 1
+Thread 67104768 lee 0
+Thread 68177920 lee 2
+Thread 68714496 lee 3
+Thread 69251072 lee 4
+Thread 69787648 lee 5
+
+___
+# TEMA 7 : SINCRONIZACIÓN
+___
+
+## CONDICIONES DE CARRERA (RACE CONDITIONS)
+
+**Condición de Carrera:** es un *bug* que se produce cuando tareas concurrentes acceden a un determinado recurso compartido al mismo tiempo, resultando impredecible el resultado final debido a como se han realizado dichos accesos.
+
+El resultado debido a una condición de carrera puede depender de:
+- El orden de intercalación de operaciones.
+- El funcionamiento de las memorias caché.
+- Los datos en las cachés.
+- La forma en que se produce la compilación.
+
+## SINCRONIZACIÓN
+
+- **Sección crítica:** región de un programa dónde pueden existir condiciones de carrera.
+- **Exclusión mutua:** consiste en permitir acceso a una sección crítica a una sola tarea simultáneamente. *Requisitos:*
+	- - *Progreso (liveness/progress):* una tarea fuera de la sección crítica no puede impedir el acceso a otra.
+	- *Espera acotada (no starvation):* denegación permanente del acceso a la sección crítica.
+	- *Libre de interbloqueos (no deadlocks):* varias tareas se bloquean mutuamente de forma permanente.
+
+## CERROJOS
+
+> Un **cerrojo** es un *mecanismo* que permite que varias tareas compartan un recurso, accediendo al mismo de manera atómica.
+
+Funcionamiento:
+1. Cerrar el **cerrojo** antes de acceder a una sección crítica, y liberarlo después.
+2. Esperar, si no se puede cerrar el **cerrojo.**
+
+## IMPLEMENTACIÓN DE CERROJOS
+
+### Cerrojos Creados por Software
+
+Se utiliza una variable compartida que actúa como cerrojo:
+```c
+while(locked);
+locked = 1;
+/* do critical section */
+locked = 0;
+```
+- *Ventaja:* fácil de usar.
+- *Desventaja:* contiene un bug.
+
+### Desactivación de Interrupciones
+
+Se deshabilitan las interrupciones del sistema antes de entrar en la sección crítica y se habilitan antes de salir.
+
+*Ventajas:*
+- Simple.
+- Fácil de implementar.
+
+*Desventajas:*
+- Se le da a la tarea un gran control del sistema.
+- Complicada en sistemas multiprocesadores.
+
+### Soporte Hardware
+
+Se utilizan instrucciones proporcionadas por la CPU, que garantiza que se ejecutarán de manera óptima. Por ejemplo:
+
+- **Test-and-set** coge el cerrojo, pero sólo en el caso en que nadie lo haya cogido antes.
+```c
+int test_and_set(int *x){
+	last_value = *x;
+	*x = 1;
+	return last_value;
+}
+
+/* it's used as follows: */
+while(test_and_set(&lock));
+/*  do critical section  */
+lock = 0;
+```
+- **Compare-and-swap**
+- **Fetch-and-increment**
+
+**Problemas** uso instrucciones proporcionadas por la CPU:
+- Hay que incluir la implementación de los cerrojos.
+- Portabilidad.
+
+## CERROJOS EN POSIX
+
+> El paquete **Pthreads** proporciona el tipo de datos *pthread_mutex_t* para representar cerrojos.
+
+Operaciones sobre el conjunto **mutex:**
+```c
+// inicializar cerrojo
+int pthread_mutex_int(pthread_mutex_t *mutex, NULL);
+
+// destruir cerrojo
+int pthread_mutex_destroy(pthread_mutex_t *mutex);
+
+// cerrar cerrojo
+int pthread_mutex_lock(pthread_mutex_t *mutex);
+
+// abrir cerrojo
+int pthread_mutex_unlock(pthread_mutex_t *mutex);
+```
+
+## SPINLOCKS
+
+La implementación de cerrojos está basada en **spinlocks:** de forma repetitiva, se comprueba si un cerrojo está disponible. 
+
+> Las soluciones basadas en *spinlocks* requieren espera activa, con lo cual se desperdician ciclos de CPU.
+
