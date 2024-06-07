@@ -7,6 +7,7 @@ ___
 - [[#TEMA 3 FICHEROS Y COMUNICACIONES EN UNIX]]
 - [[#TEMA 4 PLANIFICACIÓN DE PROCESOS]]
 - [[#TEMA 5 VIRTUALIZACIÓN]]
+- [[#TEMA 6 THREADS]]
 
 ___
 # TEMA 1 : PROCESOS
@@ -974,5 +975,153 @@ Containers en casos reales:
 - *Pokemon Go* (cada personaje usa un container)
 
 ___
-# TEMA 6 : 
+# TEMA 6 : THREADS
 ___
+
+## CONCEPTOS GENERALES
+
+- Un **thread** consiste en una **unidad de ejecución** de un código **ya cargado en memoria.**
+- Se pueden lanzar varios threads *al mismo tiempo.*
+- Los **thread** se diferencian de los *fork()* en que no producen una clonación completa del proceso. Cada instancia se ejecuta de forma autónoma.
+
+**Proceso:** cada niño lee su propio libro, que es el mismo, aunque puede que en capítulos diferentes.
+
+![[niños_1.png|300]]
+
+**Thread:** todos leen el mismo libro al mismo tiempo, aunque puede que en capítulos distintos.
+
+![[niños_2.png|300]]
+
+## IMAGEN VIRTUAL DE UN THREAD
+
+Los *thread* no comparten:
+- ID del thread.
+- **Puntero de instrucciones.**
+- Máscara de señales y registros propios.
+- Información de planificación.
+- **Stack y puntero de acceso al mismo.**
+
+La visión que cada thread tiene de sí mismo es la de una unidad de ejecución completamente independiente a la de los demás threads.
+
+> Cada thread realmente actúa como si dicho código, memoria, etc., fuese únicamente suyo.
+
+## THREADS VS PROCESOS
+
+- El **código** que ejecutará cada thread se incluye en una **función asociada:** no es necesario utilizar *fork().*
+- La **creación de threads** es menos costosa.
+- El **cambio de contexto entre threads** es mucho más rápido.
+- La **comunicación entre threads** es más sencilla: podemos utilizar *variables compartidas* a las que todos los threads puedan acceder.
+
+## THREADS DEL KERNEL VS THREADS DEL USUARIO
+
+**Kernel Level Threads:**
+- Son unidades de procesamiento soportadas directamente por el SO.
+- El SO se encarga de su creación, planificación y sincronización.
+
+**User Level Threads:**
+- La aplicación se encarga de su creación, organización y planificación.
+- *Flexibles.*
+- El kernel *no es consciente* de la existencia de threads.
+
+## PROCESOS/THREADS/TASKS EN LINUX
+
+**En UNIX:**  Cada *PCB* contiene uno o más **TCBs** (**T**hread **C**ontrol **B**lock), que contienen:
+- Thread ID.
+- Valores de registros propios.
+- Información propia de cada Thread: máscara de señales e información de planificación.
+
+**En Linux** no se distingue entre procesos y threads todo son tareas **(tasks).** 
+
+Tanto la función **fork()** como **pthread_create()** llaman a la función **clone().**
+
+Al crear un *thread* en Linux se crea una nueva tarea y:
+- Se especifica la función que ejecutará el thread.
+- Se especifica cuál es el stack del thread.
+- Se especifica lo que se comparte.
+
+Cada thread creado a partir del mismo proceso tiene una imagen virtual de memoria propia y distinta, que se mapea a direcciones de memoria física.
+
+En Linux todas las tareas se tratan igual, aunque antes de realizar un cambio de contexto se comprueba si éste debe ser completo o sólo parcial.
+
+> Para obtener el TID (Task ID) de una tarea usa **gettid().**
+
+## SINTAXIS DE *pthread_create()* y *pthread_exit()*
+
+```c
+int pthread_create(pthread_t hilo, NULL, void *(*func)(void *), (void *) arg);
+```
+
+> Crea el thread **hilo** que ejecutará la función **func().**
+
+```c
+int pthread_exit(0);
+```
+
+> Finaliza la ejecución del thread que invoca la función.
+
+## SINTAXIS DE *pthread_self()* y *pthread_join()*
+
+```c
+pthread_t pthread_self(void);
+```
+
+> Devuelve el identificador del thread que ejecuta la llamada.
+
+```c
+int pthread_join(pthread_t hilo, NULL);
+```
+
+> Suspende la ejecución del thread hasta que termine el thread **hilo.**
+
+## *exit()* VS *pthread_exit()*
+
+Al usar **exit():**
+- La ejecución de las funciones hijo que éste ha creado no se ven afectadas.
+- Por el contrario, todos los threads que éste ha creado también finalizarán (es importante finalizar los threads antes del proceso principal).
+
+## EJEMPLO CREACIÓN DE THREADS
+
+thread1.c
+```c
+#include <stdio.h>
+#include <pthread .h>
+#define MAX_THREADS 10
+
+void *func() {
+	printf ("Thread %u\n", pthread_self());
+	/* Realmente , pthread_self() no es de tipo %u */
+	pthread_exit(0);
+}
+
+int main() {
+	int i;
+	pthread_t hilo[MAX_THREADS];
+	for (i = 0; i < MAX_THREADS; i ++)
+		pthread_create(&hilo[i], NULL, func, NULL);
+		
+	for (i = 0; i < MAX_THREADS; i ++)
+		pthread_join(hilo[i], NULL );
+	exit (0); /* Finaliza todos los threads , si quedase alguno */
+}
+```
+
+Para compilar código con threads es necesario enlazar con la librería de pthreads:
+```shell
+gcc thread1.c -o thread1 -Ipthread
+```
+
+*% ./thread1*
+Thread 55803904
+Thread 56340480
+Thread 56877056
+Thread 57413632
+Thread 57950208
+Thread 58486784
+Thread 59023360
+Thread 59559936
+Thread 60096512
+Thread 60633088
+
+## PLANIFICACIÓN DE THREADS
+
+pag 10

@@ -14,6 +14,24 @@
               "type": "markdown",
               "state": {
                 "file": "Sistemas Operativos.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "70e4cd43782a034e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0fefb2b84b55f1ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemas Operativos.md",
                 "mode": "preview",
                 "source": true
               }
@@ -146,8 +164,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "162153d818a77ced",
+  "active": "9b44baeaba220ee6",
   "lastOpenFiles": [
+    "imgs/sistemas_operativos/niños_2.png",
+    "imgs/sistemas_operativos/niños_1.png",
     "imgs/sistemas_operativos/container.png",
     "imgs/sistemas_operativos/dispositivo_virtual.png",
     "imgs/sistemas_operativos/hipervisor_con_anfitrion.png",
@@ -159,9 +179,7 @@
     "imgs/sistemas_operativos/esquema_FIFO.png",
     "imgs/sistemas_operativos/comportamiento_procesos.png",
     "imgs/sistemas_operativos/ejemplo_tuberias_2.png",
-    "imgs/sistemas_operativos/ejemmplo_tuberias_1.png",
     "Untitled.md",
-    "imgs/sistemas_operativos/estructura_fichero_1.png",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
     "Diseño y Animacion de Personajes.md",
     "imgs/sistemas_operativos",
