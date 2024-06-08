@@ -258,8 +258,8 @@ Tras la clonación:
 
 **fork();** devuelve:
 - **Al proceso padre:** el *PID* del hijo.
-- **Al proceso hijo:** *0*.
-- **Error:** *-1*.
+- **Al proceso hijo:** *0.*
+- **Error:** *-1.*
 
 **getpid();** devuelve: el PID del proceso que realiza la llamada.
 
