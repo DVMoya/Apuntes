@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "23cc436b68ab0f4d",
+        "id": "d51a1ae1d2a32414",
         "type": "tabs",
         "children": [
           {
-            "id": "999ee3870ac3ba6d",
+            "id": "a57935d3635ebeae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sistemas Operativos.md",
+                "file": "Motores de Videojuegos.md",
                 "mode": "preview",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a2e03e78e08ba805",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemas Operativos.md",
+                "file": "Motores de Videojuegos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemas Operativos.md",
+                "file": "Motores de Videojuegos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemas Operativos.md"
+                "file": "Motores de Videojuegos.md"
               }
             }
           }
@@ -147,8 +146,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "999ee3870ac3ba6d",
+  "active": "a57935d3635ebeae",
   "lastOpenFiles": [
+    "Diseño y Animacion de Personajes.md",
+    "Motores de Videojuegos.md",
+    "Sistemas Operativos.md",
     "pdfs_apuntes_completos/Sistemas Operativos.pdf",
     "pdfs_apuntes_completos",
     "Nueva carpeta",
@@ -158,15 +160,12 @@
     "imgs/sistemas_operativos/dispositivo_virtual.png",
     "imgs/sistemas_operativos/hipervisor_con_anfitrion.png",
     "imgs/sistemas_operativos/hipervisor_nativo.png",
-    "Motores de Videojuegos.md",
-    "Sistemas Operativos.md",
     "imgs/sistemas_operativos/esquema_colas_multinivel.png",
     "imgs/sistemas_operativos/esquema_round_robbin.png",
     "imgs/sistemas_operativos/esquema_FIFO.png",
     "imgs/sistemas_operativos/comportamiento_procesos.png",
     "Untitled.md",
     "Teoría y Práctica de las Producciones Audiovisuales.md",
-    "Diseño y Animacion de Personajes.md",
     "imgs/sistemas_operativos",
     "Redes y Sistemas Multijugador.md",
     "imgs/motores_de_videojuegos",
