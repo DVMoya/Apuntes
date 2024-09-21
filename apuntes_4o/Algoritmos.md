@@ -1,5 +1,5 @@
 ___
-# BÚSQUEDA
+# BÚSQUEDA EN VECTOR
 ___
 
 ## BÚSQUEDA SECUENCIAL
@@ -130,3 +130,161 @@ CTPC (Coste Temporal en el Peor Caso): $O(n).$
 CTMC (Coste Temporal en el Mejor Caso): $O(n).$
 CEPC (Coste Espacial en el Peor Caso): $O(n).$
 CEMC (Coste Espacial en el Mejor Caso): $O(n).$
+
+___
+# LISTAS ENLAZADAS
+___
+
+## TIPOS ABSTRACTOS DE DATOS (*TAD*)
+
+### TAD Pila
+
+pila.cpp
+```cpp
+  
+#include <iostream>
+#include <string>
+using namespace std;
+
+#include "Pila.h"
+
+Pila::Nodo::Nodo(int d, Nodo * s) : dato{d}, siguiente{s} {
+}
+
+Pila::Pila() : laCima{nullptr}, laTalla{0} {
+
+}
+  
+void Pila::apilar(int unDato) {
+   laCima = new Nodo(unDato, laCima);
+   laTalla++;
+}
+
+void Pila::desapilar() {
+   if (laCima == nullptr)
+      throw string("Intentando desapilar en una pila vacia");
+
+   Nodo * basura = laCima;
+   laCima = laCima->siguiente;
+   delete basura;
+   laTalla--;
+}
+
+int Pila::cima() const {
+   if (laCima == nullptr)
+      throw string("Intentando consultar la cima en una pila vacia");
+   return laCima->dato;
+}
+
+void Pila::mostrar() const {
+   cout << "[";
+   for (Nodo * actual = laCima; actual != nullptr; actual = actual->siguiente) {
+      cout << actual->dato;
+      if (actual->siguiente != nullptr)
+	 cout << ", ";
+   }
+   cout << "]";
+}
+
+int Pila::talla() const {
+   return laTalla;
+}
+
+bool Pila::estaVacia() const {
+   return laCima == nullptr;
+}
+```
+
+pila.h
+```cpp
+  
+class Pila {
+
+   struct Nodo {
+      int dato;
+      Nodo * siguiente;
+      Nodo(int, Nodo *);
+   };
+
+   Nodo * laCima;
+   int laTalla;
+
+public:
+
+   Pila();
+  
+   void apilar(int);
+
+   void desapilar();
+
+   int cima() const;
+
+   void mostrar() const;
+
+   int talla() const;
+
+   bool estaVacia() const;
+
+};
+```
+
+testPila.cpp
+```cpp
+  
+#include <iostream>
+using namespace std;
+
+#include <cstdlib>   // rand
+
+#include "Pila.h"
+
+int main () {
+   Pila pila;
+   int i;
+
+   for (i = 11; i < 100; i += 11) {
+      cout << "Insertando " << i << ": Pila=";
+      pila.apilar(i);
+      pila.mostrar();
+      cout << "\tTalla=" << pila.talla() << endl;
+   }
+
+   cout << endl;
+
+   while ( ! pila.estaVacia()) {
+      cout << "Eliminando " << pila.cima() << ": Pila=";
+      pila.desapilar();
+      pila.mostrar();
+      cout << "\tTalla=" << pila.talla() << endl;
+
+      int unDatoCualquiera = rand() % 100;
+      cout << "Insertando " << unDatoCualquiera << ": Pila=";
+      pila.apilar(unDatoCualquiera);
+      pila.mostrar();
+      cout << "\tTalla=" << pila.talla() << endl;
+
+      cout << "Eliminando " << pila.cima() << ": Pila=";
+      pila.desapilar();
+      pila.mostrar();
+      cout << "\tTalla=" << pila.talla() << endl;
+   }
+
+   try {
+      cout << "Eliminando " << pila.cima() << ": Pila=";
+   } catch (string mensaje) {
+      cout << "Probando excepcion: " << mensaje << endl;
+   }
+  
+   try {
+      pila.desapilar();
+   } catch (string mensaje) {
+      cout << "Probando excepcion: " << mensaje << endl;
+   }
+  
+
+}
+```
+
+### TAD Cola
+
+### TAD Cola de Prioridad
