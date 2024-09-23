@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "166ef8c1a33a166a",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ddaeac001216b9f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b14a4be52193c82c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "apuntes_4o/MY_AI.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "73cd22b08abc70e5",
+    "type": "split",
+    "children": [
+      {
+        "id": "9029a17b0d315a13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8689e60fe523bda1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "92c72f83e8b99c6a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eaa2428c86fd065b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8d61a398fe1b69ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "20f0d22a23c57ce2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5eedce795412ad6f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "apuntes_4o/MY_AI.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8bc87e88e3ad4b9b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "apuntes_4o/MY_AI.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b84fe75ad6ae6f26",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "82b235de28041d2a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "apuntes_4o/MY_AI.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "b14a4be52193c82c",
+  "lastOpenFiles": [
+    "apuntes_4o/Actual AI.md",
+    "apuntes_4o/MY_AI.md",
+    "apuntes_4o/Artificial Intelligence.md"
+  ]
+}
