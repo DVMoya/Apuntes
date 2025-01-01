@@ -150,72 +150,53 @@ ___
 	- [ ] Con un árbol binario se puede resolver cualquier cosa que se pueda solucionar con un árbol más complejo, por ello los árboles de decisión suelen implementarse como binarios.
 	- [x] Todas las anteriores son correctas.
 
-21) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
+### EXAMEN ENERO 2024
 
-22) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
+3) En el contexto del proyecto del robot *Shakey;* indicar cuál de las siguientes afirmaciones es correcta.
+	- [x] Sirvió de inspiración en la planificación de tareas.
+	- [ ] El "cerebro real" ocupaba varias salas con diferentes computadoras.
+	- [ ] Se desarrolló el algoritmo de Dijkstra para la planificación de trayectorias.
+	- [ ] Constituyó un hito en su capacidad senso-motora.
+	- [ ] Todas las anteriores son correctas.
+4) ¿Qué método de aprendizaje por refuerzo es más adecuado para entrenar un agente en un entorno de videojuego en tiempo real?
 
-23) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-24) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-25) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-26) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-27) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-28) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-29) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
-
-30) 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] 
-	- [ ] v
+	- [ ] Aprendizaje profundo.
+	- [ ] Aprendizaje supervisado.
+	- [x] Q-Learning.
+	- [ ] Todas las anteriores son correctas.
+5) En el contexto de la IA existe un paradigma denominado IA fuerte o "strong AI" que se caracteriza por perseguir la creación de (marcar donde corresponda):
+	- [ ] Un programa informático que produce el comportamiento racional más fuerte posible para tomar una decisión.
+	- [x] Un programa informático capaz de modelar el razonamiento cognitivo del ser humano.
+	- [ ] Un programa informático capaz de superar al ser humano en el test de Turing.
+	- [ ] Un programa informático capaz de mantener una conversación con un ser humano.
+	- [ ] Todas las anteriores son correctas.
+6) Entre las diferentes herramientas utilizadas en IA para videojuegos existen algunas que facilitan enormemente el procesamiento desacoplado de objetivos y acciones. Indicar cuál de las siguientes sería la idónea:
+	- [ ] Máquinas de estado finito.
+	- [ ] Árboles binarios de decisión.
+	- [x] Planificadores.
+	- [ ] Árboles de comportamiento.
+	- [ ] Todas las respuestas anteriores son correctas.
+7) Acerca del algoritmo de *Dijkstra;* indicar cuál de las siguientes es correcta.
+	- [ ] Fue originalmente diseñado para resolver un problema en la teoría matemática de grafos, denominado de forma confusa determinación del "camino más corto".
+	- [ ] Es un algoritmo muy utilizado en el análisis táctico.
+	- [ ] Tiene gran aplicación en los videojuegos de estrategia.
+	- [ ] Este algoritmo no funciona con grafos donde aparecen costes negativos.
+	- [x] Todas las respuestas anteriores son correctas.
+8) Un algoritmo de búsqueda se denomina completo si (marca la correcta):
+	- [ ] Siempre encuentra la solución óptima.
+	- [x] Siempre encuentra una solución si ésta existe.
+	- [ ] Encuentra todas las soluciones posibles.
+	- [ ] Son correctas (a) y (b) pero no (c)
+	- [ ] Son correctas (a), (b) y (c)
+9) Con relación al algoritmo A*; indicar cuál de las siguientes afirmaciones es correcta.
+	- [ ] A* es un algoritmo completo, es decir, en caso de existir una solución siempre dará con ella.
+	- [ ] A* con una heurística idénticamente nula daría lugar al algoritmo de Dijkstra.
+	- [ ] La diferencia con otros algoritmos es que A* también tiene en cuenta el coste desde el principio, y no simplemente el coste local del nodo visitado anteriormente.
+	- [ ] Actualmente se trabaja en la generación automática de heurísticas para A*.
+	- [x] Todas las anteriores son correctas.
+10) En el contexto del denominado "Pathfinding" existen una serie de propiedades necesarias para vincular los caminos encontrados en la representación típica de los grafos con la representación del mundo asociada. Indicar la respuesta correcta.
+- [ ] Cuantización/Localización; Generación; Depuración.
+- [x] Cuantización/Localización; Generación; Validación.
+- [ ] Cuantización/Localización; Implementación; Validación.
+- [ ] Son correctas (a) y (b) pero no (c)
+- [ ] Son correctas (a), (b) y (c)
