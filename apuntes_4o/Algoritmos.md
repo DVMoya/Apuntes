@@ -288,3 +288,13 @@ int main () {
 ### TAD Cola
 
 ### TAD Cola de Prioridad
+
+___
+# ÁRBOLES
+___
+
+Un árbol es una conexión de nodos que o bien está vacía o bien se compone de un nodo raíz. Una raíz puede tener sub árboles conectados a modo de hijos. Los enlaces que conectan a los nodos son arcos. Las raíces sin hijos son hojas. La profundidad de un nodo son los pasos que hay que tomar desde la raíz hasta la hoja. La profundidad del árbol es la profundidad de la más profunda de sus hojas. La altura es lo mismo pero al revés.
+
+## ÁRBOLES BINARIOS DE BÚSQUEDA (ABB)
+
+Un árbol cuyas raíces tienen máximo dos hijos. Los hijos se ordenan a izquierda o a derecha dependiendo de si su valor es mayor o menor que el del nodo raíz.
