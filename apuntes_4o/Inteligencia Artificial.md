@@ -30,7 +30,7 @@ ___
 ### EXAMEN ENERO 2023
 1) Explicar las diferencias entre búsqueda *"informada"* y *"no informada"* en grafos, en el contexto de *"PATHFINDING"*, dando ejemplos de algún algoritmo conocido en cada caso.
 
-<p id="border_round">
+<p class="border_round">
 La búsqueda no informada, o "a ciegas", es típica de algoritmos como "Depth First Search" o "Breath First Search" que no hacen uso de costes en las conexiones entre los nodos del grafo. Por el contrario, algoritmos de búsqueda dirigida (al nodo objetivo) como A*, hacen uso de la información de los costes en el grafo, y además de una función heurística que permite optimizar la ruta al nodo objetivo, basada en la información de distancia desde cada nodo al objetivo, proporcionada por dicha heurística. Otro ejemplo de búsqueda informada, basada en los costes asociados a las conexiones del grafo, sería el algoritmo de Dijkstra, tan utilizado en los juegos de estrategia.
 </p>
 
@@ -43,18 +43,43 @@ La búsqueda no informada, o "a ciegas", es típica de algoritmos como "Depth Fi
 ## Preguntas de Resolución de Problemas:
 
 ### EXAMEN ENERO 2023
+10) Dado el espacio de búsqueda de la figura de la izquierda , se requiere encontrar un camino desde el estado inicial A al estado objetivo J. La tabla de la derecha muestra el valor de la función heurística con el coste estimado, desde cada nodo al nodo objetivo J. Indicar cuál sería el primer camino encontrado por el algoritmo A* utilizando la heurística dada.
 
+![[IA_Enero2024_Test_ej10_grafoYtabla.png|500]]
+
+- [ ] A, B, F, G, J
+- [ ] A, E, H, M, N, J
+- [ ] A, E, H, M, J
+- [x] A, B, C, D G, J
+- [ ] A, B, C, D, G, K, J
+
+14) Construye la *Lista de Adyacencia* asociada al grafo mostrado.
+
+![[Pasted image 20250102190757.png|300]]
+
+<div class="border_round">
+A <b>→</b> H <b>→</b> Z    <br>
+G <b>→</b> H <b>→</b> L    <br>
+H <b>→</b> A <b>→</b> L <b>→</b> W  <br>
+L <b>→</b> G <b>→</b> X     <br>
+W <b>→</b> H <b>→</b> Z<br>
+X <b>→</b> L<br>
+Z <b>→</b> A → W</div>
 
 ### EXAMEN ENERO 2024
 11) Construye la lista de Adyacencia del Grafo mostrado.
+
 ![[IA_Enero2024_Test_ej11_grafo.png|300]]
-1 **→** 4 **→** 6
-2 **→** 4 **→** 5
-3 **→** 4
-4 **→** 1 **→** 2 **→** 3
-5 **→** 2 **→** 7
-6 **→** 1
-7 **→** 5
+
+<div class="border_round">
+1 <b>→</b> 4 <b>→</b> 6 <br>
+2 <b>→</b> 4 <b>→</b> 5<br>
+3 <b>→</b> 4<br>
+4 <b>→</b> 1 <b>→</b> 2 <b>→</b> 3<br>
+5 <b>→</b> 2 <b>→</b> 7<br>
+6 <b>→</b> 1<br>
+7 <b>→</b> 5</div>
+
 
 12) Dado el espacio de búsqueda de la figura, se requiere encontrar un camino desde el estado inicial S al estado objetivo G. La tabla muestra tres funciones heurísticas diferentes: h1, h2, y h3. Indicar los tres aminos encontrados por el algoritmo A* utilizando cada una de las heurísticas dadas.
 ![[IA_Enero2024_Test_ej12_grafo.png|300]]
