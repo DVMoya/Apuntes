@@ -28,9 +28,16 @@ ___
 ## Preguntas de Desarrollo:
 
 ### EXAMEN ENERO 2023
+1) Explicar las diferencias entre búsqueda *"informada"* y *"no informada"* en grafos, en el contexto de *"PATHFINDING"*, dando ejemplos de algún algoritmo conocido en cada caso.
 
+<p id="border_round">
+La búsqueda no informada, o "a ciegas", es típica de algoritmos como "Depth First Search" o "Breath First Search" que no hacen uso de costes en las conexiones entre los nodos del grafo. Por el contrario, algoritmos de búsqueda dirigida (al nodo objetivo) como A*, hacen uso de la información de los costes en el grafo, y además de una función heurística que permite optimizar la ruta al nodo objetivo, basada en la información de distancia desde cada nodo al objetivo, proporcionada por dicha heurística. Otro ejemplo de búsqueda informada, basada en los costes asociados a las conexiones del grafo, sería el algoritmo de Dijkstra, tan utilizado en los juegos de estrategia.
+</p>
 
 ### EXAMEN ENERO 2024
+1) Define el aprendizaje por refuerzo y proporciona un ejemplo de cómo se podría aplicar en un entorno de videojuegos.
+
+2) ¿Cómo se puede utilizar la inteligencia artificial en los videojuegos para mejorar la experiencia del jugador?
 
 
 ## Preguntas de Resolución de Problemas:
@@ -39,6 +46,33 @@ ___
 
 
 ### EXAMEN ENERO 2024
+11) Construye la lista de Adyacencia del Grafo mostrado.
+![[IA_Enero2024_Test_ej11_grafo.png|300]]
+1 **→** 4 **→** 6
+2 **→** 4 **→** 5
+3 **→** 4
+4 **→** 1 **→** 2 **→** 3
+5 **→** 2 **→** 7
+6 **→** 1
+7 **→** 5
+
+12) Dado el espacio de búsqueda de la figura, se requiere encontrar un camino desde el estado inicial S al estado objetivo G. La tabla muestra tres funciones heurísticas diferentes: h1, h2, y h3. Indicar los tres aminos encontrados por el algoritmo A* utilizando cada una de las heurísticas dadas.
+![[IA_Enero2024_Test_ej12_grafo.png|300]]
+
+|Node|$h_1$|$h_2$|$h_3$|
+| --- | --- | --- | --- |
+|S|$0$|$5$|$6$|
+|A|$0$|$3$|$5$|
+|B|$0$|$4$|$2$|
+|C|$0$|$2$|$5$|
+|D|$0$|$5$|$3$|
+|G|$0$|$0$|$0$|
+
+- [ ] $h_1$: S, B, C, G | $h_2$: S, B, C, G | $h_3$: S, B, C, G
+- [ ] $h_1$: S, B, C, G | $h_2$: S, B, D, G | $h_3$: S, B, C, G
+- [x] $h_1$: S, B, C, G | $h_2$: S, B, C, G | $h_3$: S, B, D, G
+- [ ] $h_1$: S, B, D, G | $h_2$: S, B, D, G | $h_3$: S, B, C, G
+- [ ] Todas las anteriores son falsas.
 
 
 ## Preguntas tipo Test:
