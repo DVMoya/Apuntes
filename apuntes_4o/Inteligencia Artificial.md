@@ -14,7 +14,10 @@ ___
 - *PARTE 2 - Supuestos Prácticos* (50%, 90 min)
 	- Mapas de *influencias*
 		- Aplicar **filtros**
-	- *ID3* (**I**nductive **D**ecision tree algorithm **3**)
+	- *ID3* (**I**nductive **D**ecisión tree algorithm **3**)
+		- Árboles de decisión
+		- Árboles de comportamiento
+		- Más y más árboles, árboles por todas partes
 
 ___
 
@@ -24,7 +27,19 @@ ___
 
 ## Preguntas de Desarrollo:
 
+### EXAMEN ENERO 2023
+
+
+### EXAMEN ENERO 2024
+
+
 ## Preguntas de Resolución de Problemas:
+
+### EXAMEN ENERO 2023
+
+
+### EXAMEN ENERO 2024
+
 
 ## Preguntas tipo Test:
 
@@ -158,45 +173,106 @@ ___
 	- [ ] Se desarrolló el algoritmo de Dijkstra para la planificación de trayectorias.
 	- [ ] Constituyó un hito en su capacidad senso-motora.
 	- [ ] Todas las anteriores son correctas.
+
 4) ¿Qué método de aprendizaje por refuerzo es más adecuado para entrenar un agente en un entorno de videojuego en tiempo real?
 
 	- [ ] Aprendizaje profundo.
 	- [ ] Aprendizaje supervisado.
 	- [x] Q-Learning.
 	- [ ] Todas las anteriores son correctas.
+
 5) En el contexto de la IA existe un paradigma denominado IA fuerte o "strong AI" que se caracteriza por perseguir la creación de (marcar donde corresponda):
 	- [ ] Un programa informático que produce el comportamiento racional más fuerte posible para tomar una decisión.
 	- [x] Un programa informático capaz de modelar el razonamiento cognitivo del ser humano.
 	- [ ] Un programa informático capaz de superar al ser humano en el test de Turing.
 	- [ ] Un programa informático capaz de mantener una conversación con un ser humano.
 	- [ ] Todas las anteriores son correctas.
+
 6) Entre las diferentes herramientas utilizadas en IA para videojuegos existen algunas que facilitan enormemente el procesamiento desacoplado de objetivos y acciones. Indicar cuál de las siguientes sería la idónea:
 	- [ ] Máquinas de estado finito.
 	- [ ] Árboles binarios de decisión.
 	- [x] Planificadores.
 	- [ ] Árboles de comportamiento.
 	- [ ] Todas las respuestas anteriores son correctas.
+
 7) Acerca del algoritmo de *Dijkstra;* indicar cuál de las siguientes es correcta.
 	- [ ] Fue originalmente diseñado para resolver un problema en la teoría matemática de grafos, denominado de forma confusa determinación del "camino más corto".
 	- [ ] Es un algoritmo muy utilizado en el análisis táctico.
 	- [ ] Tiene gran aplicación en los videojuegos de estrategia.
 	- [ ] Este algoritmo no funciona con grafos donde aparecen costes negativos.
 	- [x] Todas las respuestas anteriores son correctas.
+
 8) Un algoritmo de búsqueda se denomina completo si (marca la correcta):
 	- [ ] Siempre encuentra la solución óptima.
 	- [x] Siempre encuentra una solución si ésta existe.
 	- [ ] Encuentra todas las soluciones posibles.
 	- [ ] Son correctas (a) y (b) pero no (c)
 	- [ ] Son correctas (a), (b) y (c)
+
 9) Con relación al algoritmo A*; indicar cuál de las siguientes afirmaciones es correcta.
 	- [ ] A* es un algoritmo completo, es decir, en caso de existir una solución siempre dará con ella.
 	- [ ] A* con una heurística idénticamente nula daría lugar al algoritmo de Dijkstra.
 	- [ ] La diferencia con otros algoritmos es que A* también tiene en cuenta el coste desde el principio, y no simplemente el coste local del nodo visitado anteriormente.
 	- [ ] Actualmente se trabaja en la generación automática de heurísticas para A*.
 	- [x] Todas las anteriores son correctas.
+
 10) En el contexto del denominado "Pathfinding" existen una serie de propiedades necesarias para vincular los caminos encontrados en la representación típica de los grafos con la representación del mundo asociada. Indicar la respuesta correcta.
-- [ ] Cuantización/Localización; Generación; Depuración.
-- [x] Cuantización/Localización; Generación; Validación.
-- [ ] Cuantización/Localización; Implementación; Validación.
-- [ ] Son correctas (a) y (b) pero no (c)
-- [ ] Son correctas (a), (b) y (c)
+	- [ ] Cuantización/Localización; Generación; Depuración.
+	- [x] Cuantización/Localización; Generación; Validación.
+	- [ ] Cuantización/Localización; Implementación; Validación.
+	- [ ] Son correctas (a) y (b) pero no (c)
+	- [ ] Son correctas (a), (b) y (c)
+
+13) En el contexto del denominad *Q-Learning;* indicar cuál de las siguientes afirmaciones **NO** es correcta.
+	- [x] Requiere un modelo predefinido del entorno.
+	- [ ] El algoritmo trabaja de forma iterativa, generando episodios sucesivos.
+	- [ ] Cuanto menor sea el parámetro "Gamma" menos influencia tienen las recompensas futuras.
+	- [ ] "Q" se puede decir que representa la "calidad" de una acción tomada en un estado dado.
+	- [ ] El objetivo siempre es alcanzar el estado asociado con la mayor recompensa.
+14) Entre las siguientes ventajas del denominado *Paradigma Conexionista;* indicar cuál **NO** es correcta.
+	- [ ] La computación no se rige por reglas.
+	- [ ] La información es distribuida.
+	- [ ] Permite la tolerancia a fallos respecto a los datos.
+	- [x] Reproducen el procesamiento en serie.
+	- [ ] Todas las anteriores son correctas.
+
+15) En el contexto de los denominados *Steering Behaviors;* indicar cuál de las siguientes afirmaciones **NO** es correcta.
+	- [ ] "Seek" (o búsqueda de un objetivo estático) actúa para dirigir al personaje hacia una posición especificada en el espacio global.
+	- [ ] "Flee" es simplemente la operación inversa de "Seek".
+	- [ ] "Pursuit" es similar a "Seek" excepto que ahora el objetivo es otro personaje en movimiento.
+	- [ ] "Evasion" es análoga a "Pursuit", salvo que "Wander" se usa para alejarse de la posición futura prevista del personaje objetivo.
+	- [ ] Son correctas todas las anteriores.
+
+16) En el contexto del denominado análisis táctico se suele distinguir entre propiedades estáticas, dinámicas y evolución. Indica cuál de las siguientes afirmaciones es correcta.
+	- [ ] El terreno y la topología se consideran propiedades estáticas.
+	- [ ] Los recursos humanos se consideran propiedades en evolución.
+	- [ ] El nivel de peligro se considera una propiedad dinámica.
+	- [x] Son correctas todas las anteriores.
+
+17) En el contexto de las denominadas *Máquinas de Estado Finito* (FSMs) se aprecian una serie de limitaciones en cuanto a su uso en videojuegos. Indicar cuál de las siguientes afirmaciones **NO** es correcta.
+	- [x] Son fáciles de reutilizar en juegos diferentes.
+	- [ ] El proceso de edición de la lógica de un FSM es de muy bajo nivel.
+	- [ ] Operan siempre en un nodo reactivo.
+	- [ ] Conllevan una mínima sobrecarga computacional.
+	- [ ] Son intuitivas y se asemejan al modelo de razonamiento humano.
+
+18) En el contexto de los denominados *Behavior Trees* (BTs) se aprecian una serie de ventajas en cuanto a su uso en videojuegos. Indicar cuál de las siguientes afirmaciones **NO** es correcta.
+	- [ ] Son fácilmente escalables.
+	- [ ] Permiten un alto grado de reusabilidad.
+	- [x] Un referente de uso en la industria de videojuegos sería "F.E.A.R." de Monolith Productions.
+	- [ ] Permiten ejecución en modo concurrente.
+	- [ ] Su programación es más compleja que la de Máquinas de Estado.
+
+19) ¿Cuál es el papel principal de los algoritmos de *pathfinding* en el contexto de los videojuegos? Indica la afirmación correcta.
+	- [ ] Generar gráficos tridimensionales.
+	- [ ] Tomar decisiones estratégicas.
+	- [ ] Planificar la distribución de recursos.
+	- [x] Encontrar rutas óptimas de movimiento.
+	- [ ] Optimizar algoritmos de renderización.
+
+20) En el contexto de los *Árboles de decisión;* indicar cuál de las siguientes afirmaciones es correcta.
+	- [ ] Aunque el árbol de decisión es más simple con múltiples ramas, la velocidad de ejecución no mejora significativamente..
+	- [ ] Los árboles de decisión clasifican las variables continuas, creando regiones binarias a partir de umbrales.
+	- [ ] Los árboles de decisión suelen ser binarios porque pueden optimizarse más fácilmente.
+	- [ ] Con un árbol binario se puede resolver cualquier cosa que se pueda solucionar con un árbol más complejo, por ello los árboles de decisión suelen implementarse como binarios.
+	- [x] Don correctas todas las anteriores.
