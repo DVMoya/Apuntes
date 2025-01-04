@@ -55,7 +55,7 @@ La búsqueda no informada, o "a ciegas", es típica de algoritmos como "Depth Fi
 
 14) Construye la *Lista de Adyacencia* asociada al grafo mostrado.
 
-![[Pasted image 20250102190757.png|300]]
+![[IA_Enero2024_Test_ej14_grafo.png|300]]
 
 <div class="border_round">
 A <b>→</b> H <b>→</b> Z    <br>
@@ -335,3 +335,159 @@ Z <b>→</b> A → W</div>
 	- [ ] Los árboles de decisión suelen ser binarios porque pueden optimizarse más fácilmente.
 	- [ ] Con un árbol binario se puede resolver cualquier cosa que se pueda solucionar con un árbol más complejo, por ello los árboles de decisión suelen implementarse como binarios.
 	- [x] Don correctas todas las anteriores.
+
+___
+# PARTE 2 - PROBLEMAS
+___
+
+### EXAMEN ENERO 2023
+
+1) En el contexto de los juegos de estrategia (RTS games) se tiene la sección de un mapa de influencia representada en la fig. (A) , a la cual se le pasa el filtro de convolución de la fig. (B).
+
+![[IA_Enero2023_Problemas_ej1.png|400]]
+
+-  Dicho filtro de convolución es un filtro Gaussiano y, por lo tanto, es separable como producto de las dos matrices que se indican a continuación.
+
+$$
+	\frac {1}{16}
+	\begin{bmatrix}
+		1 & 2 & 1 \\
+		2 & 4 & 2 \\
+		1 & 2 & 1
+	\end{bmatrix}
+	=
+	\frac {1}{4}
+	\begin{bmatrix}
+		1 \\
+		2 \\
+		1 
+	\end{bmatrix}
+	\times
+	\frac {1}{4}
+	\begin{bmatrix}
+		1 & 2 & 1
+	\end{bmatrix}
+$$
+
+- Se demuestra que si, en lugar de realizar la convolución directamente con el filtro completo (fig. B), se realiza dicha operación en dos pasos, se llega al mismo resultado, optimizando el coste computacional.
+	- a) Se pide completar las tablas siguientes, que representan el resultado de convolucionar el filtro vertical primero (izquierda), y a continuación el filtro horizontal (derecha). Dar el resultado en números enteros o racionales (no utilizar reales con decimales).
+
+![[IA_Enero2023_Problemas_ej1a.png|400]]
+- 
+	- b) ¿Cómo has modificado la matriz de ambos filtros para aplicar en los bordes?
+
+<p style="text-align: center;"><b style="color: coral;"> ES CRUACIAL APORTAR TODAS LAS OPERACIONES REALIZADAS </b></p>
+
+### Solución apartado (A)
+
+<div class="border_round">
+<p style="text-align: center;">
+	Resultado "Filtro Vertical"
+	<table>
+	  <tr>
+	    <td>26/3</td>
+	    <td>17/3</td>
+	    <td>10/3</td>
+	  </tr>
+	  <tr>
+	    <td>31/4</td>
+	    <td>9/2</td>
+	    <td>11/4</td>
+	  </tr>
+	  <tr>
+	    <td>20/3</td>
+	    <td>13/3</td>
+	    <td>8/3</td>
+	  </tr>
+	</table><br>
+	Resultado "Filtro Horizontal"
+	<table>
+	  <tr>
+	    <td>23/3</td>
+	    <td>35/6</td>
+	    <td>37/9</td>
+	  </tr>
+	  <tr>
+	    <td>20/3</td>
+	    <td>39/8</td>
+	    <td>10/3</td>
+	  </tr>
+	  <tr>
+	    <td>53/9</td>
+	    <td>9/2</td>
+	    <td>29/9</td>
+	  </tr>
+	</table><br>
+</p>
+</div>
+
+### Explicación
+
+Veamos ahora un caso de ejemplo.
+Para la Matriz asociada al Filtro vertical: Valor esquina superior izquierda. (23/6). Dicho valor se obtiene al convolucionar la submatriz del filtro vertical $\frac {1}{3} \begin{bmatrix} 1 \\ 2\end{bmatrix}$ con $\begin{bmatrix} 9 \\ 8 \end{bmatrix}$, es decir, $\frac {1}{3} \begin{bmatrix} 18 \\ 8\end{bmatrix}=26/3$ .
+Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asociada al Filtro horizontal, ya que deviene de la convolución de la submatriz del filtro horizontal $\frac {1}{3} \begin{bmatrix} 1 & 2\end{bmatrix}$ con $\begin {bmatrix} 26/3 & 17/3 \end{bmatrix}$, obteniendo previamente para el filtro vertical, es decir, *$23/3$*
+
+### Solución apartado (B)
+
+![[IA_Enero2023_Problemas_ej1b_sol.png|500]]
+
+___
+# COSAS IMPORTANTES (chat GPT)
+___
+
+Aquí tienes ejemplos de matrices **3x3** para filtros **de paso alto** y **de paso bajo**, sin fracciones, con una breve descripción de su característica principal:
+
+### **Filtro de Paso Bajo (Suavizado)**
+
+El filtro de paso bajo se utiliza para suavizar la imagen, eliminando detalles finos y manteniendo las áreas suaves.
+
+#### 1. **Filtro de Paso Bajo Simple**
+$$
+G = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix}
+$$
+**Característica**: Filtro uniforme que suaviza la imagen de manera simple sin distinguir entre el centro y los bordes.
+
+#### 2. **Filtro de Paso Bajo con más énfasis en el centro**
+$$
+G = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 2 & 1 \\ 0 & 1 & 0 \end{pmatrix}
+$$
+**Característica**: Suaviza la imagen con mayor peso en el centro, proporcionando un desenfoque más centrado.
+
+#### 3. **Filtro de Paso Bajo Suavizado Moderado**
+$$
+G = \begin{pmatrix} 1 & 2 & 1 \\ 2 & 4 & 2 \\ 1 & 2 & 1 \end{pmatrix}
+$$
+**Característica**: Suaviza la imagen, preservando las características de mayor escala y eliminando detalles más finos.
+
+---
+
+### **Filtro de Paso Alto (Realce de bordes)**
+
+El filtro de paso alto se utiliza para resaltar los bordes y eliminar las áreas suaves de la imagen.
+
+#### 4. **Filtro de Paso Alto Simple**
+$$
+G = \begin{pmatrix} -1 & -1 & -1 \\ -1 & 8 & -1 \\ -1 & -1 & -1 \end{pmatrix}
+$$
+**Característica**: Resalta los bordes de la imagen mediante una diferencia entre los píxeles cercanos, eliminando áreas suaves.
+
+#### 5. **Filtro de Paso Alto con énfasis central fuerte**
+$$
+G = \begin{pmatrix} 0 & -1 & 0 \\ -1 & 5 & -1 \\ 0 & -1 & 0 \end{pmatrix}
+$$
+**Característica**: Resalta bordes más agudos, con un fuerte énfasis en el valor central para aumentar el contraste.
+
+#### 6. **Filtro de Paso Alto Moderado**
+$$
+G = \begin{pmatrix} -1 & -1 & -1 \\ -1 & 4 & -1 \\ -1 & -1 & -1 \end{pmatrix}
+$$
+**Característica**: Realza los bordes con un poco menos de agresividad, destacando las transiciones de la imagen.
+
+---
+
+### Resumen:
+
+- **Filtros de paso bajo**: Suavizan la imagen, eliminando detalles pequeños y preservando áreas más grandes y suaves.
+- **Filtros de paso alto**: Realzan los bordes y detalles finos, eliminando las áreas de suavizado para destacar las transiciones bruscas.
+
+Ambos filtros tienen aplicaciones importantes en procesamiento de imágenes, como la eliminación de ruido (paso bajo) o la detección de bordes (paso alto).
