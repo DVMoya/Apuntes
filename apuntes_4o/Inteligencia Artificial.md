@@ -429,8 +429,11 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 
 ### Solución apartado (B)
 
-![[IA_Enero2023_Problemas_ej1b_sol.png|500]]
-
+<div class="border_round">
+<p style="text-align: center;">
+	<img width="500" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej1b_sol.png" alt="Proceso aplicación de filtros vertical y horizontal">
+</p>
+</div>
 
 2) En el contexto de un juego de estrategia, se tiene el siguiente conjunto de 10 ejemplos.
 
@@ -530,6 +533,110 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 	</table>
 </p>
 </div>
+
+### EXAMEN ENERO 2024
+
+1) En el contexto de los juegos de estrategia (RTS games) se tiene la sección de un Mapa de Influencia representado en la fig. (A), a la cual se le pasan de forma secuencial, primero el filtro de convolución de la fig. (B), y a continuación el de la fig. (C).
+
+![[IA_Enero2024_Problemas_ej1.png|500]]
+
+- Se pide los siguiente:
+	- a) (0,2) Demostrar que el filtro de convolución dado en (B) es separable. Es decir, puede representarse como producto de dos matrices, una vertical y otra horizontal.
+	- b) (1) Aplicar, a continuación, dichos filtros de forma unidimensional (primero vertical y luego horizontal), a la sección del Mapa de Influencias previo (A). ¿Cómo has modificado la matriz de ambos filtros para aplicarla en los bordes?
+	- c) (1) Aplicar, a continuación, el filtro dado en (C) a la sección del Mapa de Influencia previo (A) ¿Cómo has modificado la matriz para aplicarla en los bordes?
+	- d) (0,3) Explicar las diferencias de los dos tipos de filtros dados. ¿Para qué pueden ser útiles?
+
+### Solución apartado (A)
+
+<div class="border_round">
+<p>
+	<img width="300" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1a.png" alt="Matriz fig B dividida en dos">
+</p>
+</div>
+
+### Solución apartado (B)
+
+<div class="border_round">
+<p style="text-align: center;">
+	Resultado "Filtro Vertical"
+	<table  id="cell_square">
+	  <tr>
+	    <td>7/2</td>
+	    <td>9/2</td>
+	    <td>5/2</td>
+	  </tr>
+	  <tr>
+	    <td>5</td>
+	    <td>16/3</td>
+	    <td>7/3</td>
+	  </tr>
+	  <tr>
+	    <td>13/2</td>
+	    <td>13/2</td>
+	    <td>3</td>
+	  </tr>
+	</table><br>
+	Resultado "Filtro Horizontal"
+	<table id="cell_square">
+	  <tr>
+	    <td>4</td>
+	    <td>7/2</td>
+	    <td>7/2</td>
+	  </tr>
+	  <tr>
+	    <td>31/6</td>
+	    <td>38/9</td>
+	    <td>23/6</td>
+	  </tr>
+	  <tr>
+	    <td>13/2</td>
+	    <td>16/3</td>
+	    <td>19/4</td>
+	  </tr>
+	</table><br>
+	Explicación del procedimiento:
+	<img width="500" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1b.png" alt="Proceso aplicación de filtros vertical y horizontal">
+</p>
+</div>
+
+### Solución apartado (C)
+
+<div class="border_round">
+<p style="text-align: center;">
+	Resultado "Filtro C"
+	<table id="cell_square">
+	  <tr>
+	    <td>2</td>
+	    <td>6</td>
+	    <td>-2</td>
+	  </tr>
+	  <tr>
+	    <td>9</td>
+	    <td>11</td>
+	    <td>11</td>
+	  </tr>
+	  <tr>
+	    <td>28</td>
+	    <td>19</td>
+	    <td>-1</td>
+	  </tr>
+	</table><br>
+	Explicación del procedimiento:
+	<img width="500" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1c.png" alt="Proceso aplicación de filtros c">
+</p>
+</div>
+
+### Solución apartado (D)
+
+<div class="border_round">
+<p>
+	El primer filtro (B) es de tipo "paso bajo", y básicamente se trata de un filtro que realiza un suavizado del mapa de bits (<i>blur filter</i>), asignando al píxel central la media de todos los píxeles incluidos en la ventana. La matriz de filtrado estaría compuesta por unos y el divisor sería el número total de elementos en la matriz. Se trata por tanto del denominado "filtro de media". Ayudan a homogeneizar la imagen y eliminar el ruido de fondo.
+	<br><br>
+	El segundo filtro (C) es de tipo "paso alto", y su objetivo es el contrario de los anteriores, resaltando las fuentes de mayor variabilidad en el mapa de bits (<i>sharpening filter</i>), ayudando por tanto a identificar las fuentes de influencia en los mapas así denominados.
+</p>
+</div>
+
+2) En el contexto de un juego de estrategia, se tiene el siguiente conjunto de 5 ejemplos
 
 ___
 # COSAS IMPORTANTES (chat GPT)
