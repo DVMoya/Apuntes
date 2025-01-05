@@ -383,7 +383,7 @@ $$
 <div class="border_round">
 <p style="text-align: center;">
 	Resultado "Filtro Vertical"
-	<table>
+	<table  id="cell_square">
 	  <tr>
 	    <td>26/3</td>
 	    <td>17/3</td>
@@ -401,7 +401,7 @@ $$
 	  </tr>
 	</table><br>
 	Resultado "Filtro Horizontal"
-	<table>
+	<table id="cell_square">
 	  <tr>
 	    <td>23/3</td>
 	    <td>35/6</td>
@@ -430,6 +430,106 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 ### Solución apartado (B)
 
 ![[IA_Enero2023_Problemas_ej1b_sol.png|500]]
+
+
+2) En el contexto de un juego de estrategia, se tiene el siguiente conjunto de 10 ejemplos.
+
+![[IA_Enero2023_Problemas_ej2.png|400]]
+
+- a) Aplicando el algoritmo ID3 (Inductive Decision tree algorithm 3), para generar el árbol binario de decisión asociado a dichos ejemplos, se llega, tras la primera iteración, al siguiente resultado.
+
+![[IA_Enero2023_Problemas_ej2_arbol1.png|400]]
+
+- Aplicar la siguiente iteración del algoritmo ID3 para completar el árbol mostrado. Se aconseja mantener cuatro cifras decimales en todos los cálculos.
+
+- Demostrar, utilizando la representación de reglas "IF THEN" asociada al árbol obtenido, que efectivamente contiene solución explícita a los 10 ejemplos dados.
+
+![[IA_Enero2023_Problemas_ej2_ayuda.png|500]]
+
+### Solución apartado (A)
+
+<div class="border_round">
+<p>
+	Teniendo en cuenta la distribución inicial de las acciones, para el conjunto total de ejemplos, se calcula la <b>Entropía Global:</b><br><br>
+	(Attack: 6/10; Defend 4/10), Lo que implica: <i>E = – (3/5 log2 3/5) – 2/5 log2 2/5) = 0,9710</i>
+	<br><br>
+	Ahora bien, en la 2ª iteración de ID3, lo que tenemos que clasificar son los 5 ejemplos identificados en el árbol anterior: {1, 2, 6, 7, 8}, cuyas acciones son: <i>(Attack: 1/5; Defend 4/5). Lo que implica: E(cover) = – (1/5 log2 1/5) – 4/5 log2 4/5) = 0,7219</i>
+	<br><br>
+	<table id="cell_auto_adjust">
+	  <tr>
+	    <td>1</td>
+	    <td>With ammo</td>
+	    <td>High</td>
+	    <td>Defend</td>
+	  </tr>
+	  <tr>
+	    <td>2</td>
+	    <td>With ammo</td>
+	    <td>High</td>
+	    <td>Defend</td>
+	  </tr>
+	  <tr>
+	    <td>6</td>
+	    <td>Empty</td>
+	    <td>High</td>
+	    <td>Defend</td>
+	  </tr>
+	  <tr>
+	    <td>7</td>
+	    <td>With ammo</td>
+	    <td>High</td>
+	    <td>Defend</td>
+	  </tr>
+	  <tr>
+	    <td>8</td>
+	    <td>With ammo</td>
+	    <td>Normal</td>
+	    <td>Attack</td>
+	  </tr>
+	</table>
+	<br><br>
+	Nótese que la propiedad "Cover" ya ha sido tenida en cuenta como nodo raíz y, por loo tanto, se descarta del subconjunto de los 5 ejemplos que se procesan en la nueva iteración.
+	<br><br>
+	Así, calculamos la Ganancia para la 1ª propiedad (Ammo), que tiene dos atributos: Ammo y Empty.
+	<br><br>
+	<img width="400" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a1.png" alt="Fórmulas como las de antes">
+	<br><br>
+	Calculamos ahora la Ganancia para la 2ª propiedad (Distance). Tiene dos atributos: High y Normal.
+	<br><br>
+	<img width="400" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a2.png" alt="Fórmulas como las de antes">
+	<br><br>
+	Lo que implica que la máxima Ganancia en información se asocia con el atributo "Distance". Por tanto, la solución será:
+	<br><br>
+	<img width="400" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a3.png" alt="Árbol resultante">
+</p>
+</div>
+
+### Solución apartado (B)
+
+<div class="border_round">
+<p>
+	<table id="cell_auto_adjust">
+		<tr>
+			<td style="font-weight: 750; width: 85vw;">Reglas Asociadas al Árbol de Decisión</td>
+			<td style="font-weight: 750; width: 30vw;">Ejemplos</td>
+		</tr>
+		<tr>
+			<td class="cell_align_left">IF (Cover = No) THEN Attack</td>
+			<td>{3,5,9,10}</td>
+		</tr>
+		<tr height="5px"> <td></td> <td></td> </tr>
+		<tr>
+			<td class="cell_align_left">IF (Cover = Yes) ^ (Distance = N) THEN Attack</td>
+			<td>{8}</td>
+		</tr>
+		<tr height="5px"> <td></td> <td></td> </tr>
+		<tr>
+			<td  class="cell_align_left">IF (Cover = Yes) ^ (Distance = H) THEN Defend</td>
+			<td>{1,2,6,7}</td>
+		</tr>
+	</table>
+</p>
+</div>
 
 ___
 # COSAS IMPORTANTES (chat GPT)
@@ -491,3 +591,4 @@ $$
 - **Filtros de paso alto**: Realzan los bordes y detalles finos, eliminando las áreas de suavizado para destacar las transiciones bruscas.
 
 Ambos filtros tienen aplicaciones importantes en procesamiento de imágenes, como la eliminación de ruido (paso bajo) o la detección de bordes (paso alto).
+
