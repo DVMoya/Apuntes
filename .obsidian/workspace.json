@@ -13,10 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "apuntes_4o/MY_AI.md",
+                "file": "apuntes_4o/Inteligencia Artificial.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Inteligencia Artificial"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b062a0b345fba3f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8f84ddf15ee6269",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "apuntes_4o/Inteligencia Artificial.md",
                 "mode": "preview",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Inteligencia Artificial"
             }
           }
         ]
@@ -39,7 +61,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +78,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,7 +88,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -85,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apuntes_4o/MY_AI.md",
+                "file": "apuntes_4o/Inteligencia Artificial.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +121,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Inteligencia Artificial"
             }
           },
           {
@@ -102,10 +132,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apuntes_4o/MY_AI.md",
+                "file": "apuntes_4o/Inteligencia Artificial.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Inteligencia Artificial"
             }
           },
           {
@@ -116,7 +148,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +159,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apuntes_4o/MY_AI.md"
-              }
+                "file": "apuntes_4o/Inteligencia Artificial.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Inteligencia Artificial"
             }
           }
         ]
@@ -148,8 +184,8 @@
   },
   "active": "b14a4be52193c82c",
   "lastOpenFiles": [
-    "apuntes_4o/Actual AI.md",
     "apuntes_4o/MY_AI.md",
+    "apuntes_4o/Actual AI.md",
     "apuntes_4o/Artificial Intelligence.md"
   ]
 }

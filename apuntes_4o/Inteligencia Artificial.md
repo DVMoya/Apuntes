@@ -431,7 +431,7 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 
 <div class="border_round">
 <p style="text-align: center;">
-	<img width="500" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej1b_sol.png" alt="Proceso aplicación de filtros vertical y horizontal">
+	<img width="500" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej1b_sol.png" alt="Proceso aplicación de filtros vertical y horizontal">
 </p>
 </div>
 
@@ -495,15 +495,15 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 	<br><br>
 	Así, calculamos la Ganancia para la 1ª propiedad (Ammo), que tiene dos atributos: Ammo y Empty.
 	<br><br>
-	<img width="400" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a1.png" alt="Fórmulas como las de antes">
+	<img width="400" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a1.png" alt="Fórmulas como las de antes">
 	<br><br>
 	Calculamos ahora la Ganancia para la 2ª propiedad (Distance). Tiene dos atributos: High y Normal.
 	<br><br>
-	<img width="400" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a2.png" alt="Fórmulas como las de antes">
+	<img width="400" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a2.png" alt="Fórmulas como las de antes">
 	<br><br>
 	Lo que implica que la máxima Ganancia en información se asocia con el atributo "Distance". Por tanto, la solución será:
 	<br><br>
-	<img width="400" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a3.png" alt="Árbol resultante">
+	<img width="400" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2023_Problemas_ej2a3.png" alt="Árbol resultante">
 </p>
 </div>
 
@@ -550,7 +550,7 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 
 <div class="border_round">
 <p>
-	<img width="300" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1a.png" alt="Matriz fig B dividida en dos">
+	<img width="300" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1a.png" alt="Matriz fig B dividida en dos">
 </p>
 </div>
 
@@ -595,7 +595,7 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 	  </tr>
 	</table><br>
 	Explicación del procedimiento:
-	<img width="500" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1b.png" alt="Proceso aplicación de filtros vertical y horizontal">
+	<img width="500" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1b.png" alt="Proceso aplicación de filtros vertical y horizontal">
 </p>
 </div>
 
@@ -622,7 +622,7 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 	  </tr>
 	</table><br>
 	Explicación del procedimiento:
-	<img width="500" src="C:\Users\david\Documents\carrera\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1c.png" alt="Proceso aplicación de filtros c">
+	<img width="500" src="E:\universidad\Apuntes\apuntes_4o\imgs\IA_Enero2024_Problemas_ej1c.png" alt="Proceso aplicación de filtros c">
 </p>
 </div>
 
