@@ -68,11 +68,9 @@ No importa tomar apuntes con esta profesora que al final va a coger las pregunta
 - ¿Qué factores influyen en la decisión de emprendedor y, por lo tanto, en que se inicie un proceso emprendedor? ¿Qué se entiende por distancia psicológica?
 
 <div class="border_round">
-<p>
 	**Factores que influyen**: distancia psicológica, información, confianza en capacidades, y capital social.
 	<br><br>
 	**Distancia psicológica**: Percepción de distancia social (red de contactos), espacial (recursos), y temporal (tiempo hasta iniciar). Cuanto más grande percibas esta distancia, más complicado y lejano parecerá emprender, y menos ganas tendrás de comprometerte. Por eso es clave reducir esta percepción, usando información, contactos y planificación.
-</p>
 </div>
 
 - Describe las distintas fases del viaje para emprender.
@@ -87,7 +85,6 @@ No importa tomar apuntes con esta profesora que al final va a coger las pregunta
 - ¿Vale la pena emprender? ¿Cuáles son las principales ventajas e inconvenientes asociados al emprendimiento? ¿Cuáles son las principales habilidades y competencias asociadas con el emprendimiento?
 
 <div class="border_round">
-<p>
 	Eso es subjetivo, pero la regla general es que merece la pena siempre y cuando las ventajas superen a las desventajas.
 	<br><br>
 	Principales <b>ventajas:</b> Reconocimiento personal, independencia, control del tiempo, logros personales, recompensas económicas y prestigio.
@@ -95,13 +92,11 @@ No importa tomar apuntes con esta profesora que al final va a coger las pregunta
 	Principales <b>desventajas:</b> Incertidumbre, costes personales/familiares, gestión de recursos, toma de decisiones y la presión de clientes/proveedores.
 	<br><br>
 	Las principales <b>habilidades</b> y <b>competencias</b> son: Innovación, resiliencia, gestión de recursos, toma de decisiones, liderazgo y comunicación.
-</p>
 </div>
 
 - Si quiero emprender, ¿Cómo puedo hacerlo? ¿Qué métodos puedo utilizar para analizar la viabilidad de mi emprendimiento? ¿Cuáles son las principales particularidades de los métodos estratégicos y de los métodos Lean?
 
 <div class="border_round">
-<p>
 	Para emprender necesitas una idea, cierto grado de seguridad de que la idea puede funcionar y elaborar un plan de empresa. También viene bien elaborar una red de contactos y recursos.
 	<br><br>
 	Existen dos tipos de métodos: <br>
@@ -109,28 +104,23 @@ No importa tomar apuntes con esta profesora que al final va a coger las pregunta
 		<li>Métodos <i>estratégicos:</i> Uso de información secundario, planificación racional. Reduce la incertidumbre parcialmente.</li>
 		<li><i>Lean/Acción:</i> Uso de información primaria (mercado), iteración constante, feedback directo. Más adaptabilidad, pero sesgo del emprendedor.</li>
 	</ul>
-</p>
 </div>
 
 - ¿Porqué utilizar el método *PlanificAcción*? ¿Cuáles son las principales características?
 
 <div class="border_round">
-<p>
 	Razones para usarlo:<br>
 	<ol>  
 		<li>Reduce la percepción de distancia psicológica.</li>  
 		<li>Integra análisis racional y validación experimental.</li>  
 		<li>Facilita el diseño iterativo y la validación de hipótesis.</li>  
 	</ol>
-	<br><br>
 	Sus principales características son: iteración, aprendizaje de errores, validación en mercado y planificación estratégica.
-</p>
 </div>
 
 - ¿Porqué consultar con el mercado si yo ya tengo una idea? ¿Cómo puedo hacerlo? ¿De qué técnicas dispongo?
 
 <div class="border_round">
-<p>
 	Consultar con el mercado nos permite identificar las necesidades del consumidor, validar la hipótesis, reducir la incertidumbre y ajustar la idea.
 	<br><br>
 	Esto se puede hacer con distintas técnicas:<br>
@@ -139,5 +129,82 @@ No importa tomar apuntes con esta profesora que al final va a coger las pregunta
 		<li>Observación guiada (actividades con el consumidor estudiando la interacción con el producto o servicio).</li>
 		<li>Encuestas online (limitadas por anonimato y sesgo).</li>
 	</ul>
-</p>
 </div>
+
+## TEMA 3
+
+- **Idea vs Oportunidad** ¿Cómo se puede diferenciar una idea de una oportunidad de negocio? ¿Qué criterios se deben considerar para evaluar si una oportunidad tiene potencial de convertirse en una idea viable?
+
+<div class="border_round">
+	La idea es una conceptualización inicial, mientras que una oportunidad es una idea validad que resuelve un problema o necesidad insatisfecha en el mercado.
+	<br><br>
+	Los criterios empleados son:
+	<ul>
+		<li>Que sea realista y económicamente viable</li>
+		<li>Que añada valor al consumidor de forma duradera</li>
+		<li>Que sea innovadora (que no solo mejore los productos existentes)</li>
+	</ul>
+</div>
+
+- **Plan de Negocio** ¿Qué es un plan de Negocio? ¿Para qué sirve? ¿Qué partes tiene? ¿Cómo puedo redactar uno?
+
+<div class="border_round">
+	Es un documento que evalúa la viabilidad y ruta para materializar una oportunidad de negocio.
+	<br><br>
+	El plan de negocio permite planificar y evaluar el progreso internamente, y obtener financiación/socios/subvenciones.
+	<br><br>
+	El plan de negocio contiene las siguientes partes:
+	<ol>
+		<li>Ficha de empresa.</li>
+		<li>Índice.</li>
+		<li>Resumen ejecutivo.</li>
+		<li>Actividad, producto/servicio.</li>
+		<li>Estudio de mercado.</li>
+		<li>Marketing, operaciones, recursos humanos, financiero, riesgos.</li>
+		<li>Conclusiones, anexos.</li>
+	</ol>
+	<br><br>
+	A la hora de redactar el plan de negocio se necesita ser claro, coherente y actualizado. Además se han de emplear datos relevantes y estructurar el documento con la estructura antes descrita.
+</div>
+
+- **Resumen Ejecutivo** ¿Qué es un Resumen ejecutivo? ¿Por qué es importante? ¿Qué partes tiene? ¿Cómo puedo redactar uno?
+
+<div class="border_round">
+	El resumen ejecutivo es una sinopsis del plan de negocio (max 5 páginas). Tiene como objetivo establecer un primer contacto con inversores, lo que supone una clave para captar su interés.
+	<br><br>
+	El resumen ejecutivo se compone de: nombre, necesidades a satisfacer, características del producto, beneficios, competidores y equipo humano.
+	<br><br>
+	Es necesario que el resumen ejecutivo sea: preciso, atractivo, breve y que se emplee un lenguaje sencillo.
+</div>
+
+- **Elevator Pitch** ¿Por qué es importante hacer un buen elevator pitch? ¿Qué debo tener en cuenta para hacer un buen elevator pitch?
+
+<div class="border_round">
+	Un buen elevator pitch permite captar el interés rápidamente.
+	<br><br>
+	Al hacer un elevator pitch es importante tener en cuenta:
+	<ul>
+		<li>Responder al quién, qué, cómo, y por qué somos únicos.</li>
+		<li>Destacar el mercado, objetivos y modelos de ingresos.</li>
+		<li>Que sea personalizado, claro y dentro del tiempo.</li>
+	</ul>
+</div>
+
+- **Modelo de Negocio: CANVAS** ¿Qué es un modelo de negocio? ¿Por qué es importante? ¿Qué aspectos debe tener? ¿Por qué el CANVAS?
+
+<div class="border_round">
+	Un modelo de negocio es una herramienta  para expresar la lógica de negocio: cómo crear, entregar y capturar al valor. Es importante a la hora de explicar la sostenibilidad, coherencia y adaptación al entorno cambiante.
+	<br><br>
+	El modelo de negocio debe contener:
+	<ul>
+		<li>Propuesta de valor</li>
+		<li>Clientes</li>
+		<li>Recursos</li>
+		<li>Actividades</li>
+		<li>Socios</li>
+		<li>Ingresos</li>
+		<li>Gastos</li>
+	</ul>
+	Usar el método CANVAS permite que el modelo sea visual, estructurado, adaptable y fácil de usar en iteraciones. 
+</div>
+
