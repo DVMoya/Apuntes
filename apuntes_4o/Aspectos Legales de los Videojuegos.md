@@ -55,7 +55,9 @@ ___
 
 ![[EstructuraAdministracionJuridica.png|600]]
 
-## 0.6 Clases de Leis
+El constitucional no aparece aquí. Se encarga de lidiar de cualquier caso que un juez haya considerado anticonstitucional (que contradiga la constitucional) y también materia relacionada con los diputados.
+
+## 0.6 Clases de Leyes
 
 <div class = "border_round">
 	<ul>
