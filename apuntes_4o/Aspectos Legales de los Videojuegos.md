@@ -92,6 +92,103 @@ ___
 # TEMA 1 : EL CONCEPTO JURÍDICO DE VIDEOJUGO
 ___
 
+## 1.1. Concepto de **Videojuego**
+
+Wikipedia (04/02/24):  
+"Un videojuego es un juego electrónico en el que una o más personas interactúan mediante un controlador con un dispositivo que muestra imágenes de video. Este dispositivo electrónico, conocido genéricamente como «plataforma», puede ser una computadora, una máquina arcade, una videoconsola o un dispositivo portátil, como un teléfono móvil, un teléfono inteligente, una tableta o una consola de videojuegos portátil. La industria de los videojuegos es un sector en constante crecimiento".
+
+## 1.2. Concepto jurídico-privado de videojuego o juego electrónico
+
+- Un videojuego es una **obra de propiedad intelectual** de carácter **multimedia**, que integra **software**, una **obra audiovisual** (elementos sonoros e imagen) y una **obra literaria**, entre otros.
+
+- Desde el punto de vista jurídico, el videojuego es un **dispositivo** que constituye una **creación de la mente humana** y puede ser objeto de **derechos de exclusiva**, como **patentes, diseño industrial y signos distintivos**.
+
+- Asimismo, el videojuego es un **objeto de actividad empresarial**, por lo que está sujeto al **derecho de la competencia, de la publicidad y de la contratación electrónica**.
+
+Según el **artículo 3** de la **Ley 13/2011, de 27 de mayo, de regulación del juego**, se entiende por **juego**:
+
+> “[…] toda actividad en la que se arriesgan cantidades de dinero o objetos económicamente evaluables en cualquier forma sobre resultados futuros e inciertos, dependientes en alguna medida del azar, y que permiten su transferencia entre los participantes, con independencia de que en ellos predomine el grado de destreza de los jugadores o sean exclusiva y fundamentalmente de suerte, envite o azar. Los premios podrán ser en metálico o en especie […]”.
+
+## 1.3. Aspectos **legales** de los videojuegos
+
+#### **Derecho Público:**
+
+✔ **Derecho Constitucional** 
+✔ **Derecho Penal** 
+✔ **Derecho Administrativo**
+✔ **Derecho Financiero**
+
+✅ Libertad de expresión y creación vs. contenidos violentos, sexistas o discriminatorios: **Derecho Constitucional**
+
+✅ Plagio; supresión de mecanismos anticopia o de acceso a servicios: **Derecho Penal**
+
+✅ Regulación del juego (con transferencia económica): **Derecho Administrativo y Financiero**
+
+#### **Derecho Privado:**
+
+✔ **Derecho Civil** 
+✔ **Derecho Mercantil**
+✔ **Derecho del Trabajo**
+
+✅ Derechos morales y de explotación sobre la obra: **Derecho de Propiedad Intelectual y Derecho de Propiedad Industrial** (civil, mercantil, laboral...).
+
+✅ Contratación y publicidad: **Derecho Mercantil**.
+
+## 1.4. Derecho **constitucional** y videojuegos
+
+***Constitución Española de 1978***
+✅ Artículo 20: **Libertad de expresión y de creación**.  
+✅ Artículo 33: **Derecho a la propiedad privada**.  
+✅ Artículo 36: **Derecho a la libre empresa**.  
+✅ Artículo 14: **Derecho a la igualdad**, sin discriminación por sexo, opinión, etc.  
+✅ Artículo 18: **Derecho a la intimidad y a la protección de datos personales**.
+✅ Posibles problemas y conflictos entre derechos y libertades fundamentales.
+
+### 1.4.1. art, 20, libertad de expresión y de creación
+
+- 1) Se reconocen y protegen los derechos:
+	- a) A expresar y difundir libremente los pensamientos, ideas y opiniones por medio de la palabra, la escritura o cualquier otro medio de reproducción.
+	- b) A la producción y creación literaria, artística, científica y técnica. […]
+    
+- 2) El ejercicio de estos derechos no puede restringirse mediante ningún tipo de censura previa. […]
+    
+- 3) Estas libertades tienen su límite en el respeto a los derechos reconocidos en este título, en los preceptos de las leyes que los desarrollan y, especialmente, en el derecho al honor, a la intimidad, a la propia imagen y a la protección de la juventud y de la infancia.
+    
+- 4) Sólo podrá acordarse el secuestro de publicaciones, grabaciones y otros medios de información en virtud de resolución judicial.
+
+### 1.4.2. Derecho a la igualdad, sin discriminación
+
+**Art. 14 CE:** “Los españoles son iguales ante la ley, sin que pueda prevalecer ninguna discriminación por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.”  
+
+**Art. 9.2 CE:** “Corresponde a los poderes públicos promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en los que se integra sean reales y efectivas; remover los obstáculos que impiden o dificultan su plenitud y facilitar la participación de todos los ciudadanos en la vida política, económica, cultural y social.”
+
+**Art. 3 LOI:** La igualdad supone ausencia de discriminación, directa o indirecta.  
+
+**Art. 7 LOI:** Acoso sexual y acoso por razón de sexo.  
+
+**Art. 11 LOI:** Acciones positivas.
+
+### 1.4.3. Derecho a la propiedad privada
+
+**Art. 33 CE:**
+1. Se reconoce el derecho a la propiedad privada y a la herencia.
+2. La función social de estos derechos delimitará su contenido, de acuerdo con las leyes.
+3. Nadie podrá ser privado de sus bienes y derechos si no es por causa justificada de utilidad pública o de interés social, mediante la correspondiente indemnización y conforme a lo dispuesto por las leyes.
+
+### 1.4.4. Derecho a la libre empresa
+
+**Art. 38 CE:** Se reconoce la libertad de empresa en el marco de la economía de mercado. Los poderes públicos garantizan y protegen su ejercicio y la defensa de la productividad, de acuerdo con las exigencias de la economía general y, si es el caso, de la planificación.
+
+### 1.4.5. Derecho a la intimidad y a la protección de derechos personales
+
+**Art. 18 CE:**
+1. Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen. […]
+2. La ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos.
+
+- *Ley Orgánica 1/1982, de 5/05*, de protección civil del derecho al honor, a la intimidad personal y familiar y a la propia imagen.  
+- *Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27/04/16*, relativo a la protección de las personas físicas en lo que respecta al tratamiento de sus datos personales y a la libre circulación de esos datos.  
+- *Ley Orgánica 3/2018, de 5/12*, de Protección de Datos Personales y garantía de los derechos digitales.
+
 ___
 # TEMA 2 : DERECHO PÚBLICO Y VIDEOJUEGOS
 ___
