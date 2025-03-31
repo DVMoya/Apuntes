@@ -60,7 +60,7 @@ La búsqueda no informada, o "a ciegas", es típica de algoritmos como "Depth Fi
 <div class="border_round">
 A <b>→</b> H <b>→</b> Z    <br>
 G <b>→</b> H <b>→</b> L    <br>
-H <b>→</b> A <b>→</b> L <b>→</b> W  <br>
+H <b>→</b> A <b>→</b> G <b>→</b> W  <br>
 L <b>→</b> G <b>→</b> X     <br>
 W <b>→</b> H <b>→</b> Z<br>
 X <b>→</b> L<br>
@@ -299,7 +299,7 @@ Z <b>→</b> A → W</div>
 	- [ ] "Seek" (o búsqueda de un objetivo estático) actúa para dirigir al personaje hacia una posición especificada en el espacio global.
 	- [ ] "Flee" es simplemente la operación inversa de "Seek".
 	- [ ] "Pursuit" es similar a "Seek" excepto que ahora el objetivo es otro personaje en movimiento.
-	- [ ] "Evasion" es análoga a "Pursuit", salvo que "Wander" se usa para alejarse de la posición futura prevista del personaje objetivo.
+	- [x] "Evasion" es análoga a "Pursuit", salvo que "Wander" se usa para alejarse de la posición futura prevista del personaje objetivo.
 	- [ ] Son correctas todas las anteriores.
 
 16) En el contexto del denominado análisis táctico se suele distinguir entre propiedades estáticas, dinámicas y evolución. Indica cuál de las siguientes afirmaciones es correcta.
@@ -445,7 +445,7 @@ Fijémonos que este valor se acaba convirtiendo en *$23/3$*, en la Matriz asocia
 
 - Aplicar la siguiente iteración del algoritmo ID3 para completar el árbol mostrado. Se aconseja mantener cuatro cifras decimales en todos los cálculos.
 
-- Demostrar, utilizando la representación de reglas "IF THEN" asociada al árbol obtenido, que efectivamente contiene solución explícita a los 10 ejemplos dados.
+- b) Demostrar, utilizando la representación de reglas "IF THEN" asociada al árbol obtenido, que efectivamente contiene solución explícita a los 10 ejemplos dados.
 
 ![[IA_Enero2023_Problemas_ej2_ayuda.png|500]]
 

@@ -4,26 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "9ddaeac001216b9f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "b14a4be52193c82c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "apuntes_4o/Inteligencia Artificial.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Inteligencia Artificial"
-            }
-          }
-        ]
-      },
-      {
         "id": "b062a0b345fba3f7",
         "type": "tabs",
         "children": [
@@ -33,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "apuntes_4o/Inteligencia Artificial.md",
+                "file": "apuntes_4o/Aspectos Legales de los Videojuegos.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Inteligencia Artificial"
+              "title": "Aspectos Legales de los Videojuegos"
             }
           }
         ]
@@ -60,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -182,8 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b14a4be52193c82c",
+  "active": "f8f84ddf15ee6269",
   "lastOpenFiles": [
+    "apuntes_4o/Iniciativa Empresarial.md",
+    "apuntes_4o/Inteligencia Artificial.md",
     "apuntes_4o/MY_AI.md",
     "apuntes_4o/Actual AI.md",
     "apuntes_4o/Artificial Intelligence.md"
