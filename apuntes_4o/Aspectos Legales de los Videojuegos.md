@@ -738,5 +738,242 @@ Otras entidades asociativas del sector:
 - Asociación Española de Empresas Productoras y Desarrolladoras de Videojuegos y Software de Entretenimiento, DEV, [http://dev.org.es/index.php](http://dev.org.es/index.php)
 
 ___
-# TEMA 5 : 
+# TEMA 5 : La Propiedad Industrial en la Protección Jurídica en los Videojuegos
 ___
+
+## 5.1 Introducción
+*Recordatorio:*
+- protección de los bienes inmateriales = propiedad intelectual
+- propiedad intelectual = copyright  **©**
+- propiedad industrial **®**:
+	-  sistema de patentes  
+	- signos distintivos  
+	- diseño industrial
+
+## 5.2 ¿Es Aplicable el Sistema de Patentes a los Videojuegos?
+
+**OEPM:**  
+Una patente es un título que reconoce el derecho a explotar en exclusiva la invención patentada, impidiendo a otros su fabricación, venta o utilización sin consentimiento del titular. Como contrapartida, la patente se pone a disposición del público para conocimiento general. [...]
+
+La patente puede referirse a un procedimiento nuevo, un aparato nuevo, un producto nuevo o una perfección o mejora de los mismos. La duración de la patente es de veinte años a contar desde la fecha de presentación de la solicitud. Para mantenerla en vigor es necesario pagar tasas anuales a partir de su concesión.
+
+> *Art. 4 LP * 
+>“1. Son patentables las invenciones que sean nuevas, impliquen actividad inventiva y sean susceptibles de aplicación industrial.”
+>
+> - *Novedad:* “...cuando no está comprendida en el estado de la técnica” internacional, a la fecha de solicitud.  
+>
+> - *Actividad inventiva: *“si [...] no resulta del estado de la técnica de una manera evidente para un experto en la materia.”  
+>
+> - *Aplicación industrial: *“cuando su objeto puede ser fabricado en cualquier tipo de industria, incluida la agrícola.”
+
+### El Juego No es Patentable...
+
+> *Art. 4 LP  *
+> 4. No se considerarán invenciones [...], en particular: [...]
+>
+> - c) Los planes, reglas y métodos para el ejercicio de actividades intelectuales, para juegos o para actividades económico-comerciales, así como los programas de ordenador.
+>
+> Pero “se patentan técnicas y características del juego, de puntuación, hardware, procesos informáticos, diseño (en Estados Unidos), gestión de memoria, comunicación, etc.”, [http://hispalinux.es/node/757](http://hispalinux.es/node/757)
+
+### ...Pero Otros Elementos Sí
+
+Todo lo que son periféricos (la explicación de las transparencies son literalmente capturas de pantalla de las patented de dos periféricos)
+
+## 5.3 La *Marca* y Otros Signos Distintivos
+
+> *Art. 4 LM, 17/2001:*  
+> Podrán constituir marcas todos los signos, especialmente las palabras, incluidos los nombres de personas, los dibujos, las letras, las cifras, los colores, la forma del producto o de su embalaje, o los sonidos, siempre que dichos signos sean apropiados para:  
+> - a) distinguir los productos o servicios de una empresa de los de otras empresas, y  
+> - b) ser representados en el Registro de Marcas de tal manera que permita a las autoridades competentes y al público en general determinar el objeto claro y preciso de la protección otorgada a su titular.
+
+### Utilización de los Signos Distintivos en los Videojuegos
+
+**Distinción de un videojuego:**  
+- *como producto:* denominación, logotipo, melodía, imagen de portada,  
+- “*personaje*”, como marca denominativa o tridimensional
+
+**Distinción de otro producto físico**  
+(clase Niza: 280128, 280224, 280214...)
+
+**Distinción de una empresa**  
+*creadora/distribuidora de videojuegos:* nombre comercial
+
+### El *Nombre* Comercial
+
+> *Art. 87 LM*
+>
+>1. Se entiende por nombre comercial todo signo susceptible de representación gráfica que identifica a una empresa en el tráfico mercantil y que sirve para distinguirla de las demás empresas que desarrollan actividades idénticas o similares.
+>2. En particular, [...]:
+>- nombres patronímicos y denominaciones de personas jurídicas.  
+>- denominaciones de fantasía; alusivas al objeto de la actividad empresarial.  
+>- anagramas y logotipos; imágenes, figuras y dibujos.  
+>- cualquier combinación de los signos anteriores.
+>3. Salvo disposición contraria [...], serán de aplicación al nombre comercial, en la medida en que no sean incompatibles, [...] las normas de la presente Ley relativas a las marcas.”
+
+### Publicidad y Videojuegos
+
+- Publicidad de los videojuegos
+- Publicidad en los videojuegos (*in-game advertising*)
+- *Advergaming:* “videojuegos orientados a la comunicación publicitaria de la empresa, diseñados con un propósito de marketing”, http://www.expertomarketing.es/advergaming-marcas-videojuegos/
+
+### Régimen Jurídico de la Publicidad
+
+- *Ley General de la Publicidad* / Ley de competencia desleal  
+	- Supuestos de publicidad ilícita (*art. 3 LGP*):  
+		- a) atentatoria contra la dignidad, vulneradora de valores y derechos constitucionales  
+		- b) dirigida a menores, en determinados supuestos  
+		- c) subliminal  
+		- d) que infrinja normativa específica  
+		- e) engañosa, desleal y/o agresiva  
+	- Contratos publicitarios; contrato de patrocinio
+- Otras normas: *Ley del Juego*
+
+## 5.4 El Diseño Industrial y los Videojuegos
+
+> *Art. 1.2 LPJDI: [...]*  
+> 2. “A los efectos de esta ley se entenderá por:  
+> - a) **Diseño:** la apariencia de la totalidad o de una parte de un producto, que se derive de las características de, en particular, las líneas, contornos, colores, forma, textura o materiales del producto en sí o de su ornamentación.  
+> - b) **Producto:** todo artículo industrial o artesanal, incluidas, entre otras cosas, las piezas destinadas a su montaje en un producto complejo, el embalaje, la presentación, los símbolos gráficos y los caracteres tipográficos, con exclusión de los programas informáticos”.  
+> 
+> Posible solapamiento con la protección como propiedad intelectual y/o como marca.
+
+### Requisitos Para el Registro del Diseño Industrial
+
+• **Novedad:** Cuando ningún otro diseño idéntico [o con diferencias irrelevantes] haya sido puesto a disposición del público antes de la fecha de presentación de la solicitud de registro.
+
+• **Carácter singular:** Cuando la impresión general que produzca en el usuario informado difiera de la impresión general producida en dicho usuario por cualquier otro diseño que haya sido puesto a disposición del público con anterioridad.
+
+___
+# TEMA 6 : EL JUEGO EN LÍNEA. LA CONTRATACIÓN ELECTRÓNICA
+___
+
+## 6.1 Introducción
+
+El videojuego y la contratación electrónica confluyen a menudo:  
+- A. Porque la persona usuaria puede contratar su uso en línea. Ejemplo: licencia de usuario/a final (EULA).  
+- B. Porque el uso del videojuego puede llevar a adquirir otros productos o servicios, y estas operaciones pueden realizarse en línea. Ejemplo: adquisición de “cajas de botín”.
+
+En consecuencia, es necesario conocer las nociones básicas de:
+- la regulación de la contratación electrónica: Código Civil y LSSICE
+- las características de los contratos para el uso de los videojuegos en línea
+
+## 6.2 La Regulación Jurídica
+
+### La Regulación Jurídica de los Contratos
+
+**Teoría general de los contratos:**
+
+- **Art. 1254 CC**: “El contrato existe desde que una o varias personas consienten en obligarse, respecto de otra u otras, a dar alguna cosa o prestar algún servicio.”
+- **Art. 1262 CC**: “El consentimiento se manifiesta por la concurrencia de la oferta y la aceptación sobre la cosa y la causa que han de constituir el contrato…”
+- **Art. 1255 CC**: “Los contratantes pueden establecer los pactos, cláusulas y condiciones que tengan por conveniente, siempre que no sean contrarios a las leyes, a la moral ni al orden público.”
+- **Art. 51 CCo**: “Serán válidos y producirán obligación y acción en juicio los contratos mercantiles, independientemente de la forma y del idioma en que se celebren, la clase a que correspondan y la cantidad que tengan por objeto, siempre que conste su existencia por alguno de los medios que el Derecho civil tenga establecidos. [...]”
+
+### Contratos Más Habituales en el Ámbito de los Videojuegos
+
+- *Contrato laboral*; o de desarrollo de software
+- *Acuerdo de confidencialidad*
+- *Acuerdo de comercialización*
+- *Contrato de depósito* (notaría, entidad privada...)
+- *Contratos de cesión de derechos*; licencia
+
+### La Regulación Jurídica de los Contratos Electrónicos
+
+> *Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE):*
+> 
+> *Anexo, Definiciones:* “contrato electrónico”: todo contrato en el que la oferta y la aceptación se transmiten por medio de equipos electrónicos de tratamiento y almacenamiento de datos, conectados a una red de telecomunicaciones.
+> 
+> *Disposición adicional cuarta:* «Estando en lugares distintos quien hizo la oferta y quien la aceptó, hay consentimiento desde que el oferente conoce la aceptación o desde que, después de que el aceptante se la haya enviado, no pueda ignorarla sin faltar a la buena fe...» (modificación de los arts. 1262, 2º párrafo del Código Civil y 54 del Código de Comercio)
+>
+> *Art. 28:* 
+> obligación del oferente de confirmar la recepción de la aceptación, porque (art. 1313 CC) «La confirmación purifica al contrato de los vicios que pudiera tener desde el momento de su celebración».
+
+### Lugar de Celebración del Contrato Electrónico
+
+- **Se puede pactar** el lugar en el que se considera celebrado el contrato (para determinar la ley aplicable y los tribunales competentes).
+- **A falta de pacto**, art. 29 LSSICE:
+    - «Los contratos celebrados por vía electrónica en los que intervenga como parte un consumidor se presumirán celebrados en el lugar en que este tenga su residencia habitual».
+    - «Los contratos electrónicos entre empresarios o profesionales, si no hay pacto entre las partes, se presumirán celebrados en el lugar en que esté establecido el prestador de servicios».
+- **Subsidiariamente**, art. 1262, 2º párrafo del Código Civil: «... El contrato, en este caso, se presume celebrado en el lugar en que se hizo la oferta».
+
+## 6.3 Características de los Contratos para el Uso de Videojuegos en Línea
+
+### Contrato de Licencia de Usuario Final (**EULA**); Contenidos Habituales
+
+- Identificación de las partes; duración
+- Objeto: software de juego; en su caso, de edición; contenido adicional
+- Licencia de propiedad intelectual del software: cesión no exclusiva e intransferible; prohibiciones de uso
+- Titularidad del software, las marcas, nombres de dominio, secretos empresariales
+- “Ausencia de garantías”: no responsabilidad por calidad, idoneidad para el uso, integridad o precisión
+- Cesión de datos personales (puede incluir métodos de pago y, en móviles, localización geográfica)
+- Aspectos fiscales y de prevención de blanqueo de capitales
+
+### Juegos "Gratuitos" y Micro-Transacciones
+
+En los juegos _free to play_ (F2P), el juego es inicialmente gratuito, pero suele haber micropagos asociados.  
+
+> El desarrollador/editor permite la descarga del videojuego sin pago; pero se "monetiza" mediante la inclusión de publicidad y/o compras asociadas al juego (_in-app purchases_, para permitir comprar habilidades o armas para el personaje, avanzar más rápido en el juego, nuevos escenarios, etc.). Ej.: _Candy Crush_ o _FarmVille_ 
+> 
+> *(Andy Ramos, 2017).*
+
+Diversas implicaciones jurídicas:
+- Posible publicidad engañosa
+- Obligación de información previa
+- Medidas de protección de la infancia
+
+### Publicidad Engañosa y Videojuegos
+
+En EE.UU. y Reino Unido se abrieron expedientes sancionadores a comercializadoras de juegos F2P por anunciar que eran «gratuitos» cuando, en la práctica, era difícil que lo fueran, ya que las compras integradas eran prácticamente obligatorias.  
+- Ejemplo: _Dungeon Keeper_ —las autoridades del Reino Unido declararon su publicidad como confusa por anunciar que el juego era gratuito, cuando su mecánica dificultaba que un consumidor promedio pudiera avanzar sin gastar dinero en adquirir moneda virtual.
+
+En España:  
+La **Ley General de Publicidad** (artículo 3.e) declara ilegal la publicidad engañosa; la **Ley de Competencia Desleal** define los actos de engaño, las omisiones engañosas, los actos de confusión...
+
+Las **Directrices de Buenas Prácticas de Publicidad de productos de software interactivo** (art. 6.2) indican que los anuncios deben “reflejar con precisión la naturaleza y contenido del producto”, y no inducir a error.
+
+> Por tanto, se debe tener mucho cuidado al utilizar la palabra "Gratis" o "Gratuito" al publicitar un juego si realmente existen compras asociadas dentro del mismo.
+
+### Obligación de Información Previa
+
+> **Art. 60 bis de la Ley General para la Defensa de los Consumidores y Usuarios:**  
+> 
+> Antes de que se perfeccione el contrato, debe obtenerse **consentimiento expreso** para todos los pagos adicionales a la remuneración principal.  
+> 
+> Estos deben comunicarse de forma **clara y comprensible**, y la aceptación debe hacerse mediante un sistema de **inclusión voluntaria (opt-in)**.  
+En caso contrario, el consumidor tendrá **derecho al reembolso**.
+
+En los juegos F2P, los "pagos adicionales" son los **micropagos** integrados en el videojuego. Por tanto, al comercializar un juego F2P, el/la publicador/a debe:
+- Obtener **consentimiento expreso** para cualquier pago adicional.
+- Comunicar los **suplementos** de forma clara y comprensible.
+- Incluir una **casilla de aceptación** específica para dichos suplementos.
+- Si el sistema de aceptación es de tipo **opt-out** (o no existe directamente), el usuario/a tendrá **derecho al reembolso** de ese pago adicional.
+
+### Medidas de Protección de la Infancia
+
+> **Artículo 3, b, de la Ley General de Publicidad**:  
+> “Es ilícita: […]  
+> b) La publicidad dirigida a menores que les incite a la compra de un bien o servicio, explotando su inexperiencia o credulidad, o en la que aparezcan persuadiendo de la compra a padres o tutores.”
+
+Por tanto, en las pantallas de juegos donde existan compras asociadas, los mensajes deben ser **neutros** y **no incitar al menor** a realizar o pedir la adquisición de estos complementos a sus padres.
+
+ > **Artículo 7 de las Directrices de Buenas Prácticas...**:  
+> Se establece una **protección especial para los menores**, con **exigencias más estrictas y rigurosas** en la publicidad que se les dirige.
+
+### Responsabilidad Derivada de los Contratos en Línea
+
+> **Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico** 
+> 
+> **Artículo 13. Responsabilidad de los prestadores de servicios de la sociedad de la información**
+> 
+> 1. Los prestadores de servicios de la sociedad de la información están sujetos a la responsabilidad civil, penal y administrativa establecida con carácter general en el ordenamiento jurídico, sin perjuicio de lo que dispone esta Ley.
+> 2. Para determinar la responsabilidad de los prestadores de servicios por el ejercicio de actividades de intermediación, se estará a lo que establecen los artículos siguientes.
+> 
+> **Artículo 16 LSSICE. Responsabilidad de los prestadores de servicios de alojamiento o almacenamiento de datos**
+>
+> 3. Los prestadores de un servicio de intermediación consistente en alojar datos proporcionados por el destinatario de ese servicio no serán responsables por la información almacenada a petición del destinatario, siempre que:
+> - a) No tengan conocimiento efectivo de que la actividad o la información almacenada es ilícita o lesiona bienes o derechos de terceros susceptibles de indemnización, o  
+> - b) Si lo tienen, actúen con diligencia para retirar los datos o hacer imposible el acceso a ellos.
+> 
+> Se entiende que el prestador de servicios tiene el conocimiento efectivo al que se refiere el párrafo a) cuando un órgano competente haya declarado la ilicitud de los datos, ordenado su retirada o que se imposibilite el acceso a los mismos, o se hubiera declarado la existencia de la lesión, y el prestador conociera la correspondiente resolución, sin perjuicio de los procedimientos de detección y retirada de contenidos que los prestadores apliquen en virtud de acuerdos voluntarios y de otros medios de conocimiento efectivo que pudieran establecerse.
+
+
+

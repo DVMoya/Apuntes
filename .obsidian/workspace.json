@@ -14,6 +14,26 @@
               "type": "markdown",
               "state": {
                 "file": "apuntes_4o/Aspectos Legales de los Videojuegos.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Aspectos Legales de los Videojuegos"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d6ea1006f1b68cae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ffa4f2914c39c1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "apuntes_4o/Aspectos Legales de los Videojuegos.md",
                 "mode": "preview",
                 "source": true
               },
@@ -78,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8d61a398fe1b69ea",
