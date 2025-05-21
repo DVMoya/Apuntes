@@ -304,7 +304,7 @@ ___
 # TEMA 3 : LA PROPIEDAD INTELECTUAL DE LOS VIDEOJUEGOS (I)
 ___
 
-## 2.1 Concepto y Objeto. Fuentes Legales
+## 3.1 Concepto y Objeto. Fuentes Legales
 
 **Tipo particular de propiedad**  
 Principales normas reguladoras:
@@ -329,7 +329,7 @@ Principales normas reguladoras:
 - **d)** Las obras cinematográficas y cualquier otra obra audiovisual. [...]
 - **i)** Los programas de ordenador.»
 
-## 2.2 El Sujeto de la Propiedad Intelectual
+## 3.2 El Sujeto de la Propiedad Intelectual
 
 **Artículo 1 LPI:**  
 «La propiedad intelectual de una obra literaria, artística o científica corresponde al autor por el solo hecho de su creación.»
@@ -396,7 +396,7 @@ Principales normas reguladoras:
 - Editores de obras inéditas en dominio público, o sin derechos de autor
 - Fabricantes de bases de datos (derecho sui generis)
 
-## 2.3 Contenido de la Propiedad Intelectual:
+## 3.3 Contenido de la Propiedad Intelectual:
 
 ### Derechos Morales
 
@@ -527,3 +527,216 @@ Es una corporación sin ánimo de lucro, con el objetivo de:
 - **Las entidades de gestión de derechos de autor**: SGAE, CEDRO, DAMA, EGEDA, ...
 - **Los símbolos e indicaciones de la reserva de los derechos de autor**: © + titular + lugar y año de publicación
 - **Los procedimientos judiciales**: Vía penal, civil, administrativa...
+
+___
+# TEMA 4 : LA PROPIEDAD INTELECTUAL DE LOS VIDEOJUEGOS (II)
+___
+
+## 4.1 Introducción; debate sobre el objeto de protección en el videojuego
+
+Diferentes posiciones en el debate sobre el objeto de protección en el videojuego:
+- Como software
+- Como obra audiovisual
+- Como obra "atípica"
+
+### Videojuego como Software
+
+(**arts. 95 y ss. LPI**)
+
+1. [...] se entiende por programa de ordenador toda secuencia de instrucciones o indicaciones destinadas a ser utilizadas, directa o indirectamente, en un sistema informático para realizar una función o una tarea o para obtener un resultado determinado, cualquiera que sea su forma de expresión y fijación.  
+[...] comprenderá también su documentación preparatoria. La documentación técnica y los manuales de uso [...].
+
+2. La protección que prevé la presente Ley se aplica a cualquier forma de expresión de un programa de ordenador. [...] cualesquiera versiones sucesivas del programa, así como los programas derivados, excepto aquellos creados con el fin de ocasionar efectos nocivos...
+    
+3. No estarán protegidas mediante los derechos de autor de acuerdo con la presente Ley las ideas y principios en los que se basen cualquiera de los elementos de un programa de ordenador, incluidos los que sirven de fundamento a sus interfaces.
+
+> *art. 95.1 LPI in fine*
+>
+“El derecho de autor sobre los programas de ordenador se regirá por los preceptos del presente Título y, en aquello no específicamente previsto en el mismo, por las disposiciones que resulten aplicables de la presente Ley.”
+
+### Videojuego como Obra Audiovisual
+
+(**arts. 86 y ss. LPI**)
+
+“Creaciones expresadas mediante una serie de imágenes asociadas, con o sin sonorización incorporada, que estén destinadas esencialmente a ser mostradas a través de aparatos de proyección o por cualquier otro medio de comunicación pública de la imagen y del sonido, con independencia de los soportes materiales de dichas obras.”
+
+“Son autores de la obra audiovisual:
+
+1. El director-realizador.
+2. Los autores del argumento, la adaptación y los del guion o los diálogos.
+3. Los autores de las composiciones musicales, con o sin letra, creadas especialmente para esta obra.”
+
+**Dificultades:**
+
+- Papel del software, ausente en la obra audiovisual y esencial en el videojuego.
+    
+- _Numerus clausus_ en la coautoría. (las plazas de coautoría son limitadas)
+    
+- Excesiva cesión de derechos a la producción: presunción de cesión, en exclusiva, de reproducción, distribución, comunicación pública, doblaje y subtitulado (art. 88 LPI).
+    
+- “Destinadas esencialmente a ser mostradas...”, no a ser jugadas interactivamente.
+
+### Videojuego como  Obra "Atípica"
+
+- Protección de la interactividad, en tanto que software
+- Protección, en su caso, de los elementos audiovisuales (imagen y sonido) y literarios (guion), por las reglas generales y/o especiales de la LPI:  
+    • Obras audiovisuales: arts. 86 y ss.  
+    • Fonogramas: arts. 114 y ss.  
+    • Otros: bases de datos; “meras fotografías”;...
+
+## 4.2 El Videojuego como Obra "Atípica": Software y Elementos Audiovisuales y sonoros
+
+### Protección del Software del Videojuego
+
+(*arts. 95 y ss. LPI*)
+
+1. [...] se entiende por programa de ordenador toda secuencia de instrucciones o indicaciones destinadas a ser utilizadas, directa o indirectamente, en un sistema informático para realizar una función o una tarea o para obtener un resultado determinado, cualquiera que sea su forma de expresión y fijación. [...]
+2. La protección que prevé la presente Ley se aplica a cualquier forma de expresión de un programa de ordenador. [...]
+3. No estarán protegidos mediante los derechos de autor de acuerdo con la presente Ley las ideas y principios en que se basen cualquiera de los elementos de un programa de ordenador incluidos los que sirven de fundamento a sus interfaces.
+
+*Incluye:*  
+- a) El programa propiamente dicho  
+- b) Todas las fases de elaboración  
+- c) Tanto el programa completo como las partes que tengan una forma de expresión que no sea la única posible  
+- d) Programas expresados en cualquier lenguaje  
+- e) Versiones sucesivas y programas derivados  
+- f) Documentación técnica y manuales de uso  
+- g) El título o denominación
+
+*No incluye:*  
+- Las «manifestaciones externas del programa»  
+- Los virus informáticos
+
+*Art. 4 Ley de Patentes (24/2015)*
+- **1.** Son patentables las invenciones nuevas, que impliquen actividad inventiva y sean susceptibles de aplicación industrial, [...]  
+- **4.** No se considerarán invenciones [...]  
+	- c) Los planes, reglas y métodos para el ejercicio de actividades intelectuales, para juegos o para actividades económico-comerciales, así como los programas de ordenador.
+
+### Especialidades de la Autoría del Software
+
+*a) La autoría colectiva (i)*
+Concepto general de autoría colectiva:  
+
+> *Art. 8 LPI:*  
+«Se considera obra colectiva la creada por la iniciativa y bajo la coordinación de una persona natural o jurídica que la edita y divulga con su nombre y está constituida por la reunión de aportaciones de diferentes autores, cuya contribución personal se funda en una creación única y autónoma, para la cual ha sido concebida, sin que sea posible atribuir, separadamente, a cualquiera de ellos un derecho sobre el conjunto de la obra realizada.»  
+«Salvo pacto en contrario, los derechos sobre la obra colectiva corresponderán a la persona que la edite y divulgue con su nombre.»
+
+> *Art. 2 Dir. 91/250:*  
+«Se considerará autor del programa de ordenador la persona física o grupo de personas físicas que lo hayan creado o, cuando la legislación de los estados miembros lo permita, la persona jurídica que sea considerada titular del derecho por dicha legislación.  
+Cuando la legislación de un estado miembro reconozca las obras colectivas, la persona física o jurídica que, según dicha legislación, haya creado el programa, será considerada la autora de este.»
+
+> *Art. 97.1 y 2 TRLPI:*
+> 1. «Se considerará autor del programa de ordenador la persona o grupo de personas naturales que lo hayan creado, o la persona jurídica que sea prevista como titular de los derechos de autor en los casos expresamente previstos por esta Ley.
+> 2. Cuando se trate de una obra colectiva tendrá la consideración de autor, salvo pacto en contrario, la persona natural o jurídica que la edite y divulgue con su nombre.»
+
+### Autoría *Asalariada* (comparación)
+
+*Autoría **asalariada** en general*
+- Según pacto, escrito, en el contrato laboral;
+- A falta de pacto, presunción de cesión exclusiva y “con el alcance necesario para el ejercicio de la actividad habitual del empresario en el momento de la entrega de la obra realizada en virtud de dicha relación laboral” (*art. 51 LPI*)
+
+*Autoría **asalariada** de software*
+> *Art. 97.4 LPI*  
+“Cuando un trabajador asalariado cree un programa de ordenador, en el ejercicio de las funciones que le han sido confiadas o siguiendo las instrucciones de su empresario, la titularidad de los derechos de explotación [...] corresponderán, exclusivamente, al empresario, salvo pacto en contrario.”
+
+### Protección de los Elementos Audiovisuales del Videojuego
+
+Es necesario distinguir entre:
+- elementos audiovisuales **con destino interactivo:** diseñados para configurar la experiencia de juego, no para transportar el relato. Pueden formar parte del mundo de ficción (personajes, objetos que utilizan...) o facilitar la intervención del/de la jugador/a (botones, indicadores de vida y puntos de experiencia...). Protección como parte del videojuego: *arts. 95, 96, 10 y, si procede, otras LPI*
+- elementos audiovisuales **con destino mostrativo:** protección jurídica de las obras audiovisuales, *arts. 86 y ss. LPI*
+
+### Videojuego como Obra Audiovisual
+
+(*arts. 86 y ss. LPI*)
+“Creaciones expresadas mediante una serie de imágenes asociadas, con o sin sonorización incorporada, que estén destinadas esencialmente a ser mostradas a través de aparatos de proyección o por cualquier otro medio de comunicación pública de la imagen y del sonido, con independencia de los soportes materiales de dichas obras.”
+
+“Son autores de la obra audiovisual:
+1. El director-realizador
+2. Los autores del argumento, la adaptación y los del guion o los diálogos
+3. Los autores de las composiciones musicales, con o sin letra, creadas especialmente para esta obra.”
+
+> *Artículo 88. Presunción de cesión en exclusiva y límites*
+> 1. Sin perjuicio de los derechos que corresponden a los autores, por el contrato de producción de la obra audiovisual se presumirán cedidos en exclusiva al productor, con las limitaciones establecidas en este título, los derechos de reproducción, distribución y comunicación pública, así como los de doblaje o subtitulado de la obra.  
+> 	- No obstante, en las obras cinematográficas será siempre necesaria la autorización expresa de los autores para su explotación, mediante la puesta a disposición del público de copias en cualquier sistema o formato, para su utilización en el ámbito doméstico, o mediante su comunicación pública a través de la radiodifusión.
+> 1. Salvo estipulación en contrario, los autores podrán disponer de su aportación de forma aislada, siempre que no se perjudique la normal explotación de la obra audiovisual.
+
+### Protección de los Elementos Sonoros del Videojuego
+
+> *Art. 114 LPI*
+> 1. Se entiende por fonograma toda fijación exclusivamente sonora de la ejecución de una obra o de otros sonidos.
+> 2. Es productor de un fonograma la persona natural o jurídica bajo cuya iniciativa y responsabilidad se realiza por primera vez dicha fijación...
+
+Los derechos de explotación pertenecen, en general, al productor o a la productora de los fonogramas.
+
+Es necesario distinguir entre:
+- Música / otros efectos sonoros
+- Grabación instrumental y/o vocal / música “producida” por el software
+
+## 4.3 la protección Jurídica de la Propiedad Intelectual
+
+- **Protección _ex ante_**:
+    - El registro de la propiedad intelectual
+    - Los contratos de cesión de derechos
+    - Las sociedades de gestión de derechos
+    - Los símbolos de la propiedad intelectual
+- **Protección _ex post_**: los procedimientos judiciales
+    - Vía penal; vía civil; vía administrativa
+    - Vía civil: medidas cautelares; cesación; indemnización
+    - Legitimación activa y pasiva
+    - La prueba
+    - La sentencia
+
+### El Registro de la Propiedad Intelectual
+
+- Órgano de la administración pública, encargado de hacer pública la titularidad de derechos de propiedad intelectual.
+- Presunción de veracidad
+- Prioridad en el tiempo
+- Información pública; excepciones: software, solo es accesible el asiento registral (arts. 29 a 31 RRGPI)
+- Registro central y registros territoriales
+
+### Requisitos Específicos para la Inscripción (I) : Para Software
+
+*Art. 14, j) RRGPI*
+- Todo el código fuente, en soporte digital que pueda ser examinado
+- Un ejecutable
+- Memoria con breve descripción, indicando:
+    - Lenguaje de programación
+    - Entorno operativo
+    - Listado de archivos
+    - Diagrama de flujo
+
+### requisitos específicos para la Inscripción (II) : Para "Páginas Web y Obras Multimedia"
+
+*Art. 14, l)*
+- Descripción por escrito que relacione cada creación, identificando título y autoría
+- Requisitos específicos para la identificación y descripción de las obras contenidas
+- Copia en formato digital que pueda ser examinado
+
+### La protección Jurídica Contractual
+
+**Teoría general de los contratos:**
+> **Art. 1254 CC:** 
+> “El contrato existe desde que una o varias personas consienten en obligarse, respecto de otra u otras, a dar alguna cosa o prestar algún servicio.”
+
+> **Art. 1255 CC:** 
+> “Los contratantes pueden establecer los pactos, cláusulas y condiciones que tengan por conveniente, siempre que no sean contrarios a las leyes, a la moral ni al orden público.”
+
+> **Art. 1091 CC:** 
+> “Las obligaciones que nacen de los contratos tienen fuerza de ley entre las partes contratantes, y deben cumplirse como tal.”
+
+> **Art. 1262 CC:** 
+> «El consentimiento se manifiesta por el concurso de la oferta y de la aceptación sobre la cosa y la causa que han de constituir el contrato...»
+    
+> **Art. 51 CCo:** 
+> «Serán válidos y producirán obligación y acción en juicio los contratos mercantiles, independientemente de la forma y el idioma en que se celebren, la clase a que correspondan y la cantidad que tengan por objeto, siempre que conste su existencia por alguno de los medios que el Derecho civil tenga establecidos. [...]»
+
+### Las Entidades de Gestión de Derechos
+“organizaciones privadas de base asociativa y naturaleza no lucrativa que se dedican en nombre propio o ajeno a la gestión de derechos de propiedad intelectual de carácter patrimonial por cuenta de sus legítimos titulares”: SGAE, DAMA, EGEDA,...
+
+Otras entidades asociativas del sector:
+- AEVI, Asociación Española de Videojuegos [http://www.aevi.org.es/](http://www.aevi.org.es/)
+- Asociación Española de Empresas Productoras y Desarrolladoras de Videojuegos y Software de Entretenimiento, DEV, [http://dev.org.es/index.php](http://dev.org.es/index.php)
+
+___
+# TEMA 5 : 
+___
