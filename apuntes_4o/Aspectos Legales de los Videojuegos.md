@@ -975,5 +975,130 @@ Por tanto, en las pantallas de juegos donde existan compras asociadas, los mensa
 > 
 > Se entiende que el prestador de servicios tiene el conocimiento efectivo al que se refiere el párrafo a) cuando un órgano competente haya declarado la ilicitud de los datos, ordenado su retirada o que se imposibilite el acceso a los mismos, o se hubiera declarado la existencia de la lesión, y el prestador conociera la correspondiente resolución, sin perjuicio de los procedimientos de detección y retirada de contenidos que los prestadores apliquen en virtud de acuerdos voluntarios y de otros medios de conocimiento efectivo que pudieran establecerse.
 
+___
+# TEMA 7 : DERECHO DEL TRABAJO Y TIC
+___
+
+## 7.1 Características de la Prestación del Trabajo
+
+- Realizada por una persona física
+- Realizada voluntariamente
+- Retribuida
+- Por cuenta ajena
+- Dependiente de las instrucciones del empleador
+
+## 7.2 Normativa que Regula la Relación Laboral
+
+1. Estatuto de los Trabajadores. Otras normas legales y reglamentarias
+2. Los convenios colectivos
+3. Cláusulas del contrato de trabajo
+4. Usos y costumbres locales y profesionales
+
+## 7.3 Modalidades del Contrato de Trabajo
+
+- *Según la duración:*  
+	- De duración indefinida; fijo discontinuo; y adscrito a obra  
+	- De duración determinada:  
+		- Contrato estructural por circunstancias de la producción  
+		- Contrato por sustitución
+- *Contratos formativos:*  
+	- De formación en alternancia  
+	- Para la obtención de la práctica profesional
+- *Según la extensión de la jornada:*  
+	- A tiempo completo  
+	- A tiempo parcial
+- *Contrato de trabajo a distancia*
+
+## 7.4 Período de Prueba
+
+- *Solo si se pacta*  
+- Duración: según lo acordado en el contrato o según el convenio  
+- Igualdad de derechos y obligaciones, con excepciones
+
+## 7.5 Derechos y Obligaciones
+
+- *Principales obligaciones:* prestar trabajo; retribuir el trabajo  
+- *Derechos de las personas trabajadoras:*  
+	- Derechos **fundamentales**, propios de la relación laboral:  
+		- Derecho al trabajo y a la libre elección de profesión  
+		- Libre sindicación  
+		- Negociación colectiva; conflicto colectivo; huelga  
+		- Reunión; información, consulta y participación  
+	- Derechos con **particularidades** en la relación laboral:  
+		- Ocupación efectiva  
+		- Promoción y formación profesional  
+		- No discriminación directa o indirecta  
+		- Integridad física  
+		- Intimidad  
+		- Percepción puntual de la remuneración pactada  
+		- Ejercicio de acciones judiciales
+
+## 7.6 Clasificación profesional y Funciones
+
+- Tres cuestiones relativas a la clasificación profesional: *grupo profesional, puesto de trabajo y funciones del puesto*  
+
+-  **El convenio define:** los grupos profesionales; las tareas según grupo y puesto de trabajo; titulación necesaria; autonomía y responsabilidad... etc.  
+
+- Del grupo profesional asignado en el contrato dependen el grado de responsabilidad y autonomía, y el salario  
+
+- Situaciones y condiciones en que pueden variar las tareas concretas, dentro del grupo profesional o pasando a otro
+
+## 7.7 Lugar de Trabajo
+
+- “*Centro de trabajo*”: lugar donde debe prestarse el trabajo. Puede ser itinerante
+
+- **La empresa puede efectuar un traslado de las personas trabajadoras de centro de trabajo:**
+	- Por ciertas *causas técnicas, económicas, organizativas o de producción;* que requiera cambio de residencia  
+	- Individual o plural; o colectivo  
+	- Requisitos y consecuencias  
+	- *Cuando es temporal, pero requiere cambio de residencia, se denomina desplazamiento*
+
+## 7.8 tiempo de Trabajo
+
+- *Jornada laboral:* según el convenio y/o contrato, respetando la jornada máxima anual y diaria, y los descansos. Puede haber *distribución irregular.* **Registro diario.**  
+- *Descansos:* dentro de la jornada; entre jornadas; semanal.  
+- Ritmos de trabajo:  
+	- Derecho a adaptación de la jornada y forma de prestación para conciliar.  
+	- Horas extraordinarias; contraprestación, dineraria o con descanso.  
+	- Trabajo nocturno; trabajo por turnos.
+- Días festivos y permisos. Pueden ser retribuidos o no; y no recuperables o sí.  
+- Vacaciones: 30 días naturales.
+
+## 7.9 El Salario
+
+- *En dinero o en especie*  
+- Tres conceptos:
+	- **Salario base:** mínimo según horas trabajadas; salario mínimo interprofesional; puede incrementarse en el convenio o contrato  
+	- **Complementos salariales:** según circunstancias personales, del puesto de trabajo, o de los resultados económicos de la empresa. Según convenio o contrato  
+	- **Percepciones extrasalariales:** para compensar o suplir ciertos gastos
+- Dos pagas extraordinarias al año
+
+## 7.10 Modificación Sustancial de las Condiciones de Trabajo
+
+- *Derecho* de la persona empresaria *a modificar sustancialmente las condiciones de trabajo,* con ciertos requisitos y procedimientos  
+
+- **Principales modificaciones:** en la jornada, el horario, la remuneración y/o el sistema de trabajo
+
+- **Debe haber una causa** económica, técnica, organizativa o de producción  
+
+- Los procedimientos varían según afecten a pocas personas trabajadoras o sean de carácter colectivo
+
+## 7.11 Suspensión del Contrato de Trabajo
+
+- El contrato sigue existiendo pero *quedan interrumpida*s las 2 principales obligaciones: **trabajar y retribuir**  
+- *Diversas causas*, por regla general *temporales*: pactadas en el contrato; incapacidad temporal; nacimiento, adopción; riesgo por embarazo o lactancia; cargo público; privación de libertad; por razones disciplinarias; fuerza mayor; causas económicas, técnicas, organizativas o de producción; derecho de huelga; víctima de violencia de género...  
+- *Regulación de suspensiones específicas:* excedencia voluntaria o forzosa; cuidado de hijos/as o familiares dependientes; nacimiento, cuidado o adopción de menores
+
+## 7.12 Extinción del Contrato de Trabajo
+
+- *Por acuerdo entre la persona trabajadora y la empresa;* no genera ni indemnización ni prestación por desempleo  
+
+- *Por finalización del contrato de duración temporal* (indemnización de 12 días por año)  
+
+- *Por decisión de la persona trabajadora:* voluntaria; *o por incumplimiento grave de la empresa* (indemnización de 33 días por año, hasta 24 meses)  
+
+- *Por decisión de la empresa (**despido**):* por causas objetivas; despido colectivo; despido disciplinario  
+
+- *Despido improcedente; despido nulo*
 
 
